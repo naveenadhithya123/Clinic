@@ -1,0 +1,895 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>MediCare Plus | Advanced Medical &amp; Healthcare Center</title>
+  <meta name="description" content="MediCare Plus provides world-class healthcare, 24/7 emergency services, and leading medical specialists with compassionate, patient-centered care." />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=Outfit:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+  <link rel="stylesheet" href="https://unpkg.com/aos@2.3.4/dist/aos.css" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <!-- Top Bar -->
+  <div class="topbar">
+    <div class="container topbar-container">
+      <div class="topbar-info">
+        <span><i class="fas fa-phone-alt"></i> +1 (800) 456-7890</span>
+        <span><i class="fas fa-envelope"></i> contact@medicareplus.com</span>
+        <span><i class="fas fa-clock"></i> Mon - Sat: 8:00 AM - 9:00 PM | 24/7 Emergency</span>
+      </div>
+      <div class="topbar-social">
+        <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+        <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+        <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+        <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Sticky Navbar -->
+  <nav class="navbar" id="navbar">
+    <div class="container nav-container">
+      <a href="#home" class="logo">
+        <div class="logo-icon">
+          <i class="fas fa-hospital"></i>
+          <span class="logo-pulse"></span>
+        </div>
+        <div class="logo-text">
+          <span class="brand-title">MediCare<span class="accent">Plus</span></span>
+          <span class="brand-tagline">Advanced Health Clinic</span>
+        </div>
+      </a>
+
+      <div class="nav-toggle" id="navToggle" aria-label="Toggle Menu" role="button" tabindex="0">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+
+      <div class="nav-menu" id="navMenu">
+        <ul class="nav-links">
+          <li><a href="#home" class="nav-link active">Home</a></li>
+          <li><a href="#about" class="nav-link">About</a></li>
+          <li><a href="#services" class="nav-link">Services</a></li>
+          <li><a href="#doctors" class="nav-link">Doctors</a></li>
+          <li><a href="#departments" class="nav-link">Departments</a></li>
+          <li><a href="#testimonials" class="nav-link">Testimonials</a></li>
+          <li><a href="#contact" class="nav-link">Contact</a></li>
+        </ul>
+        <a href="#appointment" class="btn btn-primary nav-cta"><i class="fas fa-calendar-check"></i> Book Appointment</a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <section class="hero" id="home">
+    <div class="hero-glow-1"></div>
+    <div class="hero-glow-2"></div>
+    <div class="container hero-container">
+      <div class="hero-content" data-aos="fade-right" data-aos-duration="1000">
+        <div class="hero-badge">
+          <span class="pulse-heart-badge"><i class="fas fa-heart-pulse"></i></span>
+          Next-Generation Healthcare Technology
+        </div>
+        <h1 class="hero-title">
+          Exceptional Care for Your <span class="text-gradient">Health &amp; Wellness</span>
+        </h1>
+        <p class="hero-subtitle">
+          MediCare Plus brings together world-class medical specialists, pioneering diagnostic technologies, and empathetic clinical care for your whole family.
+        </p>
+        <div class="hero-actions">
+          <a href="#appointment" class="btn btn-primary btn-lg"><i class="fas fa-calendar-plus"></i> Book Appointment</a>
+          <a href="#services" class="btn btn-outline btn-lg"><i class="fas fa-stethoscope"></i> Explore Services</a>
+        </div>
+        
+        <div class="hero-highlights">
+          <div class="highlight-item">
+            <div class="highlight-icon"><i class="fas fa-user-doctor"></i></div>
+            <div>
+              <span class="highlight-number">150+</span>
+              <span class="highlight-label">Specialists</span>
+            </div>
+          </div>
+          <div class="highlight-item">
+            <div class="highlight-icon"><i class="fas fa-hospital-user"></i></div>
+            <div>
+              <span class="highlight-number">99.4%</span>
+              <span class="highlight-label">Satisfaction</span>
+            </div>
+          </div>
+          <div class="highlight-item">
+            <div class="highlight-icon"><i class="fas fa-award"></i></div>
+            <div>
+              <span class="highlight-number">25+</span>
+              <span class="highlight-label">Accreditations</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="hero-visual" data-aos="fade-left" data-aos-duration="1000" data-aos-delay="200">
+        <div class="hero-card-wrapper">
+          <div class="hero-img-box">
+            <img src="https://images.unsplash.com/photo-1629909613654-28e377c37b09?auto=format&fit=crop&w=800&q=80" alt="Modern Healthcare Clinic Doctor with Patient" class="hero-img" loading="lazy" />
+            <div class="hero-img-overlay"></div>
+          </div>
+
+          <!-- Subtle Heartbeat Animated Badge -->
+          <div class="floating-card cardiac-pulse-card">
+            <div class="pulse-anim-ring">
+              <i class="fas fa-heart-pulse live-heart-icon"></i>
+            </div>
+            <div>
+              <strong>Live Monitoring</strong>
+              <span>Normal Sinus Rhythm 72 BPM</span>
+            </div>
+          </div>
+
+          <!-- Doctor Availability Badge -->
+          <div class="floating-card doctor-status-card">
+            <div class="status-dot-wrap">
+              <span class="status-dot"></span>
+            </div>
+            <div>
+              <strong>Emergency Doctors</strong>
+              <span class="text-teal">On Duty Right Now (24/7)</span>
+            </div>
+          </div>
+
+          <!-- Top Rating Badge -->
+          <div class="floating-card rating-badge-card">
+            <div class="rating-stars">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star-half-alt"></i>
+            </div>
+            <strong>4.9 / 5.0 Rating</strong>
+            <span>Based on 14,800+ Patient Reviews</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Why Choose Us -->
+  <section class="why-us-section" id="about">
+    <div class="container">
+      <div class="section-title-wrap" data-aos="fade-up">
+        <span class="sub-tag">Why Choose MediCare Plus</span>
+        <h2 class="section-title">Compassionate Care Backed by Clinical Rigor</h2>
+        <p class="section-desc">We are dedicated to providing accessible, state-of-the-art medical services with uncompromising quality standards and personalized patient care.</p>
+      </div>
+
+      <div class="why-us-grid">
+        <div class="feature-card" data-aos="fade-up" data-aos-delay="100">
+          <div class="feature-icon-box icon-red">
+            <i class="fas fa-truck-medical"></i>
+          </div>
+          <h3 class="feature-title">24/7 Emergency Care</h3>
+          <p class="feature-desc">Immediate triage, intensive care units, and a dedicated trauma response team prepared every minute of every day.</p>
+          <span class="feature-tag">Always Available</span>
+        </div>
+
+        <div class="feature-card" data-aos="fade-up" data-aos-delay="200">
+          <div class="feature-icon-box icon-blue">
+            <i class="fas fa-user-md"></i>
+          </div>
+          <h3 class="feature-title">Expert Doctors</h3>
+          <p class="feature-desc">Board-certified physicians, renowned surgeons, and specialized clinical researchers with international experience.</p>
+          <span class="feature-tag">Top 1% Specialists</span>
+        </div>
+
+        <div class="feature-card" data-aos="fade-up" data-aos-delay="300">
+          <div class="feature-icon-box icon-teal">
+            <i class="fas fa-microscope"></i>
+          </div>
+          <h3 class="feature-title">Modern Equipment</h3>
+          <p class="feature-desc">Ultra-high resolution 3T MRI, dual-source CT, robotic-assisted surgical theaters, and digital pathology labs.</p>
+          <span class="feature-tag">Pioneering Tech</span>
+        </div>
+
+        <div class="feature-card" data-aos="fade-up" data-aos-delay="400">
+          <div class="feature-icon-box icon-purple">
+            <i class="fas fa-shield-halved"></i>
+          </div>
+          <h3 class="feature-title">Insurance Accepted</h3>
+          <p class="feature-desc">Direct cashless billing with over 60+ health insurance providers and transparent upfront financial counseling.</p>
+          <span class="feature-tag">Hassle-Free Claims</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Services Grid -->
+  <section class="services-section" id="services">
+    <div class="container">
+      <div class="section-title-wrap" data-aos="fade-up">
+        <span class="sub-tag">Our Clinical Expertise</span>
+        <h2 class="section-title">Comprehensive Healthcare Services</h2>
+        <p class="section-desc">From preventative health screenings to delicate specialized treatments, our multidisciplinary clinics deliver complete wellness care.</p>
+      </div>
+
+      <div class="services-grid">
+        <!-- Service 1: Cardiology -->
+        <div class="service-card" data-aos="fade-up" data-aos-delay="100">
+          <div class="service-banner">
+            <img src="https://images.unsplash.com/photo-1576091160399-112ba8d25d1d?auto=format&fit=crop&w=600&q=80" alt="Cardiology Diagnostic Care" loading="lazy" />
+            <div class="service-icon-floating"><i class="fas fa-heart-pulse"></i></div>
+          </div>
+          <div class="service-body">
+            <h3 class="service-name">Cardiology</h3>
+            <p class="service-text">Comprehensive cardiac evaluations, advanced non-invasive vascular diagnostics, angioplasty, and preventative cardiology.</p>
+            <ul class="service-perks">
+              <li><i class="fas fa-check-circle"></i> Echocardiography &amp; Stress Tests</li>
+              <li><i class="fas fa-check-circle"></i> Interventional Cardiology</li>
+            </ul>
+            <div class="service-footer">
+              <a href="#appointment" class="service-action-link">Schedule Visit <i class="fas fa-arrow-right"></i></a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Service 2: Neurology -->
+        <div class="service-card" data-aos="fade-up" data-aos-delay="200">
+          <div class="service-banner">
+            <img src="https://images.unsplash.com/photo-1559757175-5700dde675bc?auto=format&fit=crop&w=600&q=80" alt="Neurology Brain Assessment" loading="lazy" />
+            <div class="service-icon-floating"><i class="fas fa-brain"></i></div>
+          </div>
+          <div class="service-body">
+            <h3 class="service-name">Neurology</h3>
+            <p class="service-text">Cutting-edge treatment for neurological conditions, stroke rehabilitation, Parkinson's disease, and comprehensive seizure disorders.</p>
+            <ul class="service-perks">
+              <li><i class="fas fa-check-circle"></i> Advanced EEG &amp; Nerve Conduction</li>
+              <li><i class="fas fa-check-circle"></i> Memory &amp; Cognitive Therapies</li>
+            </ul>
+            <div class="service-footer">
+              <a href="#appointment" class="service-action-link">Schedule Visit <i class="fas fa-arrow-right"></i></a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Service 3: Pediatrics -->
+        <div class="service-card" data-aos="fade-up" data-aos-delay="300">
+          <div class="service-banner">
+            <img src="https://images.unsplash.com/photo-1622253692010-333f2da6031d?auto=format&fit=crop&w=600&q=80" alt="Pediatric Child Health Examination" loading="lazy" />
+            <div class="service-icon-floating"><i class="fas fa-baby"></i></div>
+          </div>
+          <div class="service-body">
+            <h3 class="service-name">Pediatrics</h3>
+            <p class="service-text">Dedicated child-friendly healthcare from neonatal stages through adolescence, covering immunizations and growth milestones.</p>
+            <ul class="service-perks">
+              <li><i class="fas fa-check-circle"></i> Well-Baby Checkups &amp; Vaccines</li>
+              <li><i class="fas fa-check-circle"></i> Pediatric Emergency &amp; Allergy</li>
+            </ul>
+            <div class="service-footer">
+              <a href="#appointment" class="service-action-link">Schedule Visit <i class="fas fa-arrow-right"></i></a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Service 4: Orthopedics -->
+        <div class="service-card" data-aos="fade-up" data-aos-delay="400">
+          <div class="service-banner">
+            <img src="https://images.unsplash.com/photo-1584515979956-d9f6e5d09982?auto=format&fit=crop&w=600&q=80" alt="Orthopedics Bone and Joint Care" loading="lazy" />
+            <div class="service-icon-floating"><i class="fas fa-bone"></i></div>
+          </div>
+          <div class="service-body">
+            <h3 class="service-name">Orthopedics</h3>
+            <p class="service-text">Bone, joint, and spinal care with minimally invasive arthroscopy, sports injury recovery, and total knee/hip joint reconstruction.</p>
+            <ul class="service-perks">
+              <li><i class="fas fa-check-circle"></i> Joint Replacement Specialists</li>
+              <li><i class="fas fa-check-circle"></i> Sports Injury Rehabilitation</li>
+            </ul>
+            <div class="service-footer">
+              <a href="#appointment" class="service-action-link">Schedule Visit <i class="fas fa-arrow-right"></i></a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Service 5: Dental Care -->
+        <div class="service-card" data-aos="fade-up" data-aos-delay="500">
+          <div class="service-banner">
+            <img src="https://images.unsplash.com/photo-1606811841689-23dfddce3e95?auto=format&fit=crop&w=600&q=80" alt="Dental Examination Clinic" loading="lazy" />
+            <div class="service-icon-floating"><i class="fas fa-tooth"></i></div>
+          </div>
+          <div class="service-body">
+            <h3 class="service-name">Dental Care</h3>
+            <p class="service-text">Modern pain-free dental solutions, aesthetic veneers, computer-guided dental implants, teeth whitening, and preventive hygiene.</p>
+            <ul class="service-perks">
+              <li><i class="fas fa-check-circle"></i> Digital 3D Smile Designing</li>
+              <li><i class="fas fa-check-circle"></i> Root Canals &amp; Orthodontics</li>
+            </ul>
+            <div class="service-footer">
+              <a href="#appointment" class="service-action-link">Schedule Visit <i class="fas fa-arrow-right"></i></a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Service 6: General Checkup -->
+        <div class="service-card" data-aos="fade-up" data-aos-delay="600">
+          <div class="service-banner">
+            <img src="https://images.unsplash.com/photo-1505751172876-fa1923c5c528?auto=format&fit=crop&w=600&q=80" alt="General Medical Checkup" loading="lazy" />
+            <div class="service-icon-floating"><i class="fas fa-stethoscope"></i></div>
+          </div>
+          <div class="service-body">
+            <h3 class="service-name">General Checkup</h3>
+            <p class="service-text">Customized executive health packages, comprehensive diagnostic panels, lifestyle management, and chronic illness control.</p>
+            <ul class="service-perks">
+              <li><i class="fas fa-check-circle"></i> Comprehensive Blood &amp; Lipid Work</li>
+              <li><i class="fas fa-check-circle"></i> Personalized Wellness Roadmaps</li>
+            </ul>
+            <div class="service-footer">
+              <a href="#appointment" class="service-action-link">Schedule Visit <i class="fas fa-arrow-right"></i></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Doctors Carousel -->
+  <section class="doctors-section" id="doctors">
+    <div class="container">
+      <div class="doctors-header-flex" data-aos="fade-up">
+        <div class="section-title-wrap text-left">
+          <span class="sub-tag">Renowned Medical Team</span>
+          <h2 class="section-title">Meet Our Leading Specialists</h2>
+          <p class="section-desc">Our team brings decades of global clinical practice, clinical empathy, and surgical precision.</p>
+        </div>
+        <div class="carousel-navigation-buttons">
+          <button class="carousel-btn" id="docPrevBtn" aria-label="Previous Doctor"><i class="fas fa-chevron-left"></i></button>
+          <button class="carousel-btn" id="docNextBtn" aria-label="Next Doctor"><i class="fas fa-chevron-right"></i></button>
+        </div>
+      </div>
+
+      <div class="doctors-carousel-wrapper" data-aos="fade-up" data-aos-delay="150">
+        <div class="doctors-carousel-track" id="doctorsTrack">
+          <!-- Doctor 1 -->
+          <div class="doctor-card">
+            <div class="doctor-photo-box">
+              <img src="https://images.unsplash.com/photo-1622253692010-333f2da6031d?auto=format&fit=crop&w=600&q=80" alt="Dr. Evelyn Hayes" loading="lazy" />
+              <div class="doc-badge">Cardiology Lead</div>
+            </div>
+            <div class="doctor-details">
+              <h3 class="doc-name">Dr. Evelyn Hayes, MD</h3>
+              <p class="doc-specialty">Chief Interventional Cardiologist</p>
+              <div class="doc-experience"><i class="fas fa-user-check"></i> 18 Years Experience</div>
+              <div class="doc-rating">
+                <div class="stars">
+                  <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                </div>
+                <span>4.98 (320+ reviews)</span>
+              </div>
+              <button class="btn btn-primary btn-sm btn-block book-doc-btn" data-doctor="Dr. Evelyn Hayes (Cardiology)">
+                <i class="fas fa-calendar-check"></i> Book Appointment
+              </button>
+            </div>
+          </div>
+
+          <!-- Doctor 2 -->
+          <div class="doctor-card">
+            <div class="doctor-photo-box">
+              <img src="https://images.unsplash.com/photo-1537368910025-700350fe46c7?auto=format&fit=crop&w=600&q=80" alt="Dr. Marcus Vance" loading="lazy" />
+              <div class="doc-badge">Neurology Head</div>
+            </div>
+            <div class="doctor-details">
+              <h3 class="doc-name">Dr. Marcus Vance, Ph.D</h3>
+              <p class="doc-specialty">Senior Consultant Neurosurgeon</p>
+              <div class="doc-experience"><i class="fas fa-user-check"></i> 21 Years Experience</div>
+              <div class="doc-rating">
+                <div class="stars">
+                  <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                </div>
+                <span>4.95 (410+ reviews)</span>
+              </div>
+              <button class="btn btn-primary btn-sm btn-block book-doc-btn" data-doctor="Dr. Marcus Vance (Neurology)">
+                <i class="fas fa-calendar-check"></i> Book Appointment
+              </button>
+            </div>
+          </div>
+
+          <!-- Doctor 3 -->
+          <div class="doctor-card">
+            <div class="doctor-photo-box">
+              <img src="https://images.unsplash.com/photo-1594824813576-a0ebc721798e?auto=format&fit=crop&w=600&q=80" alt="Dr. Alisha Chen" loading="lazy" />
+              <div class="doc-badge">Pediatrics</div>
+            </div>
+            <div class="doctor-details">
+              <h3 class="doc-name">Dr. Alisha Chen, MD</h3>
+              <p class="doc-specialty">Director of Pediatric Medicine</p>
+              <div class="doc-experience"><i class="fas fa-user-check"></i> 14 Years Experience</div>
+              <div class="doc-rating">
+                <div class="stars">
+                  <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i>
+                </div>
+                <span>4.92 (280+ reviews)</span>
+              </div>
+              <button class="btn btn-primary btn-sm btn-block book-doc-btn" data-doctor="Dr. Alisha Chen (Pediatrics)">
+                <i class="fas fa-calendar-check"></i> Book Appointment
+              </button>
+            </div>
+          </div>
+
+          <!-- Doctor 4 -->
+          <div class="doctor-card">
+            <div class="doctor-photo-box">
+              <img src="https://images.unsplash.com/photo-1612349317150-e413f6a5b16d?auto=format&fit=crop&w=600&q=80" alt="Dr. Robert Sterling" loading="lazy" />
+              <div class="doc-badge">Orthopedics</div>
+            </div>
+            <div class="doctor-details">
+              <h3 class="doc-name">Dr. Robert Sterling, MD</h3>
+              <p class="doc-specialty">Orthopedic &amp; Spine Surgeon</p>
+              <div class="doc-experience"><i class="fas fa-user-check"></i> 19 Years Experience</div>
+              <div class="doc-rating">
+                <div class="stars">
+                  <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                </div>
+                <span>4.96 (350+ reviews)</span>
+              </div>
+              <button class="btn btn-primary btn-sm btn-block book-doc-btn" data-doctor="Dr. Robert Sterling (Orthopedics)">
+                <i class="fas fa-calendar-check"></i> Book Appointment
+              </button>
+            </div>
+          </div>
+
+          <!-- Doctor 5 -->
+          <div class="doctor-card">
+            <div class="doctor-photo-box">
+              <img src="https://images.unsplash.com/photo-1559839734-2b71ea197ec2?auto=format&fit=crop&w=600&q=80" alt="Dr. Sophia Martinez" loading="lazy" />
+              <div class="doc-badge">Dental Surgeon</div>
+            </div>
+            <div class="doctor-details">
+              <h3 class="doc-name">Dr. Sophia Martinez, DDS</h3>
+              <p class="doc-specialty">Chief Implantologist &amp; Orthodontist</p>
+              <div class="doc-experience"><i class="fas fa-user-check"></i> 12 Years Experience</div>
+              <div class="doc-rating">
+                <div class="stars">
+                  <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                </div>
+                <span>4.97 (290+ reviews)</span>
+              </div>
+              <button class="btn btn-primary btn-sm btn-block book-doc-btn" data-doctor="Dr. Sophia Martinez (Dental)">
+                <i class="fas fa-calendar-check"></i> Book Appointment
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="carousel-indicators" id="doctorsIndicators"></div>
+    </div>
+  </section>
+
+  <!-- Departments Section -->
+  <section class="departments-section" id="departments">
+    <div class="container">
+      <div class="section-title-wrap" data-aos="fade-up">
+        <span class="sub-tag">Specialized Divisions</span>
+        <h2 class="section-title">Our Medical Departments</h2>
+        <p class="section-desc">Collaborative multidisciplinary units equipped with modern infrastructure to support all clinical modalities.</p>
+      </div>
+
+      <div class="departments-grid">
+        <div class="dept-card" data-aos="zoom-in" data-aos-delay="100">
+          <div class="dept-icon"><i class="fas fa-heart-pulse"></i></div>
+          <h4 class="dept-title">Cardiovascular Sciences</h4>
+          <p class="dept-text">Inpatient coronary care, arrhythmia management, and catheterization laboratory.</p>
+        </div>
+        <div class="dept-card" data-aos="zoom-in" data-aos-delay="150">
+          <div class="dept-icon"><i class="fas fa-brain"></i></div>
+          <h4 class="dept-title">Neuroscience &amp; Spine</h4>
+          <p class="dept-text">Neuromuscular diagnostics, microneurosurgery, and acute neuro-rehabilitation.</p>
+        </div>
+        <div class="dept-card" data-aos="zoom-in" data-aos-delay="200">
+          <div class="dept-icon"><i class="fas fa-lungs"></i></div>
+          <h4 class="dept-title">Pulmonology &amp; Respiratory</h4>
+          <p class="dept-text">Advanced bronchoscopy, chronic asthma control, and sleep disorder therapies.</p>
+        </div>
+        <div class="dept-card" data-aos="zoom-in" data-aos-delay="250">
+          <div class="dept-icon"><i class="fas fa-bone"></i></div>
+          <h4 class="dept-title">Orthopedics &amp; Trauma</h4>
+          <p class="dept-text">Arthroscopy, bone reconstruction, sports medicine, and occupational physio.</p>
+        </div>
+        <div class="dept-card" data-aos="zoom-in" data-aos-delay="300">
+          <div class="dept-icon"><i class="fas fa-baby"></i></div>
+          <h4 class="dept-title">Pediatrics &amp; Neonatology</h4>
+          <p class="dept-text">Level III Neonatal Intensive Care Unit (NICU) and pediatric emergency.</p>
+        </div>
+        <div class="dept-card" data-aos="zoom-in" data-aos-delay="350">
+          <div class="dept-icon"><i class="fas fa-eye"></i></div>
+          <h4 class="dept-title">Ophthalmology &amp; Vision</h4>
+          <p class="dept-text">Femto-LASIK vision restoration, retinal laser procedures, and cataract surgery.</p>
+        </div>
+        <div class="dept-card" data-aos="zoom-in" data-aos-delay="400">
+          <div class="dept-icon"><i class="fas fa-tooth"></i></div>
+          <h4 class="dept-title">Advanced Dental Sciences</h4>
+          <p class="dept-text">Cosmetic prosthodontics, maxillo-facial surgery, and implantology.</p>
+        </div>
+        <div class="dept-card" data-aos="zoom-in" data-aos-delay="450">
+          <div class="dept-icon"><i class="fas fa-flask-vial"></i></div>
+          <h4 class="dept-title">Pathology &amp; Diagnostics</h4>
+          <p class="dept-text">24/7 automated molecular pathology, immunology, and high-speed reporting.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Stats Counter Section -->
+  <section class="stats-section" id="statsSection">
+    <div class="stats-backdrop"></div>
+    <div class="container stats-container">
+      <div class="stat-box" data-aos="fade-up" data-aos-delay="100">
+        <div class="stat-icon"><i class="fas fa-calendar-check"></i></div>
+        <div class="stat-number-wrap">
+          <span class="counter" data-target="26">0</span><span class="stat-plus">+</span>
+        </div>
+        <div class="stat-title">Years of Experience</div>
+        <p class="stat-sub">Delivering quality clinical excellence since 1998.</p>
+      </div>
+
+      <div class="stat-box" data-aos="fade-up" data-aos-delay="200">
+        <div class="stat-icon"><i class="fas fa-hospital-user"></i></div>
+        <div class="stat-number-wrap">
+          <span class="counter" data-target="65000">0</span><span class="stat-plus">+</span>
+        </div>
+        <div class="stat-title">Patients Treated</div>
+        <p class="stat-sub">Restoring active health and joy to families nationwide.</p>
+      </div>
+
+      <div class="stat-box" data-aos="fade-up" data-aos-delay="300">
+        <div class="stat-icon"><i class="fas fa-user-doctor"></i></div>
+        <div class="stat-number-wrap">
+          <span class="counter" data-target="140">0</span><span class="stat-plus">+</span>
+        </div>
+        <div class="stat-title">Expert Doctors</div>
+        <p class="stat-sub">Board-certified consultants and multidisciplinary teams.</p>
+      </div>
+
+      <div class="stat-box" data-aos="fade-up" data-aos-delay="400">
+        <div class="stat-icon"><i class="fas fa-award"></i></div>
+        <div class="stat-number-wrap">
+          <span class="counter" data-target="48">0</span><span class="stat-plus">+</span>
+        </div>
+        <div class="stat-title">Healthcare Awards</div>
+        <p class="stat-sub">Nationally accredited for patient safety and clinical ethics.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Patient Testimonials Slider -->
+  <section class="testimonials-section" id="testimonials">
+    <div class="container">
+      <div class="section-title-wrap" data-aos="fade-up">
+        <span class="sub-tag">Patient Stories</span>
+        <h2 class="section-title">What Our Patients Say About Us</h2>
+        <p class="section-desc">Nothing speaks louder than the heartfelt journeys of recovering patients who entrusted their lives to us.</p>
+      </div>
+
+      <div class="testimonials-slider-container" data-aos="fade-up" data-aos-delay="150">
+        <div class="testimonials-track" id="testimonialsTrack">
+          <!-- Testimonial 1 -->
+          <div class="testimonial-card">
+            <div class="quote-mark"><i class="fas fa-quote-left"></i></div>
+            <p class="testimonial-quote">
+              "When my husband suffered sudden acute chest discomfort, the MediCare Plus Emergency and Cardiology team responded within seconds. Dr. Hayes conducted an emergency stent procedure with such calm mastery. We are forever indebted to their dedication."
+            </p>
+            <div class="patient-info-row">
+              <img src="https://images.unsplash.com/photo-1544005313-94ddf0286df2?auto=format&fit=crop&w=150&q=80" alt="Sarah Jenkins" class="patient-avatar" loading="lazy" />
+              <div>
+                <h4 class="patient-name">Sarah Jenkins</h4>
+                <p class="patient-role">Cardiac Care Patient Family &bull; New York</p>
+                <div class="patient-stars">
+                  <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Testimonial 2 -->
+          <div class="testimonial-card">
+            <div class="quote-mark"><i class="fas fa-quote-left"></i></div>
+            <p class="testimonial-quote">
+              "After two years of debilitating knee pain preventing me from playing with my grandchildren, Dr. Sterling performed robotic joint replacement. Three months later, I am walking effortlessly without a trace of discomfort. True miracle workers!"
+            </p>
+            <div class="patient-info-row">
+              <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=150&q=80" alt="David Thornton" class="patient-avatar" loading="lazy" />
+              <div>
+                <h4 class="patient-name">David Thornton</h4>
+                <p class="patient-role">Total Knee Arthroplasty Patient &bull; Boston</p>
+                <div class="patient-stars">
+                  <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Testimonial 3 -->
+          <div class="testimonial-card">
+            <div class="quote-mark"><i class="fas fa-quote-left"></i></div>
+            <p class="testimonial-quote">
+              "The pediatric department under Dr. Alisha Chen turned what could have been a terrifying hospital stay for our toddler into an experience filled with warmth, toys, and immediate medical clarity. Every nurse treated us like their own family."
+            </p>
+            <div class="patient-info-row">
+              <img src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?auto=format&fit=crop&w=150&q=80" alt="Rebecca Gomez" class="patient-avatar" loading="lazy" />
+              <div>
+                <h4 class="patient-name">Rebecca Gomez</h4>
+                <p class="patient-role">Mother of Pediatric Patient &bull; Connecticut</p>
+                <div class="patient-stars">
+                  <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="testimonial-controls">
+          <button class="slider-arrow-btn" id="testPrevBtn" aria-label="Previous Testimonial"><i class="fas fa-arrow-left"></i></button>
+          <div class="testimonial-dots" id="testDots"></div>
+          <button class="slider-arrow-btn" id="testNextBtn" aria-label="Next Testimonial"><i class="fas fa-arrow-right"></i></button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Appointment Booking Section -->
+  <section class="appointment-section" id="appointment">
+    <div class="container">
+      <div class="appointment-grid">
+        <div class="appointment-info" data-aos="fade-right">
+          <span class="sub-tag">Seamless Care Scheduling</span>
+          <h2 class="section-title text-left">Book Your Consultation with a Specialist</h2>
+          <p class="section-desc text-left">
+            We respect your time. Fill out our simple booking form and our medical reception desk will confirm your appointment within 15 minutes.
+          </p>
+
+          <div class="info-card-row">
+            <div class="info-card-item">
+              <div class="info-icon-box"><i class="fas fa-phone-volume"></i></div>
+              <div>
+                <div class="info-label">Direct Medical Desk</div>
+                <div class="info-val">+1 (800) 456-7890</div>
+              </div>
+            </div>
+
+            <div class="info-card-item">
+              <div class="info-icon-box"><i class="fas fa-envelope-open-text"></i></div>
+              <div>
+                <div class="info-label">Direct Email</div>
+                <div class="info-val">care@medicareplus.com</div>
+              </div>
+            </div>
+
+            <div class="info-card-item">
+              <div class="info-icon-box"><i class="fas fa-clock"></i></div>
+              <div>
+                <div class="info-label">Clinic Consultation Hours</div>
+                <div class="info-val">Mon - Sat: 8:00 AM - 9:00 PM</div>
+              </div>
+            </div>
+          </div>
+
+          <div class="emergency-highlight-box">
+            <div class="emer-icon"><i class="fas fa-bell"></i></div>
+            <div>
+              <strong>Experiencing a Medical Emergency?</strong>
+              <p>Do not wait for form confirmation. Please call our 24/7 Rapid Emergency Response Line immediately at <strong>+1 (800) 911-MEDI</strong>.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="appointment-form-card" data-aos="fade-left">
+          <div class="form-header">
+            <h3>Schedule an Appointment</h3>
+            <p>Please enter your details below for prioritized queue booking.</p>
+          </div>
+
+          <form id="appointmentForm" novalidate>
+            <!-- Name -->
+            <div class="form-group">
+              <label for="patientName"><i class="fas fa-user"></i> Full Patient Name *</label>
+              <input type="text" id="patientName" name="patientName" placeholder="e.g. Jonathan Drake" required />
+              <span class="error-msg" id="nameError">Please enter your full name.</span>
+            </div>
+
+            <!-- Phone & Email -->
+            <div class="form-row-2">
+              <div class="form-group">
+                <label for="patientPhone"><i class="fas fa-phone-alt"></i> Phone Number *</label>
+                <input type="tel" id="patientPhone" name="patientPhone" placeholder="e.g. +1 (555) 234-5678" required />
+                <span class="error-msg" id="phoneError">Please provide a valid contact number.</span>
+              </div>
+              <div class="form-group">
+                <label for="patientEmail"><i class="fas fa-envelope"></i> Email Address</label>
+                <input type="email" id="patientEmail" name="patientEmail" placeholder="e.g. name@example.com" />
+              </div>
+            </div>
+
+            <!-- Department & Date -->
+            <div class="form-row-2">
+              <div class="form-group">
+                <label for="departmentSelect"><i class="fas fa-hospital-user"></i> Department *</label>
+                <select id="departmentSelect" name="department" required>
+                  <option value="">Choose Department...</option>
+                  <option value="Cardiology">Cardiology &amp; Heart Care</option>
+                  <option value="Neurology">Neurology &amp; Brain Sciences</option>
+                  <option value="Pediatrics">Pediatrics &amp; Child Health</option>
+                  <option value="Orthopedics">Orthopedics &amp; Joint Surgery</option>
+                  <option value="Dental">Dental &amp; Maxillofacial</option>
+                  <option value="General Checkup">Executive General Health Checkup</option>
+                  <option value="Pulmonology">Pulmonology &amp; Respiratory</option>
+                  <option value="Ophthalmology">Ophthalmology &amp; Vision</option>
+                </select>
+                <span class="error-msg" id="deptError">Please choose a department.</span>
+              </div>
+
+              <div class="form-group">
+                <label for="preferredDate"><i class="fas fa-calendar-day"></i> Preferred Date *</label>
+                <input type="date" id="preferredDate" name="preferredDate" required />
+                <span class="error-msg" id="dateError">Please pick an upcoming appointment date.</span>
+              </div>
+            </div>
+
+            <!-- Message / Symptoms -->
+            <div class="form-group">
+              <label for="patientMessage"><i class="fas fa-notes-medical"></i> Symptoms or Reason for Visit</label>
+              <textarea id="patientMessage" name="message" rows="3" placeholder="Briefly describe your symptoms, existing conditions, or doctor preference..."></textarea>
+            </div>
+
+            <button type="submit" class="btn btn-primary btn-block btn-lg" id="submitBookingBtn">
+              <span class="btn-text"><i class="fas fa-calendar-check"></i> Confirm Appointment Request</span>
+              <span class="btn-loading" style="display:none;"><i class="fas fa-circle-notch fa-spin"></i> Submitting...</span>
+            </button>
+          </form>
+
+          <!-- Success Alert -->
+          <div class="booking-success-alert" id="bookingSuccessMsg" style="display:none;">
+            <div class="success-icon-wrap"><i class="fas fa-circle-check"></i></div>
+            <h4>Booking Request Received!</h4>
+            <p>Thank you, <strong id="confirmedPatientName"></strong>. Your appointment request for the <strong id="confirmedDept"></strong> department on <strong id="confirmedDate"></strong> has been registered.</p>
+            <p class="confirm-note">Our medical coordinator will call you within 15 minutes with your doctor room slot.</p>
+            <button class="btn btn-outline btn-sm" id="newBookingBtn">Book Another Appointment</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer" id="contact">
+    <div class="container footer-top">
+      <div class="footer-grid">
+        <!-- Col 1: About & Brand -->
+        <div class="footer-col brand-col">
+          <div class="logo footer-logo">
+            <div class="logo-icon"><i class="fas fa-hospital"></i></div>
+            <div class="logo-text">
+              <span class="brand-title">MediCare<span class="accent">Plus</span></span>
+              <span class="brand-tagline">Advanced Health Clinic</span>
+            </div>
+          </div>
+          <p class="footer-about-text">
+            MediCare Plus is an internationally accredited private clinic providing holistic medical excellence, surgical precision, and compassionate healthcare to over 65,000 satisfied patients.
+          </p>
+          <div class="footer-socials">
+            <a href="#" aria-label="Facebook" class="footer-social-btn"><i class="fab fa-facebook-f"></i></a>
+            <a href="#" aria-label="Twitter" class="footer-social-btn"><i class="fab fa-twitter"></i></a>
+            <a href="#" aria-label="LinkedIn" class="footer-social-btn"><i class="fab fa-linkedin-in"></i></a>
+            <a href="#" aria-label="Instagram" class="footer-social-btn"><i class="fab fa-instagram"></i></a>
+            <a href="#" aria-label="YouTube" class="footer-social-btn"><i class="fab fa-youtube"></i></a>
+          </div>
+        </div>
+
+        <!-- Col 2: Quick Links -->
+        <div class="footer-col">
+          <h4 class="footer-col-title">Quick Navigation</h4>
+          <ul class="footer-links">
+            <li><a href="#home"><i class="fas fa-angle-right"></i> Home</a></li>
+            <li><a href="#about"><i class="fas fa-angle-right"></i> About MediCare Plus</a></li>
+            <li><a href="#services"><i class="fas fa-angle-right"></i> Clinical Services</a></li>
+            <li><a href="#doctors"><i class="fas fa-angle-right"></i> Specialist Doctors</a></li>
+            <li><a href="#departments"><i class="fas fa-angle-right"></i> Medical Departments</a></li>
+            <li><a href="#testimonials"><i class="fas fa-angle-right"></i> Patient Reviews</a></li>
+            <li><a href="#appointment"><i class="fas fa-angle-right"></i> Book Online</a></li>
+          </ul>
+        </div>
+
+        <!-- Col 3: Departments & Services -->
+        <div class="footer-col">
+          <h4 class="footer-col-title">Specialized Services</h4>
+          <ul class="footer-links">
+            <li><a href="#services"><i class="fas fa-angle-right"></i> Interventional Cardiology</a></li>
+            <li><a href="#services"><i class="fas fa-angle-right"></i> Neurology &amp; Brain Health</a></li>
+            <li><a href="#services"><i class="fas fa-angle-right"></i> Pediatric Critical Care</a></li>
+            <li><a href="#services"><i class="fas fa-angle-right"></i> Orthopedic Joint Surgery</a></li>
+            <li><a href="#services"><i class="fas fa-angle-right"></i> Pain-Free Aesthetic Dentistry</a></li>
+            <li><a href="#services"><i class="fas fa-angle-right"></i> 24/7 Trauma Emergency</a></li>
+          </ul>
+        </div>
+
+        <!-- Col 4: Contact & Location -->
+        <div class="footer-col">
+          <h4 class="footer-col-title">Contact &amp; Location</h4>
+          <div class="footer-contact-details">
+            <div class="contact-detail-item">
+              <i class="fas fa-map-marker-alt"></i>
+              <span>742 Evergreen Healthcare Blvd, Medical Tower Suite 400, New York, NY 10016</span>
+            </div>
+            <div class="contact-detail-item">
+              <i class="fas fa-phone-alt"></i>
+              <span>+1 (800) 456-7890 / +1 (800) 911-MEDI</span>
+            </div>
+            <div class="contact-detail-item">
+              <i class="fas fa-envelope"></i>
+              <span>appointments@medicareplus.com</span>
+            </div>
+          </div>
+
+          <!-- Map Embed Placeholder -->
+          <div class="map-embed-card">
+            <div class="map-overlay-pin">
+              <i class="fas fa-location-dot"></i>
+              <span>MediCare Plus Main Medical Center</span>
+            </div>
+            <iframe 
+              title="MediCare Plus Location Map" 
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d193595.15830869428!2d-74.119763973046!3d40.69766374874431!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c24fa5d33f083b%3A0xc80b8f06e177fe62!2sNew%20York%2C%20NY!5e0!3m2!1sen!2sus!4v1680000000000!5m2!1sen!2sus" 
+              width="100%" 
+              height="130" 
+              style="border:0;" 
+              allowfullscreen="" 
+              loading="lazy" 
+              referrerpolicy="no-referrer-when-downgrade">
+            </iframe>
+          </div>
+        </div>
+      </div>
+
+      <!-- Newsletter Box -->
+      <div class="footer-newsletter-row">
+        <div class="newsletter-text-col">
+          <div class="newsletter-icon"><i class="fas fa-paper-plane"></i></div>
+          <div>
+            <h4>Subscribe to Health Insights &amp; Wellness Updates</h4>
+            <p>Get verified physician articles, preventive wellness guides, and health camp alerts straight to your inbox.</p>
+          </div>
+        </div>
+        <div class="newsletter-form-col">
+          <form id="newsletterForm" class="newsletter-form-elem">
+            <input type="email" id="newsletterEmail" placeholder="Enter your personal email address" required />
+            <button type="submit" class="btn btn-primary"><i class="fas fa-bell"></i> Subscribe</button>
+          </form>
+          <span class="newsletter-feedback" id="newsletterFeedback"></span>
+        </div>
+      </div>
+    </div>
+
+    <!-- Footer Bottom -->
+    <div class="footer-bottom">
+      <div class="container footer-bottom-flex">
+        <p>&copy; 2026 MediCare Plus Hospital &amp; Medical Clinic. All rights reserved.</p>
+        <div class="legal-links">
+          <a href="#">Privacy Policy</a>
+          <span>&bull;</span>
+          <a href="#">Patient Rights &amp; Responsibilities</a>
+          <span>&bull;</span>
+          <a href="#">Terms of Service</a>
+          <span>&bull;</span>
+          <a href="#">HIPAA Compliance</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Scroll to Top Button -->
+  <button class="scroll-top-btn" id="scrollTopBtn" aria-label="Back to top"><i class="fas fa-arrow-up"></i></button>
+
+  <!-- External JavaScript Libraries -->
+  <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
