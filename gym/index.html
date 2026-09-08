@@ -1,0 +1,834 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>IronPulse Fitness | Transform Your Body &bull; High-Intensity Gym</title>
+  <meta name="description" content="IronPulse Fitness is the premier high-energy training facility. Master coaches, CrossFit rigs, heavyweight zones, HIIT studios, and 24/7 access." />
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@500;600;700&family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=Teko:wght@600;700&display=swap" rel="stylesheet">
+
+  <!-- Font Awesome & AOS Animation Library -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+  <link rel="stylesheet" href="https://unpkg.com/aos@2.3.4/dist/aos.css" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- Backdrop Overlay for Mobile Menu -->
+  <div class="nav-overlay" id="navOverlay"></div>
+
+  <!-- Sticky Bold Navbar -->
+  <nav class="navbar" id="navbar">
+    <div class="container nav-container">
+      <a href="#home" class="gym-brand">
+        <div class="brand-icon-wrap">
+          <i class="fas fa-bolt"></i>
+        </div>
+        <div class="brand-titles">
+          <span class="brand-title-main">IRONPULSE</span>
+          <span class="brand-title-sub">Fitness &bull; Performance</span>
+        </div>
+      </a>
+
+      <!-- Mobile Hamburger Toggle -->
+      <button class="nav-toggle" id="navToggle" aria-label="Toggle Navigation">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+
+      <!-- Navigation Menu -->
+      <div class="nav-menu" id="navMenu">
+        <ul class="nav-links">
+          <li><a href="#home" class="nav-link active">Home</a></li>
+          <li><a href="#programs" class="nav-link">Programs</a></li>
+          <li><a href="#trainers" class="nav-link">Trainers</a></li>
+          <li><a href="#pricing" class="nav-link">Pricing</a></li>
+          <li><a href="#gallery" class="nav-link">Gallery</a></li>
+          <li><a href="#reviews" class="nav-link">Testimonials</a></li>
+          <li><a href="#contact" class="nav-link">Contact</a></li>
+        </ul>
+        <a href="#freePass" class="btn btn-neon btn-sm nav-cta-btn">
+          <i class="fas fa-fire"></i> Claim Free Pass
+        </a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <section class="hero-section" id="home">
+    <div class="hero-bg-media"></div>
+    <div class="hero-diagonal-skew"></div>
+
+    <div class="container hero-grid">
+      <div class="hero-content" data-aos="fade-right" data-aos-duration="1000">
+        <div class="hero-badge-top">
+          <i class="fas fa-fire-flame-curved"></i> #1 Ranked Training Facility 2025
+        </div>
+        <h1 class="hero-title">
+          TRANSFORM YOUR BODY, <br />
+          <span class="neon-text">UNLEASH YOUR POWER</span>
+        </h1>
+        <p class="hero-subtitle">
+          Break through physical plateaus with cutting-edge strength equipment, certified master trainers, and high-octane conditioning programs designed for warriors.
+        </p>
+        <div class="hero-actions">
+          <a href="#freePass" class="btn btn-neon btn-lg btn-pulse">
+            <i class="fas fa-dumbbell"></i> Join Now (7-Day Free)
+          </a>
+          <a href="#programs" class="btn btn-outline-neon btn-lg">
+            <i class="fas fa-fire"></i> View Programs
+          </a>
+        </div>
+      </div>
+
+      <div class="hero-visual" data-aos="fade-left" data-aos-duration="1000" data-aos-delay="200">
+        <div class="hero-card-frame">
+          <img src="https://images.unsplash.com/photo-1517838277536-f5f99be501cd?auto=format&fit=crop&w=800&q=80" alt="IronPulse Fitness Athlete" loading="lazy" />
+        </div>
+
+        <!-- Floating Badges -->
+        <div class="hero-float-badge badge-top-left">
+          <div class="badge-icon-box"><i class="fas fa-user-ninja"></i></div>
+          <div>
+            <strong>48+ Master Coaches</strong>
+            <span>Olympic &amp; CrossFit Certified</span>
+          </div>
+        </div>
+
+        <div class="hero-float-badge badge-bottom-right">
+          <div class="badge-icon-box"><i class="fas fa-clock"></i></div>
+          <div>
+            <strong>24/7 Access</strong>
+            <span>Fingerprint Biometric Entry</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Animated Stats Counter Bar -->
+  <section class="stats-section" id="statsSection">
+    <div class="container stats-grid">
+      <div class="stat-box" data-aos="fade-up" data-aos-delay="100">
+        <div class="stat-icon"><i class="fas fa-users"></i></div>
+        <div class="stat-num-wrap">
+          <span class="counter-val" data-target="5400">0</span><span class="stat-plus">+</span>
+        </div>
+        <div class="stat-label">Active Members</div>
+        <span class="stat-sub">Crushing goals daily</span>
+      </div>
+
+      <div class="stat-box" data-aos="fade-up" data-aos-delay="200">
+        <div class="stat-icon"><i class="fas fa-medal"></i></div>
+        <div class="stat-num-wrap">
+          <span class="counter-val" data-target="48">0</span><span class="stat-plus">+</span>
+        </div>
+        <div class="stat-label">Certified Coaches</div>
+        <span class="stat-sub">Personalized guidance</span>
+      </div>
+
+      <div class="stat-box" data-aos="fade-up" data-aos-delay="300">
+        <div class="stat-icon"><i class="fas fa-calendar-days"></i></div>
+        <div class="stat-num-wrap">
+          <span class="counter-val" data-target="120">0</span><span class="stat-plus">+</span>
+        </div>
+        <div class="stat-label">Weekly Classes</div>
+        <span class="stat-sub">From HIIT to Yoga</span>
+      </div>
+
+      <div class="stat-box" data-aos="fade-up" data-aos-delay="400">
+        <div class="stat-icon"><i class="fas fa-trophy"></i></div>
+        <div class="stat-num-wrap">
+          <span class="counter-val" data-target="14">0</span><span class="stat-plus">+</span>
+        </div>
+        <div class="stat-label">Years of Power</div>
+        <span class="stat-sub">Building champions</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- Programs Section with 3D Card Flips -->
+  <section class="programs-section" id="programs">
+    <div class="container">
+      <div class="section-header" data-aos="fade-up">
+        <span class="section-tag">Elite Training Disciplines</span>
+        <h2 class="section-title">High-Octane Fitness Programs</h2>
+        <p class="section-subtitle">
+          Hover over any program card to reveal class features, burning metrics, and direct booking.
+        </p>
+      </div>
+
+      <div class="programs-grid">
+        <!-- Program 1: Strength -->
+        <div class="program-card-wrap" data-aos="fade-up" data-aos-delay="100">
+          <div class="program-card-inner">
+            <div class="program-card-front">
+              <div class="prog-img-box">
+                <img src="https://images.unsplash.com/photo-1581009146145-b5ef050c2e1e?auto=format&fit=crop&w=600&q=80" alt="Weight Training" loading="lazy" />
+                <div class="prog-front-overlay">
+                  <span class="prog-badge-tag">Strength &amp; Muscle</span>
+                  <h3 class="prog-title">Heavyweight Powerlifting</h3>
+                  <div class="prog-quick-specs">
+                    <span><i class="fas fa-fire"></i> 650+ kcal</span>
+                    <span><i class="fas fa-clock"></i> 60 Mins</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="program-card-back">
+              <div>
+                <h3 class="prog-back-title">Powerlifting &amp; Hypertrophy</h3>
+                <p class="prog-back-desc">
+                  Olympic barbell training, deadlift platforms, power racks, and progressive overload periodization led by competitive lifters.
+                </p>
+                <ul class="prog-features-list">
+                  <li><i class="fas fa-check"></i> Eleiko Barbells &amp; Bumper Plates</li>
+                  <li><i class="fas fa-check"></i> 1-on-1 Form Biomechanics Review</li>
+                  <li><i class="fas fa-check"></i> Strength Max Tracking App</li>
+                </ul>
+              </div>
+              <button class="btn btn-neon btn-block prog-join-btn" data-program="strength">
+                <i class="fas fa-bolt"></i> Join Power Program
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Program 2: CrossFit -->
+        <div class="program-card-wrap" data-aos="fade-up" data-aos-delay="200">
+          <div class="program-card-inner">
+            <div class="program-card-front">
+              <div class="prog-img-box">
+                <img src="https://images.unsplash.com/photo-1517838277536-f5f99be501cd?auto=format&fit=crop&w=600&q=80" alt="CrossFit Training" loading="lazy" />
+                <div class="prog-front-overlay">
+                  <span class="prog-badge-tag">Functional Power</span>
+                  <h3 class="prog-title">CrossFit Conditioning</h3>
+                  <div class="prog-quick-specs">
+                    <span><i class="fas fa-fire"></i> 800+ kcal</span>
+                    <span><i class="fas fa-clock"></i> 55 Mins</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="program-card-back">
+              <div>
+                <h3 class="prog-back-title">Tactical CrossFit &amp; WOD</h3>
+                <p class="prog-back-desc">
+                  High-intensity functional movements, rope climbs, kettlebell swings, and sled pushes designed to forge unbreakable stamina.
+                </p>
+                <ul class="prog-features-list">
+                  <li><i class="fas fa-check"></i> Rogue Fitness Tactical Rig</li>
+                  <li><i class="fas fa-check"></i> Daily Varied WOD Challenges</li>
+                  <li><i class="fas fa-check"></i> Community Leaderboards</li>
+                </ul>
+              </div>
+              <button class="btn btn-neon btn-block prog-join-btn" data-program="crossfit">
+                <i class="fas fa-bolt"></i> Join CrossFit Class
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Program 3: Boxing -->
+        <div class="program-card-wrap" data-aos="fade-up" data-aos-delay="300">
+          <div class="program-card-inner">
+            <div class="program-card-front">
+              <div class="prog-img-box">
+                <img src="https://images.unsplash.com/photo-1549719386-74dfcbf7dbed?auto=format&fit=crop&w=600&q=80" alt="Championship Boxing" loading="lazy" />
+                <div class="prog-front-overlay">
+                  <span class="prog-badge-tag">Combat Cardio</span>
+                  <h3 class="prog-title">Championship Boxing</h3>
+                  <div class="prog-quick-specs">
+                    <span><i class="fas fa-fire"></i> 750+ kcal</span>
+                    <span><i class="fas fa-clock"></i> 50 Mins</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="program-card-back">
+              <div>
+                <h3 class="prog-back-title">Pro Boxing &amp; Kickboxing</h3>
+                <p class="prog-back-desc">
+                  Heavy bag combinations, rapid hand-eye pad drills, slipping techniques, and core conditioning in a full-sized regulation ring.
+                </p>
+                <ul class="prog-features-list">
+                  <li><i class="fas fa-check"></i> Heavy Bags &amp; Aqua Punching Bags</li>
+                  <li><i class="fas fa-check"></i> Mitt Work with Former Champions</li>
+                  <li><i class="fas fa-check"></i> Reflex &amp; Agility Speed Drills</li>
+                </ul>
+              </div>
+              <button class="btn btn-neon btn-block prog-join-btn" data-program="boxing">
+                <i class="fas fa-bolt"></i> Join Boxing Class
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Program 4: HIIT Cardio -->
+        <div class="program-card-wrap" data-aos="fade-up" data-aos-delay="400">
+          <div class="program-card-inner">
+            <div class="program-card-front">
+              <div class="prog-img-box">
+                <img src="https://images.unsplash.com/photo-1434725039720-aaad6dd32dfe?auto=format&fit=crop&w=600&q=80" alt="HIIT Cardio" loading="lazy" />
+                <div class="prog-front-overlay">
+                  <span class="prog-badge-tag">Fat Shred</span>
+                  <h3 class="prog-title">HIIT Metabolic Burn</h3>
+                  <div class="prog-quick-specs">
+                    <span><i class="fas fa-fire"></i> 900+ kcal</span>
+                    <span><i class="fas fa-clock"></i> 45 Mins</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="program-card-back">
+              <div>
+                <h3 class="prog-back-title">High-Intensity Burn</h3>
+                <p class="prog-back-desc">
+                  Tabata interval training, curved treadmills, air bikes, and heart-rate telemetry to trigger the 24-hour afterburn effect.
+                </p>
+                <ul class="prog-features-list">
+                  <li><i class="fas fa-check"></i> Real-time Heart Rate Displays</li>
+                  <li><i class="fas fa-check"></i> Assault AirBikes &amp; SkiErgs</li>
+                  <li><i class="fas fa-check"></i> Rapid Fat Loss Periodization</li>
+                </ul>
+              </div>
+              <button class="btn btn-neon btn-block prog-join-btn" data-program="hiit">
+                <i class="fas fa-bolt"></i> Join HIIT Burn
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Program 5: Yoga -->
+        <div class="program-card-wrap" data-aos="fade-up" data-aos-delay="500">
+          <div class="program-card-inner">
+            <div class="program-card-front">
+              <div class="prog-img-box">
+                <img src="https://images.unsplash.com/photo-1544367567-0f2fcb009e0b?auto=format&fit=crop&w=600&q=80" alt="Power Yoga" loading="lazy" />
+                <div class="prog-front-overlay">
+                  <span class="prog-badge-tag">Flexibility &amp; Core</span>
+                  <h3 class="prog-title">Power Yoga &amp; Mobility</h3>
+                  <div class="prog-quick-specs">
+                    <span><i class="fas fa-fire"></i> 400+ kcal</span>
+                    <span><i class="fas fa-clock"></i> 60 Mins</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="program-card-back">
+              <div>
+                <h3 class="prog-back-title">Vinyasa &amp; Joint Mobility</h3>
+                <p class="prog-back-desc">
+                  Dynamic flow yoga, deep fascial releases, and core isometric strengthening in an ambient infrared-heated studio.
+                </p>
+                <ul class="prog-features-list">
+                  <li><i class="fas fa-check"></i> Infrared Studio Healing Heat</li>
+                  <li><i class="fas fa-check"></i> Joint Decompression &amp; Mobility</li>
+                  <li><i class="fas fa-check"></i> Breathwork &amp; Stress Recovery</li>
+                </ul>
+              </div>
+              <button class="btn btn-neon btn-block prog-join-btn" data-program="yoga">
+                <i class="fas fa-bolt"></i> Join Yoga Class
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Program 6: Zumba -->
+        <div class="program-card-wrap" data-aos="fade-up" data-aos-delay="600">
+          <div class="program-card-inner">
+            <div class="program-card-front">
+              <div class="prog-img-box">
+                <img src="https://images.unsplash.com/photo-1518611012118-696072aa579a?auto=format&fit=crop&w=600&q=80" alt="Zumba Fitness" loading="lazy" />
+                <div class="prog-front-overlay">
+                  <span class="prog-badge-tag">Rhythm Cardio</span>
+                  <h3 class="prog-title">Zumba Dance Blast</h3>
+                  <div class="prog-quick-specs">
+                    <span><i class="fas fa-fire"></i> 600+ kcal</span>
+                    <span><i class="fas fa-clock"></i> 50 Mins</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="program-card-back">
+              <div>
+                <h3 class="prog-back-title">Latin &amp; Club Dance Fitness</h3>
+                <p class="prog-back-desc">
+                  High-energy dance cardio set to pulsating Latin and international beats. Full body workout disguised as a dance party.
+                </p>
+                <ul class="prog-features-list">
+                  <li><i class="fas fa-check"></i> Concert-Grade Sound System</li>
+                  <li><i class="fas fa-check"></i> Easy-to-Follow Choreography</li>
+                  <li><i class="fas fa-check"></i> Pure Endorphin Rush</li>
+                </ul>
+              </div>
+              <button class="btn btn-neon btn-block prog-join-btn" data-program="zumba">
+                <i class="fas fa-bolt"></i> Join Zumba Blast
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Trainer Profiles Grid -->
+  <section class="trainers-section" id="trainers">
+    <div class="container">
+      <div class="section-header" data-aos="fade-up">
+        <span class="section-tag">World-Class Coaches</span>
+        <h2 class="section-title">Meet Our Elite Master Trainers</h2>
+        <p class="section-subtitle">
+          Former Olympic athletes, strength champions, and certified nutritionists dedicated to pushing your boundaries.
+        </p>
+      </div>
+
+      <div class="trainers-grid">
+        <!-- Trainer 1 -->
+        <div class="trainer-card" data-aos="fade-up" data-aos-delay="100">
+          <div class="trainer-photo-wrap">
+            <img src="https://images.unsplash.com/photo-1567013127542-490d757e51fc?auto=format&fit=crop&w=600&q=80" alt="Coach Jaxson Reed" loading="lazy" />
+            <div class="trainer-social-overlay">
+              <a href="#" class="trainer-social-link" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+              <a href="#" class="trainer-social-link" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+            </div>
+          </div>
+          <div class="trainer-details">
+            <h3 class="trainer-name">Jaxson Reed</h3>
+            <span class="trainer-specialty">Head Powerlifting &amp; Strength Coach</span>
+            <p class="trainer-achieve">USA Powerlifting Record Holder &bull; CSCS Certified</p>
+          </div>
+        </div>
+
+        <!-- Trainer 2 -->
+        <div class="trainer-card" data-aos="fade-up" data-aos-delay="200">
+          <div class="trainer-photo-wrap">
+            <img src="https://images.unsplash.com/photo-1548690312-e3b507d8c110?auto=format&fit=crop&w=600&q=80" alt="Coach Maya Sterling" loading="lazy" />
+            <div class="trainer-social-overlay">
+              <a href="#" class="trainer-social-link" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+              <a href="#" class="trainer-social-link" aria-label="TikTok"><i class="fab fa-tiktok"></i></a>
+            </div>
+          </div>
+          <div class="trainer-details">
+            <h3 class="trainer-name">Maya Sterling</h3>
+            <span class="trainer-specialty">CrossFit &amp; High-Octane HIIT Lead</span>
+            <p class="trainer-achieve">CrossFit Games Athlete &bull; 9+ Years Coaching</p>
+          </div>
+        </div>
+
+        <!-- Trainer 3 -->
+        <div class="trainer-card" data-aos="fade-up" data-aos-delay="300">
+          <div class="trainer-photo-wrap">
+            <img src="https://images.unsplash.com/photo-1517838277536-f5f99be501cd?auto=format&fit=crop&w=600&q=80" alt="Coach Marcus Cole" loading="lazy" />
+            <div class="trainer-social-overlay">
+              <a href="#" class="trainer-social-link" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+              <a href="#" class="trainer-social-link" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+            </div>
+          </div>
+          <div class="trainer-details">
+            <h3 class="trainer-name">Marcus Cole</h3>
+            <span class="trainer-specialty">Championship Boxing &amp; Strike Coach</span>
+            <p class="trainer-achieve">Former Golden Gloves Champion &bull; Pro Fight Trainer</p>
+          </div>
+        </div>
+
+        <!-- Trainer 4 -->
+        <div class="trainer-card" data-aos="fade-up" data-aos-delay="400">
+          <div class="trainer-photo-wrap">
+            <img src="https://images.unsplash.com/photo-1518611012118-696072aa579a?auto=format&fit=crop&w=600&q=80" alt="Coach Elena Drake" loading="lazy" />
+            <div class="trainer-social-overlay">
+              <a href="#" class="trainer-social-link" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+              <a href="#" class="trainer-social-link" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+            </div>
+          </div>
+          <div class="trainer-details">
+            <h3 class="trainer-name">Elena Drake</h3>
+            <span class="trainer-specialty">Mobility, Power Yoga &amp; Nutrition</span>
+            <p class="trainer-achieve">E-RYT 500 Certified &bull; Sports Nutrition Specialist</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Membership Pricing Table -->
+  <section class="pricing-section" id="pricing">
+    <div class="container">
+      <div class="section-header" data-aos="fade-up">
+        <span class="section-tag">Flexible Memberships</span>
+        <h2 class="section-title">Invest In Your Transformation</h2>
+        <p class="section-subtitle">
+          No hidden fees, no lock-in contracts. Cancel anytime with 30 days notice.
+        </p>
+      </div>
+
+      <!-- Monthly / Annual Toggle Switch -->
+      <div class="pricing-toggle-wrap" data-aos="fade-up" data-aos-delay="100">
+        <span>Monthly Billing</span>
+        <label class="switch">
+          <input type="checkbox" id="billingToggle" />
+          <span class="slider"></span>
+        </label>
+        <span>Annual Billing <span class="discount-pill">Save 20%</span></span>
+      </div>
+
+      <div class="pricing-grid">
+        <!-- Tier 1: Basic -->
+        <div class="price-card" data-aos="fade-up" data-aos-delay="100">
+          <div class="price-header">
+            <h3 class="price-plan-name">Basic Iron</h3>
+            <div class="price-amount" id="priceBasic">$39</div>
+            <span class="price-period">/ month</span>
+          </div>
+          <ul class="price-features">
+            <li><i class="fas fa-check"></i> Standard Floor &amp; Cardio Access</li>
+            <li><i class="fas fa-check"></i> Locker Room &amp; Showers</li>
+            <li><i class="fas fa-check"></i> IronPulse Mobile App Access</li>
+            <li><i class="fas fa-check"></i> 1 Fitness Assessment / Year</li>
+          </ul>
+          <a href="#freePass" class="btn btn-outline-neon btn-block">Choose Basic</a>
+        </div>
+
+        <!-- Tier 2: Pro (Most Popular) -->
+        <div class="price-card featured" data-aos="fade-up" data-aos-delay="200">
+          <div class="featured-badge">Most Popular</div>
+          <div class="price-header">
+            <h3 class="price-plan-name">Pro Pulse</h3>
+            <div class="price-amount" id="pricePro">$69</div>
+            <span class="price-period">/ month</span>
+          </div>
+          <ul class="price-features">
+            <li><i class="fas fa-check"></i> 24/7 Unlimited Gym Access</li>
+            <li><i class="fas fa-check"></i> All Group Classes (HIIT, Yoga, Boxing)</li>
+            <li><i class="fas fa-check"></i> Infrared Sauna &amp; Cold Plunge Pool</li>
+            <li><i class="fas fa-check"></i> Monthly InBody Body Composition Scan</li>
+            <li><i class="fas fa-check"></i> Free Guest Pass (2x / Month)</li>
+          </ul>
+          <a href="#freePass" class="btn btn-neon btn-block">Claim Pro Membership</a>
+        </div>
+
+        <!-- Tier 3: Elite -->
+        <div class="price-card" data-aos="fade-up" data-aos-delay="300">
+          <div class="price-header">
+            <h3 class="price-plan-name">Elite Athlete</h3>
+            <div class="price-amount" id="priceElite">$119</div>
+            <span class="price-period">/ month</span>
+          </div>
+          <ul class="price-features">
+            <li><i class="fas fa-check"></i> Everything in Pro Pulse Plan</li>
+            <li><i class="fas fa-check"></i> 4 One-on-One Master PT Sessions / Mo</li>
+            <li><i class="fas fa-check"></i> Personalized Macro Nutrition Plan</li>
+            <li><i class="fas fa-check"></i> Recovery Lounge &amp; Normatec Boots</li>
+            <li><i class="fas fa-check"></i> VIP Locker &amp; Towel Service</li>
+          </ul>
+          <a href="#freePass" class="btn btn-outline-neon btn-block">Choose Elite</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Transformation & Facility Gallery Grid -->
+  <section class="gallery-section" id="gallery">
+    <div class="container">
+      <div class="section-header" data-aos="fade-up">
+        <span class="section-tag">Proof In The Sweat</span>
+        <h2 class="section-title">The IronPulse Arena</h2>
+        <p class="section-subtitle">
+          Take a look inside our 25,000 sq ft performance playground built for pure results.
+        </p>
+      </div>
+
+      <div class="gallery-grid" data-aos="fade-up" data-aos-delay="100">
+        <!-- Gallery 1 -->
+        <div class="gallery-card">
+          <img src="https://images.unsplash.com/photo-1540497077202-7c8a3999166f?auto=format&fit=crop&w=600&q=80" alt="Free Weights Area" loading="lazy" />
+          <div class="gallery-overlay">
+            <h4>Free Weight Arena</h4>
+            <span>Dumbbells up to 150 lbs</span>
+          </div>
+        </div>
+
+        <!-- Gallery 2 -->
+        <div class="gallery-card">
+          <img src="https://images.unsplash.com/photo-1518611012118-696072aa579a?auto=format&fit=crop&w=600&q=80" alt="Cardio Deck" loading="lazy" />
+          <div class="gallery-overlay">
+            <h4>HIIT Cardio Deck</h4>
+            <span>Curved Treadmills &amp; AirBikes</span>
+          </div>
+        </div>
+
+        <!-- Gallery 3 -->
+        <div class="gallery-card">
+          <img src="https://images.unsplash.com/photo-1549719386-74dfcbf7dbed?auto=format&fit=crop&w=600&q=80" alt="Boxing Ring" loading="lazy" />
+          <div class="gallery-overlay">
+            <h4>Regulation Boxing Ring</h4>
+            <span>Heavy Bag Circuit</span>
+          </div>
+        </div>
+
+        <!-- Gallery 4 -->
+        <div class="gallery-card">
+          <img src="https://images.unsplash.com/photo-1574680096145-d05b474e2155?auto=format&fit=crop&w=600&q=80" alt="Recovery Lounge" loading="lazy" />
+          <div class="gallery-overlay">
+            <h4>Hydro Recovery Spa</h4>
+            <span>Infrared Sauna &amp; Ice Baths</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Testimonials Slider -->
+  <section class="testimonials-section" id="reviews">
+    <div class="container">
+      <div class="section-header" data-aos="fade-up">
+        <span class="section-tag">Unstoppable Results</span>
+        <h2 class="section-title">What Our Athletes Say</h2>
+        <p class="section-subtitle">Real transformation journeys from members who unlocked their peak potential.</p>
+      </div>
+
+      <div class="testimonials-wrapper" data-aos="fade-up" data-aos-delay="150">
+        <div class="testimonials-track" id="gymTestTrack">
+          <!-- Testimonial 1 -->
+          <div class="testimonial-card">
+            <div class="test-quote-icon"><i class="fas fa-quote-left"></i></div>
+            <div class="test-stars">
+              <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+            </div>
+            <p class="test-quote">
+              "Joining IronPulse changed my entire life trajectory. Coach Jaxson corrected my deadlift mechanics and within 8 months I dropped 28 lbs of body fat while hitting a 405 lb PR. The community energy is unmatched!"
+            </p>
+            <div class="test-author">
+              <h4>Derek Vance</h4>
+              <span>Member &bull; Lost 28 lbs &bull; Powerlifter</span>
+            </div>
+          </div>
+
+          <!-- Testimonial 2 -->
+          <div class="testimonial-card">
+            <div class="test-quote-icon"><i class="fas fa-quote-left"></i></div>
+            <div class="test-stars">
+              <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+            </div>
+            <p class="test-quote">
+              "The 6 AM CrossFit WODs with Coach Maya are the highlight of my weekdays. The equipment is spotless, the infrared sauna speeds up my recovery, and everyone cheers you on until the last rep."
+            </p>
+            <div class="test-author">
+              <h4>Samantha Chen</h4>
+              <span>CrossFit Athlete &bull; 2 Years at IronPulse</span>
+            </div>
+          </div>
+
+          <!-- Testimonial 3 -->
+          <div class="testimonial-card">
+            <div class="test-quote-icon"><i class="fas fa-quote-left"></i></div>
+            <div class="test-stars">
+              <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+            </div>
+            <p class="test-quote">
+              "Marcus Cole's boxing sessions are brutal in the best way possible. I burn over 800 calories in 50 minutes and learned real defensive footwork. The Pro Pulse membership is the best investment I make every month."
+            </p>
+            <div class="test-author">
+              <h4>Liam O'Connor</h4>
+              <span>Boxing Enthusiast &bull; Tech Entrepreneur</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="test-controls">
+          <button class="test-btn" id="gymPrevBtn" aria-label="Previous Review"><i class="fas fa-chevron-left"></i></button>
+          <div class="test-dots" id="gymTestDots"></div>
+          <button class="test-btn" id="gymNextBtn" aria-label="Next Review"><i class="fas fa-chevron-right"></i></button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA Banner with 7-Day Free Pass Form -->
+  <section class="cta-banner-section" id="freePass">
+    <div class="container">
+      <div class="cta-banner-box" data-aos="zoom-in">
+        <span class="section-tag">Zero Risk &bull; Zero Commitment</span>
+        <h2 class="section-title">START YOUR JOURNEY TODAY</h2>
+        <p>
+          Claim your 100% complimentary 7-Day All-Access Pass. Experience our master trainers, high-tech floor, and recovery lounge with zero upfront payment.
+        </p>
+
+        <form id="freePassForm" novalidate>
+          <div class="pass-form-grid">
+            <div class="form-group">
+              <label for="passName"><i class="fas fa-user"></i> Full Name *</label>
+              <input type="text" id="passName" name="name" class="form-control" placeholder="e.g. Alex Morgan" required />
+              <span class="field-error" id="passNameError">Please enter your name.</span>
+            </div>
+
+            <div class="form-group">
+              <label for="passEmail"><i class="fas fa-envelope"></i> Email Address *</label>
+              <input type="email" id="passEmail" name="email" class="form-control" placeholder="e.g. alex@example.com" required />
+              <span class="field-error" id="passEmailError">Please enter a valid email.</span>
+            </div>
+
+            <div class="form-group">
+              <label for="passPhone"><i class="fas fa-phone"></i> Mobile Phone *</label>
+              <input type="tel" id="passPhone" name="phone" class="form-control" placeholder="e.g. +1 (555) 000-0000" required />
+              <span class="field-error" id="passPhoneError">Please enter your phone number.</span>
+            </div>
+
+            <div class="form-group">
+              <label for="passGoal"><i class="fas fa-bullseye"></i> Primary Fitness Goal</label>
+              <select id="passGoal" name="goal" class="form-control">
+                <option value="strength">Heavyweight Strength &amp; Muscle Gain</option>
+                <option value="crossfit">CrossFit Functional Conditioning</option>
+                <option value="hiit">Fat Loss &amp; Metabolic Conditioning</option>
+                <option value="boxing">Combat Boxing &amp; Strike Training</option>
+                <option value="yoga">Mobility, Yoga &amp; Stress Relief</option>
+                <option value="general">General Health &amp; Daily Fitness</option>
+              </select>
+            </div>
+          </div>
+
+          <button type="submit" class="btn btn-neon btn-block btn-lg" id="submitPassBtn">
+            <span class="btn-text"><i class="fas fa-fire"></i> Claim My 7-Day Free Pass</span>
+            <span class="btn-loading" style="display:none;"><i class="fas fa-spinner fa-spin"></i> Activating Free Pass...</span>
+          </button>
+        </form>
+
+        <!-- Success Message Card -->
+        <div class="pass-success-box" id="passSuccess" style="display:none;">
+          <div class="success-check-icon"><i class="fas fa-check"></i></div>
+          <h3>YOUR 7-DAY PASS IS ACTIVE!</h3>
+          <p>Bring your digital pass code to the front desk for instant biometric activation.</p>
+
+          <div class="pass-summary">
+            <div class="summary-row">
+              <span>Pass Access Code</span>
+              <span id="confPassCode">PULSE-719382</span>
+            </div>
+            <div class="summary-row">
+              <span>Athlete Name</span>
+              <span id="confPassName"></span>
+            </div>
+            <div class="summary-row">
+              <span>Target Program</span>
+              <span id="confPassGoal"></span>
+            </div>
+            <div class="summary-row">
+              <span>Pass Validity</span>
+              <span>7 Consecutive Days (All Access)</span>
+            </div>
+          </div>
+
+          <button class="btn btn-outline-neon btn-sm" id="newPassBtn">Activate Another Pass</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer" id="contact">
+    <div class="container">
+      <div class="footer-grid">
+        <!-- Col 1: Brand & Bio -->
+        <div class="footer-col footer-brand">
+          <div class="gym-brand" style="margin-bottom:16px;">
+            <div class="brand-icon-wrap"><i class="fas fa-bolt"></i></div>
+            <div class="brand-titles">
+              <span class="brand-title-main">IRONPULSE</span>
+              <span class="brand-title-sub">Fitness &bull; Performance</span>
+            </div>
+          </div>
+          <p class="footer-about">
+            The premier training sanctuary built for serious athletes, beginners, and fitness enthusiasts. Powered by world-class coaching, Eleiko rigs, and 24/7 biometric floor access.
+          </p>
+          <div class="footer-socials">
+            <a href="#" class="footer-social-btn" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+            <a href="#" class="footer-social-btn" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+            <a href="#" class="footer-social-btn" aria-label="TikTok"><i class="fab fa-tiktok"></i></a>
+            <a href="#" class="footer-social-btn" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+          </div>
+        </div>
+
+        <!-- Col 2: Weekly Schedule Overview -->
+        <div class="footer-col">
+          <h4>Weekly Peak Hours</h4>
+          <ul class="schedule-table">
+            <li>
+              <span>Strength &amp; Conditioning</span>
+              <span>Mon &ndash; Fri: 6:00 AM &ndash; 10:00 PM</span>
+            </li>
+            <li>
+              <span>CrossFit WOD Sessions</span>
+              <span>Daily: 6:00 AM &bull; 12:00 PM &bull; 6:30 PM</span>
+            </li>
+            <li>
+              <span>Boxing &amp; Strike Ring</span>
+              <span>Tue, Thu, Sat: 5:30 PM &ndash; 8:30 PM</span>
+            </li>
+            <li>
+              <span>Member 24/7 Biometric</span>
+              <span style="color:var(--neon-orange-light);">Open 24 Hours / 365 Days</span>
+            </li>
+          </ul>
+        </div>
+
+        <!-- Col 3: Location & Map -->
+        <div class="footer-col">
+          <h4>Facility Location</h4>
+          <ul class="footer-contact">
+            <li>
+              <i class="fas fa-location-dot"></i>
+              <span>1020 Ironworks Boulevard, Performance District, Boston, MA 02118</span>
+            </li>
+            <li>
+              <i class="fas fa-phone"></i>
+              <span>Gym Desk: +1 (617) 555-PULSE</span>
+            </li>
+            <li>
+              <i class="fas fa-envelope"></i>
+              <span>coaching@ironpulsefitness.com</span>
+            </li>
+          </ul>
+
+          <div class="map-embed-box">
+            <iframe 
+              title="IronPulse Facility Map" 
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2949.123847291837!2d-71.07212002346853!3d42.34012593629471!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89e37a18f4a17953%3A0x6b8f36c4b281f62!2sBoston%2C%20MA!5e0!3m2!1sen!2sus!4v1700000000000!5m2!1sen!2sus" 
+              width="100%" 
+              height="110" 
+              style="border:0;" 
+              allowfullscreen="" 
+              loading="lazy" 
+              referrerpolicy="no-referrer-when-downgrade">
+            </iframe>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>&copy; 2026 IronPulse Fitness Performance Group. All rights reserved.</p>
+        <div class="footer-bottom-links">
+          <a href="#">Privacy Policy</a>
+          <span>&bull;</span>
+          <a href="#">Safety Protocols</a>
+          <span>&bull;</span>
+          <a href="#">Terms of Membership</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Scroll to Top Button -->
+  <button class="scroll-top-btn" id="scrollTopBtn" aria-label="Return to top">
+    <i class="fas fa-arrow-up"></i>
+  </button>
+
+  <!-- External JS Libraries -->
+  <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>

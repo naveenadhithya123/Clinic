@@ -1,0 +1,1107 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>VelocityAuto Motors | Premium & High-Performance Vehicles</title>
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,700&family=Outfit:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+  <!-- FontAwesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+  <!-- AOS Animation CSS -->
+  <link rel="stylesheet" href="https://unpkg.com/aos@2.3.4/dist/aos.css" />
+  <!-- Custom Stylesheet -->
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- ================= NAVBAR ================= -->
+  <header class="header" id="header">
+    <div class="header-container">
+      <a href="#home" class="brand-logo">
+        <div class="logo-badge">
+          <i class="fas fa-gauge-high"></i>
+        </div>
+        <div class="logo-text">
+          <span class="logo-velocity">VELOCITY</span><span class="logo-auto">AUTO</span>
+          <span class="logo-tag">MOTORS</span>
+        </div>
+      </a>
+
+      <nav class="nav-menu" id="navMenu">
+        <a href="#home" class="nav-link active">Home</a>
+        <a href="#inventory" class="nav-link">Inventory</a>
+        <a href="#brands" class="nav-link">Brands</a>
+        <a href="#why-us" class="nav-link">Why Us</a>
+        <a href="#financing" class="nav-link">Financing</a>
+        <a href="#testimonials" class="nav-link">Reviews</a>
+        <a href="#contact" class="nav-link">Contact</a>
+        <a href="#test-drive" class="btn-nav-cta"><i class="fas fa-key"></i> Book Test Drive</a>
+      </nav>
+
+      <div class="nav-actions">
+        <a href="tel:+18005558356" class="nav-phone"><i class="fas fa-phone-volume"></i> <span>(800) 555-VELO</span></a>
+        <button class="hamburger-btn" id="hamburgerBtn" aria-label="Toggle Navigation">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- ================= HERO SECTION ================= -->
+  <section class="hero-section" id="home">
+    <div class="hero-backdrop">
+      <div class="hero-overlay"></div>
+      <div class="hero-radial-glow"></div>
+      <div class="hero-grid-pattern"></div>
+    </div>
+
+    <div class="container hero-container">
+      <div class="hero-content">
+        <div class="hero-badge" data-aos="fade-down" data-aos-duration="800">
+          <i class="fas fa-flag-checkered"></i> <span>2026 Pinnacle Collection Now Available</span>
+        </div>
+        <h1 class="hero-title" data-aos="fade-right" data-aos-duration="1000" data-aos-delay="100">
+          ENGINEERED FOR <span class="highlight-text">THRILL.</span><br />
+          CRAFTED FOR <span class="silver-text">LUXURY.</span>
+        </h1>
+        <p class="hero-lead" data-aos="fade-right" data-aos-duration="1000" data-aos-delay="200">
+          Discover extraordinary performance supercars, luxury sedans, and certified pre-owned exotics. Unrivaled horsepower meets impeccable craftsmanship.
+        </p>
+
+        <div class="hero-cta-group" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="300">
+          <a href="#inventory" class="btn btn-primary btn-glow">
+            <span>Explore Inventory</span> <i class="fas fa-arrow-right"></i>
+          </a>
+          <a href="#test-drive" class="btn btn-outline">
+            <i class="fas fa-steering-wheel"></i> <span>Schedule VIP Drive</span>
+          </a>
+        </div>
+
+        <div class="hero-quick-specs" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="400">
+          <div class="qspec-card">
+            <span class="qspec-val">450+</span>
+            <span class="qspec-lbl">Vehicles in Stock</span>
+          </div>
+          <div class="qspec-sep"></div>
+          <div class="qspec-card">
+            <span class="qspec-val">1.9%</span>
+            <span class="qspec-lbl">Starting APR</span>
+          </div>
+          <div class="qspec-sep"></div>
+          <div class="qspec-card">
+            <span class="qspec-val">5 YR</span>
+            <span class="qspec-lbl">Complimentary Warranty</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="hero-showcase" data-aos="zoom-in" data-aos-duration="1200" data-aos-delay="200">
+        <div class="featured-car-badge">
+          <div class="badge-tag">SPOTLIGHT OF THE MONTH</div>
+          <div class="badge-title">Porsche 911 GT3 RS</div>
+          <div class="badge-stat"><i class="fas fa-bolt"></i> 518 HP &bull; 0-60 in 3.0s</div>
+        </div>
+        <div class="hero-img-wrapper">
+          <img src="https://images.unsplash.com/photo-1614162692292-7ac56d7f7f1e?auto=format&fit=crop&w=1200&q=80" alt="Porsche 911 GT3 RS Luxury Sports Car" class="hero-car-img" />
+          <div class="hero-car-glow"></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Quick Search Bar Overlay -->
+    <div class="hero-search-container" data-aos="fade-up" data-aos-offset="0" data-aos-delay="500">
+      <div class="search-bar-box">
+        <form class="quick-search-form" id="quickSearchForm">
+          <div class="search-col">
+            <label><i class="fas fa-car-side"></i> Make / Brand</label>
+            <select id="searchMake" class="search-select">
+              <option value="all">All Brands</option>
+              <option value="porsche">Porsche</option>
+              <option value="bmw">BMW M Power</option>
+              <option value="mercedes">Mercedes-AMG</option>
+              <option value="audi">Audi Sport</option>
+              <option value="ferrari">Ferrari</option>
+              <option value="tesla">Tesla Plaid</option>
+            </select>
+          </div>
+          <div class="search-col">
+            <label><i class="fas fa-shapes"></i> Body Style</label>
+            <select id="searchBody" class="search-select">
+              <option value="all">All Styles</option>
+              <option value="coupe">Coupe & Supercar</option>
+              <option value="sedan">Luxury Sedan</option>
+              <option value="suv">Performance SUV</option>
+              <option value="convertible">Convertible</option>
+            </select>
+          </div>
+          <div class="search-col">
+            <label><i class="fas fa-tag"></i> Price Range</label>
+            <select id="searchPrice" class="search-select">
+              <option value="all">Any Price</option>
+              <option value="50-100">$50,000 - $100,000</option>
+              <option value="100-200">$100,000 - $200,000</option>
+              <option value="200+">$200,000+</option>
+            </select>
+          </div>
+          <div class="search-col-btn">
+            <button type="button" class="btn btn-primary btn-search" id="btnFilterSearch">
+              <i class="fas fa-magnifying-glass"></i> <span>Search (450+)</span>
+            </button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= BRAND LOGO MARQUEE ================= -->
+  <section class="brand-marquee-section" id="brands">
+    <div class="container marquee-header-wrap">
+      <span class="section-tag-sm"><i class="fas fa-certificate"></i> AUTHORIZED PARTNERS & EXOTIC CURATIONS</span>
+    </div>
+    <div class="marquee-wrapper">
+      <div class="marquee-track" id="marqueeTrack">
+        <!-- Set 1 -->
+        <div class="brand-item"><i class="fas fa-shield-halved"></i> <span>PORSCHE</span></div>
+        <div class="brand-item"><i class="fas fa-circle-notch"></i> <span>BMW M</span></div>
+        <div class="brand-item"><i class="fas fa-star"></i> <span>MERCEDES-AMG</span></div>
+        <div class="brand-item"><i class="fas fa-ring"></i> <span>AUDI SPORT</span></div>
+        <div class="brand-item"><i class="fas fa-horse-head"></i> <span>FERRARI</span></div>
+        <div class="brand-item"><i class="fas fa-bullhorn"></i> <span>LAMBORGHINI</span></div>
+        <div class="brand-item"><i class="fas fa-feather"></i> <span>ASTON MARTIN</span></div>
+        <div class="brand-item"><i class="fas fa-bolt"></i> <span>TESLA PLAID</span></div>
+        <div class="brand-item"><i class="fas fa-crown"></i> <span>MCLAREN</span></div>
+        <div class="brand-item"><i class="fas fa-trident"></i> <span>MASERATI</span></div>
+        <!-- Set 2 duplicate for smooth infinite looping -->
+        <div class="brand-item"><i class="fas fa-shield-halved"></i> <span>PORSCHE</span></div>
+        <div class="brand-item"><i class="fas fa-circle-notch"></i> <span>BMW M</span></div>
+        <div class="brand-item"><i class="fas fa-star"></i> <span>MERCEDES-AMG</span></div>
+        <div class="brand-item"><i class="fas fa-ring"></i> <span>AUDI SPORT</span></div>
+        <div class="brand-item"><i class="fas fa-horse-head"></i> <span>FERRARI</span></div>
+        <div class="brand-item"><i class="fas fa-bullhorn"></i> <span>LAMBORGHINI</span></div>
+        <div class="brand-item"><i class="fas fa-feather"></i> <span>ASTON MARTIN</span></div>
+        <div class="brand-item"><i class="fas fa-bolt"></i> <span>TESLA PLAID</span></div>
+        <div class="brand-item"><i class="fas fa-crown"></i> <span>MCLAREN</span></div>
+        <div class="brand-item"><i class="fas fa-trident"></i> <span>MASERATI</span></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= FEATURED INVENTORY ================= -->
+  <section class="inventory-section" id="inventory">
+    <div class="container">
+      <div class="section-title-wrap" data-aos="fade-up">
+        <span class="sub-badge"><i class="fas fa-car"></i> PREMIUM SHOWROOM INVENTORY</span>
+        <h2 class="section-title">THE CURATED <span class="highlight-text">FLEET</span></h2>
+        <p class="section-desc">Hand-picked, performance-tuned, and fully certified. Every vehicle is inspected across 180 diagnostic checkpoints.</p>
+      </div>
+
+      <!-- Category Filter Tabs -->
+      <div class="inventory-tabs" data-aos="fade-up" data-aos-delay="100">
+        <button class="inv-tab active" data-filter="all"><i class="fas fa-grip"></i> All Vehicles (8)</button>
+        <button class="inv-tab" data-filter="new"><i class="fas fa-sparkles"></i> New 2026</button>
+        <button class="inv-tab" data-filter="preowned"><i class="fas fa-award"></i> Certified Pre-Owned</button>
+        <button class="inv-tab" data-filter="supercar"><i class="fas fa-gauge-max"></i> Supercars</button>
+        <button class="inv-tab" data-filter="electric"><i class="fas fa-bolt-lightning"></i> EV / Hybrid</button>
+      </div>
+
+      <!-- Vehicle Cards Grid -->
+      <div class="inventory-grid" id="inventoryGrid">
+
+        <!-- Card 1 -->
+        <div class="car-card" data-category="supercar new" data-make="porsche" data-price="241300" data-aos="fade-up" data-aos-delay="100">
+          <div class="car-card-header">
+            <span class="car-condition-tag tag-new">Brand New 2026</span>
+            <button class="btn-wishlist" title="Save to Favorites" aria-label="Favorite"><i class="far fa-heart"></i></button>
+          </div>
+          <div class="car-img-box">
+            <img src="https://images.unsplash.com/photo-1614162692292-7ac56d7f7f1e?auto=format&fit=crop&w=800&q=80" alt="2026 Porsche 911 GT3 RS" class="car-img" loading="lazy" />
+            <div class="car-quick-overlay">
+              <button class="btn-quick-spec" data-car="porsche-gt3"><i class="fas fa-eye"></i> Quick Specs</button>
+            </div>
+          </div>
+          <div class="car-details">
+            <div class="car-brand-sub">PORSCHE MOTORSPORT</div>
+            <h3 class="car-name">911 GT3 RS Coupe</h3>
+            <div class="car-pricing">
+              <div class="price-main">$241,300</div>
+              <div class="price-est">Est. $3,420/mo</div>
+            </div>
+            <div class="car-specs-grid">
+              <div class="spec-cell"><i class="fas fa-horse"></i> <span>518 HP</span></div>
+              <div class="spec-cell"><i class="fas fa-stopwatch"></i> <span>0-60: 3.0s</span></div>
+              <div class="spec-cell"><i class="fas fa-gears"></i> <span>7-Spd PDK</span></div>
+              <div class="spec-cell"><i class="fas fa-gas-pump"></i> <span>Gasoline</span></div>
+            </div>
+            <div class="car-actions">
+              <button class="btn-card-details" data-car="porsche-gt3"><i class="fas fa-sliders"></i> View Details</button>
+              <a href="#test-drive" class="btn-card-testdrive" data-car-name="2026 Porsche 911 GT3 RS"><i class="fas fa-key"></i> Drive</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Card 2 -->
+        <div class="car-card" data-category="new supercar" data-make="bmw" data-price="92500" data-aos="fade-up" data-aos-delay="150">
+          <div class="car-card-header">
+            <span class="car-condition-tag tag-new">Brand New 2026</span>
+            <button class="btn-wishlist" title="Save to Favorites" aria-label="Favorite"><i class="far fa-heart"></i></button>
+          </div>
+          <div class="car-img-box">
+            <img src="https://images.unsplash.com/photo-1580273916550-e323be2ae537?auto=format&fit=crop&w=800&q=80" alt="2026 BMW M4 Competition Coupe" class="car-img" loading="lazy" />
+            <div class="car-quick-overlay">
+              <button class="btn-quick-spec" data-car="bmw-m4"><i class="fas fa-eye"></i> Quick Specs</button>
+            </div>
+          </div>
+          <div class="car-details">
+            <div class="car-brand-sub">BMW M DIVISION</div>
+            <h3 class="car-name">M4 Competition M xDrive</h3>
+            <div class="car-pricing">
+              <div class="price-main">$92,500</div>
+              <div class="price-est">Est. $1,310/mo</div>
+            </div>
+            <div class="car-specs-grid">
+              <div class="spec-cell"><i class="fas fa-horse"></i> <span>523 HP</span></div>
+              <div class="spec-cell"><i class="fas fa-stopwatch"></i> <span>0-60: 3.4s</span></div>
+              <div class="spec-cell"><i class="fas fa-gears"></i> <span>8-Spd M Steptronic</span></div>
+              <div class="spec-cell"><i class="fas fa-tachometer-alt"></i> <span>AWD</span></div>
+            </div>
+            <div class="car-actions">
+              <button class="btn-card-details" data-car="bmw-m4"><i class="fas fa-sliders"></i> View Details</button>
+              <a href="#test-drive" class="btn-card-testdrive" data-car-name="2026 BMW M4 Competition"><i class="fas fa-key"></i> Drive</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Card 3 -->
+        <div class="car-card" data-category="electric new" data-make="audi" data-price="147500" data-aos="fade-up" data-aos-delay="200">
+          <div class="car-card-header">
+            <span class="car-condition-tag tag-ev">100% Electric</span>
+            <button class="btn-wishlist" title="Save to Favorites" aria-label="Favorite"><i class="far fa-heart"></i></button>
+          </div>
+          <div class="car-img-box">
+            <img src="https://images.unsplash.com/photo-1603584173870-7f23fdae1b7a?auto=format&fit=crop&w=800&q=80" alt="2026 Audi RS e-tron GT" class="car-img" loading="lazy" />
+            <div class="car-quick-overlay">
+              <button class="btn-quick-spec" data-car="audi-etron"><i class="fas fa-eye"></i> Quick Specs</button>
+            </div>
+          </div>
+          <div class="car-details">
+            <div class="car-brand-sub">AUDI SPORT ELECTRIC</div>
+            <h3 class="car-name">RS e-tron GT Performance</h3>
+            <div class="car-pricing">
+              <div class="price-main">$147,500</div>
+              <div class="price-est">Est. $2,090/mo</div>
+            </div>
+            <div class="car-specs-grid">
+              <div class="spec-cell"><i class="fas fa-bolt"></i> <span>637 HP</span></div>
+              <div class="spec-cell"><i class="fas fa-stopwatch"></i> <span>0-60: 2.9s</span></div>
+              <div class="spec-cell"><i class="fas fa-battery-full"></i> <span>249 Mi Range</span></div>
+              <div class="spec-cell"><i class="fas fa-plug"></i> <span>800V Fast Chg</span></div>
+            </div>
+            <div class="car-actions">
+              <button class="btn-card-details" data-car="audi-etron"><i class="fas fa-sliders"></i> View Details</button>
+              <a href="#test-drive" class="btn-card-testdrive" data-car-name="2026 Audi RS e-tron GT"><i class="fas fa-key"></i> Drive</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Card 4 -->
+        <div class="car-card" data-category="supercar preowned" data-make="mercedes" data-price="325000" data-aos="fade-up" data-aos-delay="250">
+          <div class="car-card-header">
+            <span class="car-condition-tag tag-cpo">Certified Pre-Owned</span>
+            <button class="btn-wishlist" title="Save to Favorites" aria-label="Favorite"><i class="far fa-heart"></i></button>
+          </div>
+          <div class="car-img-box">
+            <img src="https://images.unsplash.com/photo-1617814076367-b759c7d7e738?auto=format&fit=crop&w=800&q=80" alt="Mercedes-AMG GT Black Series" class="car-img" loading="lazy" />
+            <div class="car-quick-overlay">
+              <button class="btn-quick-spec" data-car="amg-gt"><i class="fas fa-eye"></i> Quick Specs</button>
+            </div>
+          </div>
+          <div class="car-details">
+            <div class="car-brand-sub">MERCEDES-AMG AFFALTERBACH</div>
+            <h3 class="car-name">AMG GT Black Series</h3>
+            <div class="car-pricing">
+              <div class="price-main">$325,000</div>
+              <div class="price-est">Est. $4,610/mo</div>
+            </div>
+            <div class="car-specs-grid">
+              <div class="spec-cell"><i class="fas fa-horse"></i> <span>720 HP</span></div>
+              <div class="spec-cell"><i class="fas fa-stopwatch"></i> <span>0-60: 3.1s</span></div>
+              <div class="spec-cell"><i class="fas fa-road"></i> <span>3,420 Miles</span></div>
+              <div class="spec-cell"><i class="fas fa-wind"></i> <span>202 MPH</span></div>
+            </div>
+            <div class="car-actions">
+              <button class="btn-card-details" data-car="amg-gt"><i class="fas fa-sliders"></i> View Details</button>
+              <a href="#test-drive" class="btn-card-testdrive" data-car-name="Mercedes-AMG GT Black Series"><i class="fas fa-key"></i> Drive</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Card 5 -->
+        <div class="car-card" data-category="supercar preowned" data-make="ferrari" data-price="368000" data-aos="fade-up" data-aos-delay="100">
+          <div class="car-card-header">
+            <span class="car-condition-tag tag-cpo">Certified Exotic</span>
+            <button class="btn-wishlist" title="Save to Favorites" aria-label="Favorite"><i class="far fa-heart"></i></button>
+          </div>
+          <div class="car-img-box">
+            <img src="https://images.unsplash.com/photo-1592198084033-aade902d1aae?auto=format&fit=crop&w=800&q=80" alt="Ferrari F8 Tributo" class="car-img" loading="lazy" />
+            <div class="car-quick-overlay">
+              <button class="btn-quick-spec" data-car="ferrari-f8"><i class="fas fa-eye"></i> Quick Specs</button>
+            </div>
+          </div>
+          <div class="car-details">
+            <div class="car-brand-sub">FERRARI MARANELLO</div>
+            <h3 class="car-name">F8 Tributo V8 Twin-Turbo</h3>
+            <div class="car-pricing">
+              <div class="price-main">$368,000</div>
+              <div class="price-est">Est. $5,220/mo</div>
+            </div>
+            <div class="car-specs-grid">
+              <div class="spec-cell"><i class="fas fa-horse"></i> <span>710 HP</span></div>
+              <div class="spec-cell"><i class="fas fa-stopwatch"></i> <span>0-60: 2.8s</span></div>
+              <div class="spec-cell"><i class="fas fa-road"></i> <span>1,850 Miles</span></div>
+              <div class="spec-cell"><i class="fas fa-flag"></i> <span>Rosso Corsa</span></div>
+            </div>
+            <div class="car-actions">
+              <button class="btn-card-details" data-car="ferrari-f8"><i class="fas fa-sliders"></i> View Details</button>
+              <a href="#test-drive" class="btn-card-testdrive" data-car-name="Ferrari F8 Tributo"><i class="fas fa-key"></i> Drive</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Card 6 -->
+        <div class="car-card" data-category="electric new" data-make="tesla" data-price="89990" data-aos="fade-up" data-aos-delay="150">
+          <div class="car-card-header">
+            <span class="car-condition-tag tag-ev">Tri-Motor EV</span>
+            <button class="btn-wishlist" title="Save to Favorites" aria-label="Favorite"><i class="far fa-heart"></i></button>
+          </div>
+          <div class="car-img-box">
+            <img src="https://images.unsplash.com/photo-1536700503339-1e4b06520771?auto=format&fit=crop&w=800&q=80" alt="Tesla Model S Plaid" class="car-img" loading="lazy" />
+            <div class="car-quick-overlay">
+              <button class="btn-quick-spec" data-car="tesla-plaid"><i class="fas fa-eye"></i> Quick Specs</button>
+            </div>
+          </div>
+          <div class="car-details">
+            <div class="car-brand-sub">TESLA PERFORMANCE</div>
+            <h3 class="car-name">Model S Plaid Tri-Motor</h3>
+            <div class="car-pricing">
+              <div class="price-main">$89,990</div>
+              <div class="price-est">Est. $1,275/mo</div>
+            </div>
+            <div class="car-specs-grid">
+              <div class="spec-cell"><i class="fas fa-bolt"></i> <span>1,020 HP</span></div>
+              <div class="spec-cell"><i class="fas fa-stopwatch"></i> <span>0-60: 1.99s</span></div>
+              <div class="spec-cell"><i class="fas fa-battery-full"></i> <span>359 Mi Range</span></div>
+              <div class="spec-cell"><i class="fas fa-gauge"></i> <span>200 MPH</span></div>
+            </div>
+            <div class="car-actions">
+              <button class="btn-card-details" data-car="tesla-plaid"><i class="fas fa-sliders"></i> View Details</button>
+              <a href="#test-drive" class="btn-card-testdrive" data-car-name="Tesla Model S Plaid"><i class="fas fa-key"></i> Drive</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Card 7 -->
+        <div class="car-card" data-category="new supercar" data-make="chevrolet" data-price="114395" data-aos="fade-up" data-aos-delay="200">
+          <div class="car-card-header">
+            <span class="car-condition-tag tag-new">Brand New 2026</span>
+            <button class="btn-wishlist" title="Save to Favorites" aria-label="Favorite"><i class="far fa-heart"></i></button>
+          </div>
+          <div class="car-img-box">
+            <img src="https://images.unsplash.com/photo-1552519507-da3b142c6e3d?auto=format&fit=crop&w=800&q=80" alt="Chevrolet Corvette Z06" class="car-img" loading="lazy" />
+            <div class="car-quick-overlay">
+              <button class="btn-quick-spec" data-car="corvette-z06"><i class="fas fa-eye"></i> Quick Specs</button>
+            </div>
+          </div>
+          <div class="car-details">
+            <div class="car-brand-sub">CHEVROLET PERFORMANCE</div>
+            <h3 class="car-name">Corvette Z06 3LZ Coupe</h3>
+            <div class="car-pricing">
+              <div class="price-main">$114,395</div>
+              <div class="price-est">Est. $1,620/mo</div>
+            </div>
+            <div class="car-specs-grid">
+              <div class="spec-cell"><i class="fas fa-horse"></i> <span>670 HP</span></div>
+              <div class="spec-cell"><i class="fas fa-stopwatch"></i> <span>0-60: 2.6s</span></div>
+              <div class="spec-cell"><i class="fas fa-fire"></i> <span>Flat-Plane V8</span></div>
+              <div class="spec-cell"><i class="fas fa-gears"></i> <span>8-Spd Dual-Clutch</span></div>
+            </div>
+            <div class="car-actions">
+              <button class="btn-card-details" data-car="corvette-z06"><i class="fas fa-sliders"></i> View Details</button>
+              <a href="#test-drive" class="btn-card-testdrive" data-car-name="Corvette Z06 3LZ"><i class="fas fa-key"></i> Drive</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Card 8 -->
+        <div class="car-card" data-category="preowned supercar" data-make="aston" data-price="169900" data-aos="fade-up" data-aos-delay="250">
+          <div class="car-card-header">
+            <span class="car-condition-tag tag-cpo">Certified Pre-Owned</span>
+            <button class="btn-wishlist" title="Save to Favorites" aria-label="Favorite"><i class="far fa-heart"></i></button>
+          </div>
+          <div class="car-img-box">
+            <img src="https://images.unsplash.com/photo-1542282088-72c9c27ed0cd?auto=format&fit=crop&w=800&q=80" alt="Aston Martin Vantage" class="car-img" loading="lazy" />
+            <div class="car-quick-overlay">
+              <button class="btn-quick-spec" data-car="aston-vantage"><i class="fas fa-eye"></i> Quick Specs</button>
+            </div>
+          </div>
+          <div class="car-details">
+            <div class="car-brand-sub">ASTON MARTIN GAYDON</div>
+            <h3 class="car-name">Vantage 4.0L Twin-Turbo</h3>
+            <div class="car-pricing">
+              <div class="price-main">$169,900</div>
+              <div class="price-est">Est. $2,410/mo</div>
+            </div>
+            <div class="car-specs-grid">
+              <div class="spec-cell"><i class="fas fa-horse"></i> <span>503 HP</span></div>
+              <div class="spec-cell"><i class="fas fa-stopwatch"></i> <span>0-60: 3.5s</span></div>
+              <div class="spec-cell"><i class="fas fa-road"></i> <span>5,120 Miles</span></div>
+              <div class="spec-cell"><i class="fas fa-volume-high"></i> <span>Quad Exhaust</span></div>
+            </div>
+            <div class="car-actions">
+              <button class="btn-card-details" data-car="aston-vantage"><i class="fas fa-sliders"></i> View Details</button>
+              <a href="#test-drive" class="btn-card-testdrive" data-car-name="Aston Martin Vantage"><i class="fas fa-key"></i> Drive</a>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= WHY CHOOSE US ================= -->
+  <section class="why-us-section" id="why-us">
+    <div class="container">
+      <div class="section-title-wrap" data-aos="fade-up">
+        <span class="sub-badge"><i class="fas fa-shield-halved"></i> THE VELOCITY PROMISE</span>
+        <h2 class="section-title">WHY BUY FROM <span class="highlight-text">VELOCITY</span></h2>
+        <p class="section-desc">We elevate the automotive purchasing journey with transparent pricing, certified peace of mind, and VIP bespoke concierge service.</p>
+      </div>
+
+      <div class="why-grid">
+        <div class="why-card" data-aos="fade-up" data-aos-delay="100">
+          <div class="why-icon-box">
+            <i class="fas fa-clipboard-check"></i>
+          </div>
+          <h3>180-Point Inspection</h3>
+          <p>Every certified pre-owned exotic undergoes thorough mechanical, electrical, and structural scrutiny by master-trained technicians.</p>
+          <ul class="why-list">
+            <li><i class="fas fa-check"></i> Clean CARFAX Guaranteed</li>
+            <li><i class="fas fa-check"></i> Factory Diagnostic Scan</li>
+          </ul>
+        </div>
+
+        <div class="why-card" data-aos="fade-up" data-aos-delay="200">
+          <div class="why-icon-box">
+            <i class="fas fa-percent"></i>
+          </div>
+          <h3>Tailored Low-Rate Financing</h3>
+          <p>Partnered with 40+ premier lending institutions to offer competitive leasing terms, customized balloons, and rates starting at 1.9% APR.</p>
+          <ul class="why-list">
+            <li><i class="fas fa-check"></i> Instant Online Approval</li>
+            <li><i class="fas fa-check"></i> Zero Early Payment Penalty</li>
+          </ul>
+        </div>
+
+        <div class="why-card" data-aos="fade-up" data-aos-delay="300">
+          <div class="why-icon-box">
+            <i class="fas fa-shield-heart"></i>
+          </div>
+          <h3>5-Year Bumper-to-Bumper</h3>
+          <p>Complimentary extended powertrain and electrical warranty coverage with nationwide 24/7 flatbed roadside assistance.</p>
+          <ul class="why-list">
+            <li><i class="fas fa-check"></i> OEM Parts Replacement</li>
+            <li><i class="fas fa-check"></i> Complimentary Loaner Car</li>
+          </ul>
+        </div>
+
+        <div class="why-card" data-aos="fade-up" data-aos-delay="400">
+          <div class="why-icon-box">
+            <i class="fas fa-arrow-right-arrow-left"></i>
+          </div>
+          <h3>Instant AI Trade-In Valuation</h3>
+          <p>Get maximum fair-market equity for your current luxury car in under 60 seconds with our algorithmic real-time valuation engine.</p>
+          <ul class="why-list">
+            <li><i class="fas fa-check"></i> Guaranteed Best Offer</li>
+            <li><i class="fas fa-check"></i> Same-Day Equity Payout</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= FINANCING CALCULATOR ================= -->
+  <section class="financing-section" id="financing">
+    <div class="container">
+      <div class="section-title-wrap" data-aos="fade-up">
+        <span class="sub-badge"><i class="fas fa-calculator"></i> INTELLIGENT AUTO LOAN CALCULATOR</span>
+        <h2 class="section-title">CALCULATE YOUR <span class="highlight-text">INVESTMENT</span></h2>
+        <p class="section-desc">Plan your monthly ownership investment with live real-time rate adjustments and clear financial breakdowns.</p>
+      </div>
+
+      <div class="calc-wrapper" data-aos="fade-up" data-aos-delay="100">
+        <!-- Controls Column -->
+        <div class="calc-controls">
+
+          <!-- Price -->
+          <div class="calc-field-group">
+            <div class="calc-label-row">
+              <label for="calcPriceInput"><i class="fas fa-tag"></i> Vehicle Price ($)</label>
+              <div class="calc-input-pill">
+                <span>$</span>
+                <input type="number" id="calcPriceInput" min="15000" max="400000" step="1000" value="95000" />
+              </div>
+            </div>
+            <input type="range" class="calc-slider" id="calcPriceSlider" min="15000" max="400000" step="1000" value="95000" />
+            <div class="slider-ticks"><span>$15k</span><span>$200k</span><span>$400k</span></div>
+          </div>
+
+          <!-- Down Payment -->
+          <div class="calc-field-group">
+            <div class="calc-label-row">
+              <label for="calcDownInput"><i class="fas fa-money-bill-wave"></i> Down Payment ($)</label>
+              <div class="calc-input-pill">
+                <span>$</span>
+                <input type="number" id="calcDownInput" min="0" max="150000" step="500" value="15000" />
+              </div>
+            </div>
+            <input type="range" class="calc-slider" id="calcDownSlider" min="0" max="150000" step="500" value="15000" />
+            <div class="slider-ticks"><span>$0</span><span>$75k</span><span>$150k</span></div>
+          </div>
+
+          <!-- Trade-in Value -->
+          <div class="calc-field-group">
+            <div class="calc-label-row">
+              <label for="calcTradeInput"><i class="fas fa-car-tunnel"></i> Estimated Trade-In ($)</label>
+              <div class="calc-input-pill">
+                <span>$</span>
+                <input type="number" id="calcTradeInput" min="0" max="80000" step="500" value="5000" />
+              </div>
+            </div>
+            <input type="range" class="calc-slider" id="calcTradeSlider" min="0" max="80000" step="500" value="5000" />
+            <div class="slider-ticks"><span>$0</span><span>$40k</span><span>$80k</span></div>
+          </div>
+
+          <!-- Interest Rate APR -->
+          <div class="calc-field-group">
+            <div class="calc-label-row">
+              <label for="calcAprInput"><i class="fas fa-percent"></i> Interest Rate APR (%)</label>
+              <div class="calc-input-pill">
+                <input type="number" id="calcAprInput" min="0.9" max="18.0" step="0.1" value="4.9" />
+                <span>%</span>
+              </div>
+            </div>
+            <input type="range" class="calc-slider" id="calcAprSlider" min="0.9" max="18.0" step="0.1" value="4.9" />
+            <div class="slider-ticks"><span>0.9%</span><span>9.5%</span><span>18.0%</span></div>
+          </div>
+
+          <!-- Loan Term Buttons -->
+          <div class="calc-field-group">
+            <label class="term-title-label"><i class="fas fa-calendar-days"></i> Loan Term (Months)</label>
+            <div class="term-btn-grid" id="termBtnGrid">
+              <button type="button" class="btn-term" data-term="24">24 Mo</button>
+              <button type="button" class="btn-term" data-term="36">36 Mo</button>
+              <button type="button" class="btn-term" data-term="48">48 Mo</button>
+              <button type="button" class="btn-term active" data-term="60">60 Mo</button>
+              <button type="button" class="btn-term" data-term="72">72 Mo</button>
+              <button type="button" class="btn-term" data-term="84">84 Mo</button>
+            </div>
+          </div>
+
+        </div>
+
+        <!-- Summary & Visualization Column -->
+        <div class="calc-summary-card">
+          <div class="summary-header">
+            <div class="sum-tag">ESTIMATED PAYMENT</div>
+            <div class="monthly-payment-box">
+              <span class="currency-symbol">$</span>
+              <span class="monthly-amount" id="resMonthlyPayment">1,412</span>
+              <span class="per-month-text">/ month</span>
+            </div>
+            <p class="calc-disclaimer">*Excludes local government taxes, registration, and title fees.</p>
+          </div>
+
+          <!-- Ratio Progress Bar -->
+          <div class="calc-progress-wrap">
+            <div class="progress-labels">
+              <span class="lbl-principal"><i class="fas fa-circle text-accent"></i> Principal</span>
+              <span class="lbl-interest"><i class="fas fa-circle text-silver"></i> Interest</span>
+            </div>
+            <div class="progress-bar-track">
+              <div class="prog-fill-principal" id="barPrincipal" style="width: 88%;"></div>
+              <div class="prog-fill-interest" id="barInterest" style="width: 12%;"></div>
+            </div>
+          </div>
+
+          <!-- Breakdown Metrics Table -->
+          <div class="calc-breakdown-list">
+            <div class="breakdown-row">
+              <span>Total Vehicle Price:</span>
+              <strong id="resVehiclePrice">$95,000</strong>
+            </div>
+            <div class="breakdown-row">
+              <span>Total Down & Trade-In:</span>
+              <strong class="text-green" id="resTotalCredits">-$20,000</strong>
+            </div>
+            <div class="breakdown-row">
+              <span>Net Loan Principal:</span>
+              <strong id="resPrincipal">$75,000</strong>
+            </div>
+            <div class="breakdown-row">
+              <span>Estimated Total Interest:</span>
+              <strong class="text-accent" id="resTotalInterest">$9,720</strong>
+            </div>
+            <div class="breakdown-divider"></div>
+            <div class="breakdown-row row-total">
+              <span>Total Loan Outlay:</span>
+              <strong id="resTotalCost">$84,720</strong>
+            </div>
+          </div>
+
+          <div class="summary-actions">
+            <a href="#test-drive" class="btn btn-primary btn-full btn-glow">
+              <i class="fas fa-file-signature"></i> <span>Get Pre-Approved Online</span>
+            </a>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= TESTIMONIALS ================= -->
+  <section class="testimonials-section" id="testimonials">
+    <div class="container">
+      <div class="section-title-wrap" data-aos="fade-up">
+        <span class="sub-badge"><i class="fas fa-star"></i> VERIFIED DRIVER EXPERIENCES</span>
+        <h2 class="section-title">CLIENTS AT THE <span class="highlight-text">WHEEL</span></h2>
+        <p class="section-desc">Hear what passionate enthusiasts and luxury collectors say about acquiring their dream machines at VelocityAuto.</p>
+      </div>
+
+      <div class="testimonials-carousel-wrapper" data-aos="fade-up" data-aos-delay="100">
+        <div class="testimonials-slider" id="testimonialSlider">
+
+          <!-- Slide 1 -->
+          <div class="t-slide active">
+            <div class="testimonial-card">
+              <div class="t-top-row">
+                <div class="t-rating">
+                  <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                </div>
+                <div class="t-verified-badge"><i class="fas fa-circle-check"></i> Verified Purchase</div>
+              </div>
+              <p class="t-text">
+                "VelocityAuto made acquiring my Porsche 911 GT3 RS completely frictionless. The concierge team handled door-to-door enclosed transport, paperwork took 20 minutes, and the car arrived in mint showroom condition. Outstanding service!"
+              </p>
+              <div class="t-client-row">
+                <div class="t-avatar">
+                  <img src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=150&q=80" alt="Client Julian Sterling" />
+                </div>
+                <div class="t-client-meta">
+                  <h4>Julian Sterling</h4>
+                  <span>Venture Capitalist &bull; <strong class="car-tag">Purchased 2026 Porsche GT3 RS</strong></span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Slide 2 -->
+          <div class="t-slide">
+            <div class="testimonial-card">
+              <div class="t-top-row">
+                <div class="t-rating">
+                  <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                </div>
+                <div class="t-verified-badge"><i class="fas fa-circle-check"></i> Verified Purchase</div>
+              </div>
+              <p class="t-text">
+                "Their live financing calculator was accurate down to the exact penny. I traded in my previous AMG, received a stellar equity valuation, and drove away in the Audi RS e-tron GT with 2.9% financing. Simply world class!"
+              </p>
+              <div class="t-client-row">
+                <div class="t-avatar">
+                  <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=150&q=80" alt="Client Marcus Vance" />
+                </div>
+                <div class="t-client-meta">
+                  <h4>Marcus Vance</h4>
+                  <span>Tech Executive &bull; <strong class="car-tag">Purchased Audi RS e-tron GT</strong></span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Slide 3 -->
+          <div class="t-slide">
+            <div class="testimonial-card">
+              <div class="t-top-row">
+                <div class="t-rating">
+                  <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                </div>
+                <div class="t-verified-badge"><i class="fas fa-circle-check"></i> Verified Purchase</div>
+              </div>
+              <p class="t-text">
+                "The 180-point inspection gave me absolute peace of mind buying a Certified Pre-Owned Ferrari F8 Tributo. The vehicle runs like factory-new and the complimentary 5-year warranty was the icing on the cake."
+              </p>
+              <div class="t-client-row">
+                <div class="t-avatar">
+                  <img src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?auto=format&fit=crop&w=150&q=80" alt="Client Elena Rostova" />
+                </div>
+                <div class="t-client-meta">
+                  <h4>Elena Rostova</h4>
+                  <span>Architect &bull; <strong class="car-tag">Purchased Ferrari F8 Tributo</strong></span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+        <!-- Slider Controls -->
+        <div class="slider-controls">
+          <button class="slider-btn" id="tPrevBtn" aria-label="Previous Testimonial"><i class="fas fa-chevron-left"></i></button>
+          <div class="slider-dots" id="tDots">
+            <span class="dot active" data-index="0"></span>
+            <span class="dot" data-index="1"></span>
+            <span class="dot" data-index="2"></span>
+          </div>
+          <button class="slider-btn" id="tNextBtn" aria-label="Next Testimonial"><i class="fas fa-chevron-right"></i></button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= TEST DRIVE BOOKING FORM ================= -->
+  <section class="test-drive-section" id="test-drive">
+    <div class="container">
+      <div class="test-drive-card" data-aos="zoom-in" data-aos-duration="1000">
+        <div class="test-drive-left">
+          <span class="sub-badge"><i class="fas fa-gauge"></i> UNLEASH THE BEAST</span>
+          <h2 class="drive-title">BOOK YOUR <span class="highlight-text">VIP TEST DRIVE</span></h2>
+          <p class="drive-desc">
+            Experience raw horsepower, laser-sharp steering, and race-bred acceleration first hand. Complimentary track or scenic highway drive included with your personal Velocity product specialist.
+          </p>
+          <div class="drive-perks">
+            <div class="perk-item">
+              <i class="fas fa-road"></i>
+              <div><strong>Dedicated Scenic Route</strong><span>Zero city traffic delays</span></div>
+            </div>
+            <div class="perk-item">
+              <i class="fas fa-user-shield"></i>
+              <div><strong>Private Product Concierge</strong><span>1-on-1 technical walk-through</span></div>
+            </div>
+            <div class="perk-item">
+              <i class="fas fa-champagne-glasses"></i>
+              <div><strong>VIP Showroom Lounge</strong><span>Espresso bar & private suite</span></div>
+            </div>
+          </div>
+        </div>
+
+        <div class="test-drive-right">
+          <form class="drive-form" id="driveForm" novalidate>
+            <div class="form-grid">
+              
+              <div class="form-group">
+                <label for="driveName">Full Legal Name *</label>
+                <div class="input-with-icon">
+                  <i class="fas fa-user"></i>
+                  <input type="text" id="driveName" placeholder="e.g. Alex Henderson" required />
+                </div>
+                <span class="field-error" id="nameError"></span>
+              </div>
+
+              <div class="form-group">
+                <label for="drivePhone">Phone Number *</label>
+                <div class="input-with-icon">
+                  <i class="fas fa-phone"></i>
+                  <input type="tel" id="drivePhone" placeholder="(555) 000-0000" required />
+                </div>
+                <span class="field-error" id="phoneError"></span>
+              </div>
+
+              <div class="form-group">
+                <label for="driveEmail">Email Address *</label>
+                <div class="input-with-icon">
+                  <i class="fas fa-envelope"></i>
+                  <input type="email" id="driveEmail" placeholder="alex@domain.com" required />
+                </div>
+                <span class="field-error" id="emailError"></span>
+              </div>
+
+              <div class="form-group">
+                <label for="driveCarSelect">Select Vehicle *</label>
+                <div class="input-with-icon select-box">
+                  <i class="fas fa-car-side"></i>
+                  <select id="driveCarSelect" required>
+                    <option value="">Choose a Vehicle Model...</option>
+                    <option value="2026 Porsche 911 GT3 RS">2026 Porsche 911 GT3 RS (518 HP)</option>
+                    <option value="2026 BMW M4 Competition">2026 BMW M4 Competition (523 HP)</option>
+                    <option value="2026 Audi RS e-tron GT">2026 Audi RS e-tron GT (637 HP EV)</option>
+                    <option value="Mercedes-AMG GT Black Series">Mercedes-AMG GT Black Series (720 HP)</option>
+                    <option value="Ferrari F8 Tributo">Ferrari F8 Tributo (710 HP)</option>
+                    <option value="Tesla Model S Plaid">Tesla Model S Plaid (1,020 HP)</option>
+                    <option value="Corvette Z06 3LZ">Corvette Z06 3LZ (670 HP)</option>
+                    <option value="Aston Martin Vantage">Aston Martin Vantage (503 HP)</option>
+                  </select>
+                </div>
+                <span class="field-error" id="carError"></span>
+              </div>
+
+              <div class="form-group">
+                <label for="driveBranch">Dealership Showroom *</label>
+                <div class="input-with-icon select-box">
+                  <i class="fas fa-location-dot"></i>
+                  <select id="driveBranch" required>
+                    <option value="Beverly Hills Flagship">Beverly Hills &bull; Wilshire Blvd</option>
+                    <option value="Manhattan Performance Studio">Manhattan &bull; 11th Avenue</option>
+                    <option value="Miami Brickell Center">Miami &bull; Brickell Bay Drive</option>
+                  </select>
+                </div>
+              </div>
+
+              <div class="form-group">
+                <label for="driveDate">Preferred Date *</label>
+                <div class="input-with-icon">
+                  <i class="fas fa-calendar"></i>
+                  <input type="date" id="driveDate" required />
+                </div>
+                <span class="field-error" id="dateError"></span>
+              </div>
+
+              <div class="form-group full-width">
+                <label for="driveTime">Preferred Time Slot *</label>
+                <div class="input-with-icon select-box">
+                  <i class="fas fa-clock"></i>
+                  <select id="driveTime" required>
+                    <option value="10:00 AM - 11:30 AM">Morning Track: 10:00 AM - 11:30 AM</option>
+                    <option value="01:00 PM - 02:30 PM">Afternoon Highway: 01:00 PM - 02:30 PM</option>
+                    <option value="03:30 PM - 05:00 PM">Sunset Scenic: 03:30 PM - 05:00 PM</option>
+                  </select>
+                </div>
+              </div>
+
+            </div>
+
+            <div class="form-check-group">
+              <input type="checkbox" id="licenseCheck" required />
+              <label for="licenseCheck">I confirm I am at least 21 years old and hold a valid government driver's license.</label>
+            </div>
+            <span class="field-error" id="licenseError"></span>
+
+            <button type="submit" class="btn btn-primary btn-full btn-glow" id="btnSubmitDrive">
+              <i class="fas fa-key"></i> <span>Confirm VIP Test Drive Reservation</span>
+            </button>
+          </form>
+
+          <!-- Interactive Confirmation Pass Card -->
+          <div class="drive-confirmation-card" id="driveConfirmation" style="display: none;">
+            <div class="pass-header">
+              <div class="pass-status-icon"><i class="fas fa-circle-check"></i></div>
+              <h3>VIP TEST DRIVE CONFIRMED</h3>
+              <p>Your track & showroom slot has been officially locked in.</p>
+            </div>
+
+            <div class="pass-body">
+              <div class="pass-meta-grid">
+                <div><span>Driver</span><strong id="passDriver">Alex Henderson</strong></div>
+                <div><span>Reservation Code</span><strong class="text-accent" id="passRef">VA-893120</strong></div>
+                <div><span>Vehicle</span><strong id="passVehicle">Porsche 911 GT3 RS</strong></div>
+                <div><span>Showroom</span><strong id="passBranch">Beverly Hills Flagship</strong></div>
+                <div><span>Date & Time</span><strong id="passSlot">Oct 24, 2026 @ 10:00 AM</strong></div>
+                <div><span>Access Tier</span><strong class="text-silver">All-Access Track VIP</strong></div>
+              </div>
+            </div>
+
+            <button type="button" class="btn btn-secondary btn-full" id="btnBookAnother">
+              <i class="fas fa-rotate-left"></i> Book Another Drive
+            </button>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= LOCATIONS & CONTACT ================= -->
+  <section class="locations-section" id="contact">
+    <div class="container">
+      <div class="section-title-wrap" data-aos="fade-up">
+        <span class="sub-badge"><i class="fas fa-map-location-dot"></i> NATIONWIDE PERFORMANCE SHOWROOMS</span>
+        <h2 class="section-title">VISIT OUR <span class="highlight-text">SHOWROOMS</span></h2>
+        <p class="section-desc">Experience our climate-controlled private galleries, bespoke customization studios, and world-class lounges.</p>
+      </div>
+
+      <div class="locations-grid">
+        <!-- Loc 1 -->
+        <div class="location-card" data-aos="fade-up" data-aos-delay="100">
+          <div class="loc-city-tag">CALIFORNIA FLAGSHIP</div>
+          <h3>Beverly Hills</h3>
+          <p class="loc-address"><i class="fas fa-location-pin"></i> 9440 Wilshire Blvd, Beverly Hills, CA 90212</p>
+          <div class="loc-details">
+            <div><i class="fas fa-phone"></i> (310) 555-8350</div>
+            <div><i class="fas fa-envelope"></i> beverlyhills@velocityauto.com</div>
+            <div><i class="fas fa-clock"></i> Mon-Sat: 9AM - 8PM | Sun: 10AM - 6PM</div>
+          </div>
+          <a href="#test-drive" class="btn btn-outline btn-sm"><i class="fas fa-compass"></i> Visit Showroom</a>
+        </div>
+
+        <!-- Loc 2 -->
+        <div class="location-card" data-aos="fade-up" data-aos-delay="200">
+          <div class="loc-city-tag">NEW YORK STUDIO</div>
+          <h3>Manhattan</h3>
+          <p class="loc-address"><i class="fas fa-location-pin"></i> 750 11th Avenue, New York, NY 10019</p>
+          <div class="loc-details">
+            <div><i class="fas fa-phone"></i> (212) 555-8351</div>
+            <div><i class="fas fa-envelope"></i> manhattan@velocityauto.com</div>
+            <div><i class="fas fa-clock"></i> Mon-Sat: 9AM - 8PM | Sun: 11AM - 5PM</div>
+          </div>
+          <a href="#test-drive" class="btn btn-outline btn-sm"><i class="fas fa-compass"></i> Visit Showroom</a>
+        </div>
+
+        <!-- Loc 3 -->
+        <div class="location-card" data-aos="fade-up" data-aos-delay="300">
+          <div class="loc-city-tag">FLORIDA EXOTICS</div>
+          <h3>Miami Brickell</h3>
+          <p class="loc-address"><i class="fas fa-location-pin"></i> 1450 Brickell Bay Dr, Miami, FL 33131</p>
+          <div class="loc-details">
+            <div><i class="fas fa-phone"></i> (305) 555-8352</div>
+            <div><i class="fas fa-envelope"></i> miami@velocityauto.com</div>
+            <div><i class="fas fa-clock"></i> Mon-Sat: 9AM - 9PM | Sun: 10AM - 7PM</div>
+          </div>
+          <a href="#test-drive" class="btn btn-outline btn-sm"><i class="fas fa-compass"></i> Visit Showroom</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= VEHICLE DETAILS MODAL ================= -->
+  <div class="modal-backdrop" id="carModal" aria-hidden="true">
+    <div class="modal-dialog">
+      <button class="modal-close-btn" id="modalCloseBtn" aria-label="Close Dialog"><i class="fas fa-xmark"></i></button>
+      <div class="modal-body">
+        <div class="modal-img-col">
+          <img id="modalCarImg" src="" alt="Selected Vehicle Preview" />
+          <div class="modal-price-badge">
+            <span id="modalCarPrice">$0</span>
+            <small id="modalCarMonthly">Est. $0/mo</small>
+          </div>
+        </div>
+        <div class="modal-info-col">
+          <div class="modal-tag" id="modalCarTag">CERTIFIED LUXURY</div>
+          <h2 id="modalCarTitle">Vehicle Name</h2>
+          <p id="modalCarDesc" class="modal-car-desc">Vehicle description and performance notes.</p>
+          
+          <h4 class="modal-subheading"><i class="fas fa-gauge"></i> Key Technical Specs</h4>
+          <div class="modal-spec-grid" id="modalSpecGrid">
+            <!-- Dynamic specs -->
+          </div>
+
+          <h4 class="modal-subheading"><i class="fas fa-list-check"></i> Standard Premium Equipment</h4>
+          <div class="modal-features-list" id="modalFeaturesList">
+            <!-- Dynamic feature bullets -->
+          </div>
+
+          <div class="modal-actions-row">
+            <a href="#test-drive" class="btn btn-primary btn-glow" id="modalDriveBtn"><i class="fas fa-key"></i> Book Test Drive</a>
+            <a href="#financing" class="btn btn-outline" id="modalCalcBtn"><i class="fas fa-calculator"></i> Calculate Finance</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ================= FOOTER ================= -->
+  <footer class="footer">
+    <div class="footer-top">
+      <div class="container footer-grid">
+
+        <div class="footer-col brand-col">
+          <a href="#home" class="brand-logo">
+            <div class="logo-badge"><i class="fas fa-gauge-high"></i></div>
+            <div class="logo-text">
+              <span class="logo-velocity">VELOCITY</span><span class="logo-auto">AUTO</span>
+              <span class="logo-tag">MOTORS</span>
+            </div>
+          </a>
+          <p class="footer-bio">
+            VelocityAuto Motors is America's foremost curator of bespoke supercars, exotic imports, and certified high-performance vehicles.
+          </p>
+          <div class="footer-social-links">
+            <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+            <a href="#" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+            <a href="#" aria-label="TikTok"><i class="fab fa-tiktok"></i></a>
+            <a href="#" aria-label="Twitter X"><i class="fab fa-x-twitter"></i></a>
+            <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+          </div>
+        </div>
+
+        <div class="footer-col">
+          <h4>Showroom Inventory</h4>
+          <ul class="footer-links">
+            <li><a href="#inventory"><i class="fas fa-chevron-right"></i> Supercar Fleet</a></li>
+            <li><a href="#inventory"><i class="fas fa-chevron-right"></i> Certified Pre-Owned</a></li>
+            <li><a href="#inventory"><i class="fas fa-chevron-right"></i> Electric & Hyper-EVs</a></li>
+            <li><a href="#inventory"><i class="fas fa-chevron-right"></i> Luxury Sedans & SUVs</a></li>
+            <li><a href="#inventory"><i class="fas fa-chevron-right"></i> Track Specials</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4>Client Services</h4>
+          <ul class="footer-links">
+            <li><a href="#financing"><i class="fas fa-chevron-right"></i> 1.9% APR Financing</a></li>
+            <li><a href="#why-us"><i class="fas fa-chevron-right"></i> 180-Point Inspection</a></li>
+            <li><a href="#why-us"><i class="fas fa-chevron-right"></i> 5-Year Extended Warranty</a></li>
+            <li><a href="#test-drive"><i class="fas fa-chevron-right"></i> VIP Test Drive Experience</a></li>
+            <li><a href="#why-us"><i class="fas fa-chevron-right"></i> Instant AI Trade-In Value</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4>Velocity VIP Club</h4>
+          <p class="footer-newsletter-text">Receive confidential first-look releases of newly consigned rare hypercars.</p>
+          <form class="footer-newsletter-form" id="newsletterForm">
+            <div class="newsletter-input-box">
+              <i class="fas fa-envelope"></i>
+              <input type="email" placeholder="Your VIP Email..." required />
+              <button type="submit" aria-label="Subscribe"><i class="fas fa-paper-plane"></i></button>
+            </div>
+          </form>
+          <div class="footer-hotline">
+            <i class="fas fa-headset"></i>
+            <div>
+              <span>24/7 Concierge Hotline</span>
+              <strong>+1 (800) 555-VELO</strong>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <div class="container footer-bottom-inner">
+        <p>&copy; 2026 VelocityAuto Motors, LLC. All rights reserved. Precision engineered for luxury enthusiasts.</p>
+        <div class="legal-links">
+          <a href="#">Privacy Policy</a>
+          <span>&bull;</span>
+          <a href="#">Terms of Sale</a>
+          <span>&bull;</span>
+          <a href="#">CARFAX Partnership</a>
+          <span>&bull;</span>
+          <a href="#">Financing Disclosure</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Scroll To Top Button -->
+  <button class="scroll-to-top" id="scrollTopBtn" aria-label="Scroll to top">
+    <i class="fas fa-arrow-up"></i>
+  </button>
+
+  <!-- Scripts -->
+  <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>

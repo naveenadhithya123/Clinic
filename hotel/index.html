@@ -1,0 +1,899 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Aurelia Grand Hotel | Luxury Coastal Boutique Resort &amp; Spa</title>
+  <meta name="description" content="Welcome to Aurelia Grand Hotel, an iconic five-star sanctuary on the Mediterranean coast. Featuring cliffside infinity pools, Michelin-starred gastronomy, and bespoke luxury suites." />
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;600;700;800&family=Cormorant+Garamond:ital,wght@0,500;0,600;0,700;1,400;1,600&family=Playfair+Display:ital,wght@0,600;0,700;1,400&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+  <!-- Font Awesome & AOS Animation -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+  <link rel="stylesheet" href="https://unpkg.com/aos@2.3.4/dist/aos.css" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- Backdrop Overlay for Mobile Drawer -->
+  <div class="nav-overlay" id="navOverlay"></div>
+
+  <!-- Top Bar -->
+  <div class="topbar">
+    <div class="container topbar-container">
+      <div class="topbar-info">
+        <span><i class="fas fa-phone-volume"></i> Direct Reservations: +1 (800) 888-AURELIA</span>
+        <span><i class="fas fa-envelope"></i> concierge@aureliagrand.com</span>
+      </div>
+      <div class="topbar-right">
+        <div class="resort-weather">
+          <i class="fas fa-sun" style="color:#f59e0b;"></i>
+          <span>Amalfi Riviera 24&deg;C &bull; Clear Skies</span>
+        </div>
+        <div class="topbar-socials">
+          <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+          <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+          <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Sticky Glass-Morphism Navbar -->
+  <nav class="navbar" id="navbar">
+    <div class="container nav-container">
+      <a href="#home" class="hotel-brand">
+        <div class="brand-monogram">AG</div>
+        <div class="brand-titles">
+          <span class="brand-name">AURELIA GRAND</span>
+          <span class="brand-sub">Boutique Resort &amp; Spa</span>
+        </div>
+      </a>
+
+      <!-- Mobile Hamburger Toggle -->
+      <button class="nav-toggle" id="navToggle" aria-label="Toggle Navigation">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+
+      <!-- Navigation Menu -->
+      <div class="nav-menu" id="navMenu">
+        <ul class="nav-links">
+          <li><a href="#home" class="nav-link active">Home</a></li>
+          <li><a href="#about" class="nav-link">About</a></li>
+          <li><a href="#rooms" class="nav-link">Rooms</a></li>
+          <li><a href="#amenities" class="nav-link">Amenities</a></li>
+          <li><a href="#gallery" class="nav-link">Gallery</a></li>
+          <li><a href="#offers" class="nav-link">Offers</a></li>
+          <li><a href="#reviews" class="nav-link">Reviews</a></li>
+          <li><a href="#contact" class="nav-link">Contact</a></li>
+        </ul>
+        <a href="#home" class="btn btn-gold btn-sm nav-cta-btn">
+          <i class="fas fa-calendar-check"></i> Book Your Stay
+        </a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Full-Screen Hero Section with Parallax Background -->
+  <section class="hero-section" id="home">
+    <div class="hero-parallax-bg"></div>
+    <div class="hero-overlay"></div>
+
+    <div class="container hero-content" data-aos="fade-up" data-aos-duration="1000">
+      <div class="hero-badge-top">
+        <i class="fas fa-gem"></i> The Leading Hotels of the World
+      </div>
+      <h1 class="hero-title">
+        A Sanctuary of <span class="gold-text">Coastal Splendor</span>
+      </h1>
+      <p class="hero-tagline">"Where Timeless Grandeur Meets the Whispering Sea"</p>
+      <div class="gold-divider">
+        <span class="divider-line"></span>
+        <span class="divider-diamond"></span>
+        <span class="divider-line"></span>
+      </div>
+      <p class="hero-desc">
+        Perched upon sun-drenched Mediterranean cliffs, Aurelia Grand Hotel invites you into a realm of bespoke butler service, private infinity suites, and holistic seaside rejuvenation.
+      </p>
+    </div>
+
+    <!-- Embedded Glass-Morphism Booking Bar / Widget -->
+    <div class="booking-widget-wrapper" data-aos="fade-up" data-aos-delay="200">
+      <div class="booking-glass-card">
+        <form id="bookingWidgetForm" class="booking-form-grid" novalidate>
+          <!-- Check-in Date -->
+          <div class="widget-field">
+            <label for="bookCheckin"><i class="fas fa-calendar-plus"></i> Check-in Date</label>
+            <div class="widget-input-wrap">
+              <input type="date" id="bookCheckin" name="checkin" class="widget-control" required />
+            </div>
+          </div>
+
+          <!-- Check-out Date -->
+          <div class="widget-field">
+            <label for="bookCheckout"><i class="fas fa-calendar-minus"></i> Check-out Date</label>
+            <div class="widget-input-wrap">
+              <input type="date" id="bookCheckout" name="checkout" class="widget-control" required />
+            </div>
+          </div>
+
+          <!-- Guests -->
+          <div class="widget-field">
+            <label for="bookGuests"><i class="fas fa-user-group"></i> Guests</label>
+            <select id="bookGuests" name="guests" class="widget-control">
+              <option value="1">1 Adult (Solo Stay)</option>
+              <option value="2" selected>2 Adults (Couples)</option>
+              <option value="3">2 Adults + 1 Child</option>
+              <option value="4">4 Guests (Family Suite)</option>
+            </select>
+          </div>
+
+          <!-- Room Category -->
+          <div class="widget-field">
+            <label for="bookRoom"><i class="fas fa-bed"></i> Room Type</label>
+            <select id="bookRoom" name="roomType" class="widget-control">
+              <option value="deluxe">Deluxe Ocean View ($480/nt)</option>
+              <option value="junior-suite">Mediterranean Suite ($750/nt)</option>
+              <option value="panoramic-suite">Grand Panoramic Suite ($1,250/nt)</option>
+              <option value="presidential">Presidential Penthouse ($2,400/nt)</option>
+            </select>
+          </div>
+
+          <!-- Submit Button -->
+          <button type="submit" class="btn btn-gold btn-search-booking">
+            <i class="fas fa-magnifying-glass"></i> Check Availability
+          </button>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- Booking Availability Result Modal -->
+  <div class="booking-modal" id="bookingModal">
+    <div class="modal-content-card">
+      <button class="modal-close-btn" id="modalCloseBtn" aria-label="Close">&times;</button>
+      <div class="modal-icon-wrap"><i class="fas fa-circle-check"></i></div>
+      <h3>Suites Available!</h3>
+      <p>We have reserved priority inventory for your requested dates.</p>
+
+      <div class="modal-summary-box">
+        <div class="modal-row">
+          <span>Priority Inquiry Code</span>
+          <span id="modalConfCode">AUR-942810</span>
+        </div>
+        <div class="modal-row">
+          <span>Selected Suite</span>
+          <span id="modalRoomName">Deluxe Ocean View Room</span>
+        </div>
+        <div class="modal-row">
+          <span>Duration</span>
+          <span id="modalDates">Oct 14 to Oct 17 (3 Nights)</span>
+        </div>
+        <div class="modal-row">
+          <span>Guests</span>
+          <span id="modalGuests">2 Adults</span>
+        </div>
+        <div class="modal-row">
+          <span>Estimated Total</span>
+          <span id="modalTotal" style="color:var(--gold-light); font-size:1.15rem; font-weight:700;">$1,440 USD</span>
+        </div>
+      </div>
+
+      <button class="btn btn-gold btn-block" id="modalDismissBtn">
+        <i class="fas fa-lock"></i> Proceed with Concierge Confirmation
+      </button>
+    </div>
+  </div>
+
+  <!-- About the Hotel Section -->
+  <section class="about-section" id="about">
+    <div class="container">
+      <div class="about-grid">
+        <div class="about-text-col" data-aos="fade-right">
+          <span class="section-tag">An Architectural Masterpiece</span>
+          <h2 class="section-title">A Century of Uncompromising Hospitality</h2>
+          <div class="gold-divider left">
+            <span class="divider-line"></span>
+            <span class="divider-diamond"></span>
+            <span class="divider-line"></span>
+          </div>
+
+          <p class="about-lead">
+            "At Aurelia Grand, every sunrise brings a canvas of azure waves, and every twilight is celebrated with chilled vintage champagne by the sea."
+          </p>
+
+          <p class="about-desc">
+            Constructed in 1922 as a private summer estate for European aristocracy, Aurelia Grand Hotel has been faithfully restored into a 5-star seaside retreat. Nestled against steep volcanic cliffs, the property cascades gracefully toward a private turquoise cove inaccessible to the public.
+          </p>
+          <p class="about-desc">
+            Here, classical Italian marble corridors, hand-loomed silk drapery, and scented citrus groves harmonize with modern biometric spa rituals and personalized 24-hour butler assistance.
+          </p>
+
+          <div class="about-features">
+            <div class="about-feat">
+              <i class="fas fa-water"></i>
+              <span>Private White-Sand Beach Cove</span>
+            </div>
+            <div class="about-feat">
+              <i class="fas fa-bell-concierge"></i>
+              <span>Dedicated 24/7 Butler Service</span>
+            </div>
+            <div class="about-feat">
+              <i class="fas fa-helicopter"></i>
+              <span>Private Coastal Helipad</span>
+            </div>
+            <div class="about-feat">
+              <i class="fas fa-sailboat"></i>
+              <span>Complimentary Yacht Excursions</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="about-visual-col" data-aos="fade-left" data-aos-delay="200">
+          <div class="about-img-box">
+            <img src="https://images.unsplash.com/photo-1566073771259-6a8506099945?auto=format&fit=crop&w=900&q=80" alt="Aurelia Grand Hotel Cliffside Estate" loading="lazy" />
+            <div class="about-floating-card">
+              <div>
+                <strong>Aurelia Grand Sanctuary</strong>
+                <span>Forbes Travel Guide 5-Star Rated</span>
+              </div>
+              <div class="card-stars">
+                <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Highlight Stats -->
+      <div class="stats-bar-grid" data-aos="fade-up">
+        <div class="stat-item">
+          <div class="stat-icon"><i class="fas fa-hotel"></i></div>
+          <div class="stat-number">120<span class="stat-plus">+</span></div>
+          <div class="stat-label">Luxury Suites &amp; Villas</div>
+          <div class="stat-sub">Each with private Mediterranean terrace</div>
+        </div>
+        <div class="stat-item">
+          <div class="stat-icon"><i class="fas fa-utensils"></i></div>
+          <div class="stat-number">4<span class="stat-plus">&starf;</span></div>
+          <div class="stat-label">Michelin Stars</div>
+          <div class="stat-sub">Across our oceanfront dining rooms</div>
+        </div>
+        <div class="stat-item">
+          <div class="stat-icon"><i class="fas fa-smile"></i></div>
+          <div class="stat-number">98.9<span class="stat-plus">%</span></div>
+          <div class="stat-label">Guest Satisfaction</div>
+          <div class="stat-sub">Verified Cond&eacute; Nast Traveler reviews</div>
+        </div>
+        <div class="stat-item">
+          <div class="stat-icon"><i class="fas fa-trophy"></i></div>
+          <div class="stat-number">38<span class="stat-plus">+</span></div>
+          <div class="stat-label">Global Accreditations</div>
+          <div class="stat-sub">Recognized for premier luxury wellness</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Room Types Section -->
+  <section class="rooms-section" id="rooms">
+    <div class="container">
+      <div class="section-header" data-aos="fade-up">
+        <span class="section-tag">Sanctuaries of Serenity</span>
+        <h2 class="section-title">Exquisite Suites &amp; Residences</h2>
+        <div class="gold-divider">
+          <span class="divider-line"></span>
+          <span class="divider-diamond"></span>
+          <span class="divider-line"></span>
+        </div>
+        <p class="section-subtitle">
+          Designed with French oak floors, hand-carved Italian marble bathrooms, and panoramic floor-to-ceiling vistas overlooking the sea.
+        </p>
+      </div>
+
+      <div class="rooms-grid">
+        <!-- Room 1: Deluxe Room -->
+        <div class="room-card" data-aos="fade-up" data-aos-delay="100">
+          <div class="room-img-wrap">
+            <img src="https://images.unsplash.com/photo-1590490360182-c33d57733427?auto=format&fit=crop&w=700&q=80" alt="Deluxe Ocean View Room" loading="lazy" />
+            <div class="room-badge">Ocean Facing</div>
+            <div class="room-price-tag">
+              <span class="price-val">$480</span>
+              <span class="price-unit">/ night</span>
+            </div>
+          </div>
+          <div class="room-details">
+            <h3 class="room-title">Deluxe Ocean View Room</h3>
+            <div class="room-specs-bar">
+              <span><i class="fas fa-user-group"></i> 2 Guests</span>
+              <span><i class="fas fa-bed"></i> 1 King Bed</span>
+              <span><i class="fas fa-maximize"></i> 550 sq ft</span>
+            </div>
+            <p class="room-desc">
+              Sun-drenched haven featuring an expansive private balcony, Italian rain shower, curated Nespresso bar, and acoustic soundproofing.
+            </p>
+            <ul class="room-amenities-list">
+              <li><i class="fas fa-check"></i> Private Sea Balcony</li>
+              <li><i class="fas fa-check"></i> Diptyque Bath Toiletries</li>
+              <li><i class="fas fa-check"></i> 65" OLED Bang &amp; Olufsen</li>
+              <li><i class="fas fa-check"></i> 24h In-Suite Dining</li>
+            </ul>
+            <button class="btn btn-gold btn-block room-book-btn" data-room="deluxe">
+              <i class="fas fa-calendar-check"></i> Book Now
+            </button>
+          </div>
+        </div>
+
+        <!-- Room 2: Suite -->
+        <div class="room-card" data-aos="fade-up" data-aos-delay="200">
+          <div class="room-img-wrap">
+            <img src="https://images.unsplash.com/photo-1582719478250-c89cae4dc85b?auto=format&fit=crop&w=700&q=80" alt="Mediterranean Junior Suite" loading="lazy" />
+            <div class="room-badge">Terrace &bull; Butler</div>
+            <div class="room-price-tag">
+              <span class="price-val">$750</span>
+              <span class="price-unit">/ night</span>
+            </div>
+          </div>
+          <div class="room-details">
+            <h3 class="room-title">Mediterranean Junior Suite</h3>
+            <div class="room-specs-bar">
+              <span><i class="fas fa-user-group"></i> 3 Guests</span>
+              <span><i class="fas fa-bed"></i> 1 King + Daybed</span>
+              <span><i class="fas fa-maximize"></i> 850 sq ft</span>
+            </div>
+            <p class="room-desc">
+              Spacious open-concept salon featuring hand-carved Calacatta marble soaking tub, walk-in dressing room, and sunset aperitivo terrace.
+            </p>
+            <ul class="room-amenities-list">
+              <li><i class="fas fa-check"></i> Deep Marble Soaking Tub</li>
+              <li><i class="fas fa-check"></i> Personal Butler Packing</li>
+              <li><i class="fas fa-check"></i> Complimentary Minibar</li>
+              <li><i class="fas fa-check"></i> Sunset Cocktail Service</li>
+            </ul>
+            <button class="btn btn-gold btn-block room-book-btn" data-room="junior-suite">
+              <i class="fas fa-calendar-check"></i> Book Now
+            </button>
+          </div>
+        </div>
+
+        <!-- Room 3: Presidential Suite -->
+        <div class="room-card" data-aos="fade-up" data-aos-delay="300">
+          <div class="room-img-wrap">
+            <img src="https://images.unsplash.com/photo-1631049307264-da0ec9d70304?auto=format&fit=crop&w=700&q=80" alt="Presidential Royal Penthouse" loading="lazy" />
+            <div class="room-badge">Private Pool &bull; Helipad</div>
+            <div class="room-price-tag">
+              <span class="price-val">$2,400</span>
+              <span class="price-unit">/ night</span>
+            </div>
+          </div>
+          <div class="room-details">
+            <h3 class="room-title">Presidential Royal Penthouse</h3>
+            <div class="room-specs-bar">
+              <span><i class="fas fa-user-group"></i> 6 Guests</span>
+              <span><i class="fas fa-bed"></i> 2 Master Kings</span>
+              <span><i class="fas fa-maximize"></i> 2,600 sq ft</span>
+            </div>
+            <p class="room-desc">
+              The crown jewel of Aurelia Grand. Entire top-floor penthouse with private heated plunge pool, Steinway grand piano, and dedicated chef.
+            </p>
+            <ul class="room-amenities-list">
+              <li><i class="fas fa-check"></i> Private Infinity Plunge Pool</li>
+              <li><i class="fas fa-check"></i> 24h Private Chef &amp; Butler</li>
+              <li><i class="fas fa-check"></i> Helicopter Airport Transfer</li>
+              <li><i class="fas fa-check"></i> Private Wine Tasting Room</li>
+            </ul>
+            <button class="btn btn-gold btn-block room-book-btn" data-room="presidential">
+              <i class="fas fa-calendar-check"></i> Book Now
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Amenities Section (Icon Grid) -->
+  <section class="amenities-section" id="amenities">
+    <div class="container">
+      <div class="section-header" data-aos="fade-up">
+        <span class="section-tag">Curated Privileges</span>
+        <h2 class="section-title">World-Class Resort Amenities</h2>
+        <div class="gold-divider">
+          <span class="divider-line"></span>
+          <span class="divider-diamond"></span>
+          <span class="divider-line"></span>
+        </div>
+        <p class="section-subtitle">
+          From cliff-edge heated waters to tailored Roman thermal baths, our amenities cater to your every desire.
+        </p>
+      </div>
+
+      <div class="amenities-grid">
+        <!-- Amenity 1: Pool -->
+        <div class="amenity-card" data-aos="fade-up" data-aos-delay="100">
+          <div class="amenity-icon-box"><i class="fas fa-water-ladder"></i></div>
+          <h3 class="amenity-title">Cliffside Infinity Pool</h3>
+          <p class="amenity-text">Heated seawater pool perched 150 meters above the bay with sunken daybeds and bar service.</p>
+        </div>
+
+        <!-- Amenity 2: Spa -->
+        <div class="amenity-card" data-aos="fade-up" data-aos-delay="150">
+          <div class="amenity-icon-box"><i class="fas fa-spa"></i></div>
+          <h3 class="amenity-title">Imperial Thermal Spa</h3>
+          <p class="amenity-text">Full sensory wellness sanctuary featuring Roman hydrotherapy circuits, cryotherapy, and herbal saunas.</p>
+        </div>
+
+        <!-- Amenity 3: WiFi -->
+        <div class="amenity-card" data-aos="fade-up" data-aos-delay="200">
+          <div class="amenity-icon-box"><i class="fas fa-wifi"></i></div>
+          <h3 class="amenity-title">Ultra High-Speed WiFi</h3>
+          <p class="amenity-text">Seamless gigabit fiber coverage across all suites, beach cabanas, gardens, and private yachts.</p>
+        </div>
+
+        <!-- Amenity 4: Restaurant -->
+        <div class="amenity-card" data-aos="fade-up" data-aos-delay="250">
+          <div class="amenity-icon-box"><i class="fas fa-utensils"></i></div>
+          <h3 class="amenity-title">3 Michelin Restaurant</h3>
+          <p class="amenity-text">Fine dining at 'Le Mirage' helmed by Master Chef Christian Vautier with rare vintage cellar pairings.</p>
+        </div>
+
+        <!-- Amenity 5: Gym -->
+        <div class="amenity-card" data-aos="fade-up" data-aos-delay="300">
+          <div class="amenity-icon-box"><i class="fas fa-dumbbell"></i></div>
+          <h3 class="amenity-title">Panoramic Fitness Club</h3>
+          <p class="amenity-text">State-of-the-art Technogym equipment with floor-to-ceiling sea vistas and resident personal trainers.</p>
+        </div>
+
+        <!-- Amenity 6: Parking -->
+        <div class="amenity-card" data-aos="fade-up" data-aos-delay="350">
+          <div class="amenity-icon-box"><i class="fas fa-car-side"></i></div>
+          <h3 class="amenity-title">Valet &amp; Chauffeur</h3>
+          <p class="amenity-text">Complimentary underground secure parking, EV superchargers, and on-demand Mercedes-Maybach fleet.</p>
+        </div>
+
+        <!-- Amenity 7: Private Beach -->
+        <div class="amenity-card" data-aos="fade-up" data-aos-delay="400">
+          <div class="amenity-icon-box"><i class="fas fa-umbrella-beach"></i></div>
+          <h3 class="amenity-title">Private Beach &amp; Cabanas</h3>
+          <p class="amenity-text">Reserved teak sun loungers, towel service, watersports, and beachfront champagne butler service.</p>
+        </div>
+
+        <!-- Amenity 8: Concierge -->
+        <div class="amenity-card" data-aos="fade-up" data-aos-delay="450">
+          <div class="amenity-icon-box"><i class="fas fa-bell-concierge"></i></div>
+          <h3 class="amenity-title">Clefs d'Or Concierge</h3>
+          <p class="amenity-text">24/7 dedicated assistance for helicopter tours, opera tickets, private island access, and bespoke charters.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Photo Gallery with Lightbox -->
+  <section class="gallery-section" id="gallery">
+    <div class="container">
+      <div class="section-header" data-aos="fade-up">
+        <span class="section-tag">A Glimpse of Paradise</span>
+        <h2 class="section-title">The Aurelia Visual Journey</h2>
+        <div class="gold-divider">
+          <span class="divider-line"></span>
+          <span class="divider-diamond"></span>
+          <span class="divider-line"></span>
+        </div>
+        <p class="section-subtitle">
+          Explore the architectural grandeur, serene vistas, and unforgettable moments that define our resort.
+        </p>
+      </div>
+
+      <div class="gallery-grid" data-aos="fade-up" data-aos-delay="100">
+        <!-- Gallery 1 -->
+        <div class="gallery-item" data-title="Cliffside Seawater Pool" data-desc="Sunset over the infinity pool with uninterrupted views of the azure horizon.">
+          <img src="https://images.unsplash.com/photo-1540555700478-4be289fbecef?auto=format&fit=crop&w=600&q=80" alt="Infinity Pool" loading="lazy" />
+          <div class="gallery-overlay">
+            <div class="gallery-icon-view"><i class="fas fa-magnifying-glass-plus"></i></div>
+            <div class="gallery-caption">
+              <h4>Cliffside Infinity Pool</h4>
+              <span>Panoramic Sunset Vista</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Gallery 2 -->
+        <div class="gallery-item" data-title="Presidential Suite Interior" data-desc="Italian silk drapery, French oak finishes, and bespoke artisan chandeliers.">
+          <img src="https://images.unsplash.com/photo-1618773928121-c32242e63f39?auto=format&fit=crop&w=600&q=80" alt="Presidential Suite" loading="lazy" />
+          <div class="gallery-overlay">
+            <div class="gallery-icon-view"><i class="fas fa-magnifying-glass-plus"></i></div>
+            <div class="gallery-caption">
+              <h4>Presidential Salon</h4>
+              <span>Bespoke Interior Craftsmanship</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Gallery 3 -->
+        <div class="gallery-item" data-title="Champagne Terrace Breakfast" data-desc="Freshly baked organic viennoiserie, wild berries, and vintage champagne served in-suite.">
+          <img src="https://images.unsplash.com/photo-1533105079780-92b9be482077?auto=format&fit=crop&w=600&q=80" alt="Terrace Breakfast" loading="lazy" />
+          <div class="gallery-overlay">
+            <div class="gallery-icon-view"><i class="fas fa-magnifying-glass-plus"></i></div>
+            <div class="gallery-caption">
+              <h4>Terrace Morning Breakfast</h4>
+              <span>Private Balcony Dining</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Gallery 4 -->
+        <div class="gallery-item" data-title="Imperial Spa Thermal Baths" data-desc="Roman hydrotherapy pool fed by mineral-rich geothermal springs.">
+          <img src="https://images.unsplash.com/photo-1544161515-4ab6ce6db874?auto=format&fit=crop&w=600&q=80" alt="Thermal Spa" loading="lazy" />
+          <div class="gallery-overlay">
+            <div class="gallery-icon-view"><i class="fas fa-magnifying-glass-plus"></i></div>
+            <div class="gallery-caption">
+              <h4>The Thermal Sanctuary</h4>
+              <span>Holistic Wellness &amp; Hydrotherapy</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Gallery 5 -->
+        <div class="gallery-item" data-title="Calacatta Marble Bathroom" data-desc="Freestanding soaking tub with panoramic ocean view and Diptyque bath salts.">
+          <img src="https://images.unsplash.com/photo-1584622650111-993a426fbf0a?auto=format&fit=crop&w=600&q=80" alt="Marble Bathroom" loading="lazy" />
+          <div class="gallery-overlay">
+            <div class="gallery-icon-view"><i class="fas fa-magnifying-glass-plus"></i></div>
+            <div class="gallery-caption">
+              <h4>Artisan Marble Spa Bath</h4>
+              <span>In-Suite Serenity</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Gallery 6 -->
+        <div class="gallery-item" data-title="Sunset Yacht Excursion" data-desc="Our private 75ft Riva yacht returning to the Aurelia Grand marina at dusk.">
+          <img src="https://images.unsplash.com/photo-1506929562872-bb421503ef21?auto=format&fit=crop&w=600&q=80" alt="Sunset Yacht" loading="lazy" />
+          <div class="gallery-overlay">
+            <div class="gallery-icon-view"><i class="fas fa-magnifying-glass-plus"></i></div>
+            <div class="gallery-caption">
+              <h4>Riva Yacht Charter</h4>
+              <span>Private Coastal Excursions</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Gallery 7 -->
+        <div class="gallery-item" data-title="Michelin Gastronomy" data-desc="Delicate plating at Le Mirage featuring Brittany lobster and gold leaf.">
+          <img src="https://images.unsplash.com/photo-1550966871-3ed3cdb5ed0c?auto=format&fit=crop&w=600&q=80" alt="Fine Dining" loading="lazy" />
+          <div class="gallery-overlay">
+            <div class="gallery-icon-view"><i class="fas fa-magnifying-glass-plus"></i></div>
+            <div class="gallery-caption">
+              <h4>Culinary Haute Art</h4>
+              <span>Le Mirage 3-Star Dining</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Gallery 8 -->
+        <div class="gallery-item" data-title="Private Beach Cabana" data-desc="Secluded seaside daybeds with chilled towels and refreshing fruit skewers.">
+          <img src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=600&q=80" alt="Beach Cabana" loading="lazy" />
+          <div class="gallery-overlay">
+            <div class="gallery-icon-view"><i class="fas fa-magnifying-glass-plus"></i></div>
+            <div class="gallery-caption">
+              <h4>Cove Beach Haven</h4>
+              <span>Exclusive Private Shoreline</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Lightbox Pop-up Modal -->
+  <div class="gallery-lightbox" id="hotelLightbox">
+    <div class="lightbox-card">
+      <button class="lightbox-close-btn" id="lightboxClose" aria-label="Close Lightbox">&times;</button>
+      <div class="lightbox-img-wrap">
+        <img src="" alt="" id="lightboxImg" />
+      </div>
+      <div class="lightbox-caption-wrap">
+        <h4 id="lightboxTitle">Aurelia Grand Hotel</h4>
+        <p id="lightboxDesc"></p>
+      </div>
+    </div>
+  </div>
+
+  <!-- Special Offers / Packages Section -->
+  <section class="offers-section" id="offers">
+    <div class="container">
+      <div class="section-header" data-aos="fade-up">
+        <span class="section-tag">Curated Experiences</span>
+        <h2 class="section-title">Exclusive Seasonal Packages</h2>
+        <div class="gold-divider">
+          <span class="divider-line"></span>
+          <span class="divider-diamond"></span>
+          <span class="divider-line"></span>
+        </div>
+        <p class="section-subtitle">
+          Hand-crafted retreats combining luxury suite accommodations, Michelin-starred tastings, and wellness immersions.
+        </p>
+      </div>
+
+      <div class="offers-grid">
+        <!-- Offer 1 -->
+        <div class="offer-card" data-aos="fade-up" data-aos-delay="100">
+          <div class="offer-banner">
+            <img src="https://images.unsplash.com/photo-1520250497591-112f2f40a3f4?auto=format&fit=crop&w=600&q=80" alt="Romantic Escape" loading="lazy" />
+            <div class="offer-tag-badge">Popular Package</div>
+          </div>
+          <div class="offer-body">
+            <h3 class="offer-title">The Romantic Riviera Escape</h3>
+            <p class="offer-desc">A timeless romantic getaway tailored for couples celebrating anniversaries, honeymoons, or intimate moments.</p>
+            <ul class="offer-inclusions">
+              <li><i class="fas fa-check"></i> Chilled Dom P&eacute;rignon on Arrival</li>
+              <li><i class="fas fa-check"></i> 60-Minute Couples Aromatherapy Spa</li>
+              <li><i class="fas fa-check"></i> 4-Course Candlelit Beach Dinner</li>
+              <li><i class="fas fa-check"></i> Guaranteed 4:00 PM Late Check-out</li>
+            </ul>
+            <button class="btn btn-gold btn-block claim-offer-btn" data-offer="The Romantic Riviera Escape">
+              <i class="fas fa-gift"></i> Inquire Package
+            </button>
+          </div>
+        </div>
+
+        <!-- Offer 2 -->
+        <div class="offer-card" data-aos="fade-up" data-aos-delay="200">
+          <div class="offer-banner">
+            <img src="https://images.unsplash.com/photo-1544161515-4ab6ce6db874?auto=format&fit=crop&w=600&q=80" alt="Thermal Wellness Retreat" loading="lazy" />
+            <div class="offer-tag-badge">Wellness Focus</div>
+          </div>
+          <div class="offer-body">
+            <h3 class="offer-title">Thermal &amp; Holistic Rejuvenation</h3>
+            <p class="offer-desc">Rebalance body and mind with thermal mineral baths, tailor-made wellness consultations, and organic cuisine.</p>
+            <ul class="offer-inclusions">
+              <li><i class="fas fa-check"></i> Daily Thermal Hydrotherapy Circuit</li>
+              <li><i class="fas fa-check"></i> Bespoke Biometric Health Consultation</li>
+              <li><i class="fas fa-check"></i> Daily Organic Cold-Pressed Juices</li>
+              <li><i class="fas fa-check"></i> Sunrise Seaside Yoga &amp; Meditation</li>
+            </ul>
+            <button class="btn btn-gold btn-block claim-offer-btn" data-offer="Thermal &amp; Holistic Rejuvenation">
+              <i class="fas fa-gift"></i> Inquire Package
+            </button>
+          </div>
+        </div>
+
+        <!-- Offer 3 -->
+        <div class="offer-card" data-aos="fade-up" data-aos-delay="300">
+          <div class="offer-banner">
+            <img src="https://images.unsplash.com/photo-1510812431401-41d2bd2722f3?auto=format&fit=crop&w=600&q=80" alt="Haute Gastronomie Weekend" loading="lazy" />
+            <div class="offer-tag-badge">Epicurean Choice</div>
+          </div>
+          <div class="offer-body">
+            <h3 class="offer-title">The Haute Gastronomie Weekend</h3>
+            <p class="offer-desc">An immersive journey for food and wine connoisseurs with access to private cellar reserves and chef masterclasses.</p>
+            <ul class="offer-inclusions">
+              <li><i class="fas fa-check"></i> Chef's Table 7-Course Degustation</li>
+              <li><i class="fas fa-check"></i> Sommelier Guided Wine Cellar Tour</li>
+              <li><i class="fas fa-check"></i> Caviar &amp; Champagne Masterclass</li>
+              <li><i class="fas fa-check"></i> Signed Keepsake Menu by Master Chef</li>
+            </ul>
+            <button class="btn btn-gold btn-block claim-offer-btn" data-offer="The Haute Gastronomie Weekend">
+              <i class="fas fa-gift"></i> Inquire Package
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Guest Testimonials Slider -->
+  <section class="testimonials-section" id="reviews">
+    <div class="testimonials-backdrop"></div>
+    <div class="container" style="position:relative; z-index:2;">
+      <div class="section-header" data-aos="fade-up">
+        <span class="section-tag">Distinguished Praise</span>
+        <h2 class="section-title">Reflections of Elegance</h2>
+        <div class="gold-divider">
+          <span class="divider-line"></span>
+          <span class="divider-diamond"></span>
+          <span class="divider-line"></span>
+        </div>
+        <p class="section-subtitle">
+          Words from discerning international travelers, critics, and guests who have experienced Aurelia Grand.
+        </p>
+      </div>
+
+      <div class="testimonials-slider-box" data-aos="fade-up" data-aos-delay="150">
+        <div class="testimonials-track" id="testimonialsTrack">
+          <!-- Slide 1 -->
+          <div class="testimonial-card">
+            <div class="test-quote-mark"><i class="fas fa-quote-left"></i></div>
+            <div class="test-stars">
+              <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+            </div>
+            <p class="test-quote">
+              "Aurelia Grand Hotel is the pinnacle of European hospitality. Waking up to the azure horizon in the Grand Panoramic Suite with a warm sea breeze is an experience that lingers forever."
+            </p>
+            <div class="test-reviewer-info">
+              <h4>Henrietta St. Clair</h4>
+              <span>Senior Travel Editor &bull; Cond&eacute; Nast Traveler UK</span>
+            </div>
+          </div>
+
+          <!-- Slide 2 -->
+          <div class="testimonial-card">
+            <div class="test-quote-mark"><i class="fas fa-quote-left"></i></div>
+            <div class="test-stars">
+              <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+            </div>
+            <p class="test-quote">
+              "From our private helicopter arrival to the bespoke tasting dinner on the beach cove, the discreet attention of the butler staff made our honeymoon utterly magical. Truly five stars in every detail."
+            </p>
+            <div class="test-reviewer-info">
+              <h4>Maximilian &amp; Sofia von Berg</h4>
+              <span>Private Guests &bull; Zurich, Switzerland</span>
+            </div>
+          </div>
+
+          <!-- Slide 3 -->
+          <div class="testimonial-card">
+            <div class="test-quote-mark"><i class="fas fa-quote-left"></i></div>
+            <div class="test-stars">
+              <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+            </div>
+            <p class="test-quote">
+              "The Imperial Thermal Spa and Roman hydrotherapy circuits rival any luxury resort in the world. Chef Vautier's dining at Le Mirage is sublime. Aurelia Grand is our annual sanctuary."
+            </p>
+            <div class="test-reviewer-info">
+              <h4>Lord Harrison Sterling</h4>
+              <span>Forbes Travel Guide Connoisseur &bull; London, UK</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Slider Navigation Controls -->
+        <div class="test-controls-row">
+          <button class="test-arrow-btn" id="testPrevBtn" aria-label="Previous Review"><i class="fas fa-chevron-left"></i></button>
+          <div class="test-dots-wrap" id="testDots"></div>
+          <button class="test-arrow-btn" id="testNextBtn" aria-label="Next Review"><i class="fas fa-chevron-right"></i></button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Newsletter Signup with Subtle Background Animation -->
+  <section class="newsletter-section">
+    <div class="newsletter-animated-glow"></div>
+    <div class="container newsletter-content-wrap" data-aos="zoom-in">
+      <span class="section-tag" style="color:var(--gold-light);">The Aurelia Priv&eacute; Guild</span>
+      <h2 class="section-title">Receive Private Salon Invitations</h2>
+      <div class="gold-divider">
+        <span class="divider-line"></span>
+        <span class="divider-diamond"></span>
+        <span class="divider-line"></span>
+      </div>
+      <p>
+        Subscribe to unlock seasonal suite privileges, complimentary yacht upgrade credits, and private concierge invitations.
+      </p>
+
+      <form id="newsletterForm">
+        <div class="newsletter-form-row">
+          <input type="email" id="newsletterEmail" class="newsletter-input" placeholder="Enter your email address" required />
+          <button type="submit" class="btn btn-gold btn-sm">Request Invitation</button>
+        </div>
+        <span id="newsletterFeedback" class="newsletter-feedback"></span>
+      </form>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer" id="contact">
+    <div class="container footer-top">
+      <div class="footer-grid">
+        <!-- Col 1: Brand & Overview -->
+        <div class="footer-col footer-brand">
+          <div class="hotel-brand" style="margin-bottom:18px;">
+            <div class="brand-monogram">AG</div>
+            <div class="brand-titles">
+              <span class="brand-name">AURELIA GRAND</span>
+              <span class="brand-sub">Boutique Resort &amp; Spa</span>
+            </div>
+          </div>
+          <p class="footer-desc">
+            An iconic sanctuary of coastal grandeur, Michelin-caliber gastronomy, and bespoke butler service perched upon the Mediterranean cliffs.
+          </p>
+          <div class="footer-social-links">
+            <a href="#" class="footer-social-btn" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+            <a href="#" class="footer-social-btn" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+            <a href="#" class="footer-social-btn" aria-label="TripAdvisor"><i class="fab fa-tripadvisor"></i></a>
+            <a href="#" class="footer-social-btn" aria-label="Forbes Travel Guide"><i class="fas fa-award"></i></a>
+          </div>
+        </div>
+
+        <!-- Col 2: Navigation Links -->
+        <div class="footer-col">
+          <h4>Navigation</h4>
+          <ul class="footer-links">
+            <li><a href="#home"><i class="fas fa-angle-right"></i> Home &amp; Booking</a></li>
+            <li><a href="#about"><i class="fas fa-angle-right"></i> The Estate Heritage</a></li>
+            <li><a href="#rooms"><i class="fas fa-angle-right"></i> Suites &amp; Residences</a></li>
+            <li><a href="#amenities"><i class="fas fa-angle-right"></i> Resort Amenities</a></li>
+            <li><a href="#gallery"><i class="fas fa-angle-right"></i> Visual Gallery</a></li>
+            <li><a href="#offers"><i class="fas fa-angle-right"></i> Curated Packages</a></li>
+            <li><a href="#reviews"><i class="fas fa-angle-right"></i> Guest Reviews</a></li>
+          </ul>
+        </div>
+
+        <!-- Col 3: Curated Experiences -->
+        <div class="footer-col">
+          <h4>Privileges</h4>
+          <ul class="footer-links">
+            <li><a href="#amenities"><i class="fas fa-angle-right"></i> Imperial Thermal Spa</a></li>
+            <li><a href="#amenities"><i class="fas fa-angle-right"></i> Le Mirage 3-Star Dining</a></li>
+            <li><a href="#amenities"><i class="fas fa-angle-right"></i> Riva Yacht Charter</a></li>
+            <li><a href="#amenities"><i class="fas fa-angle-right"></i> Private Beach Cabanas</a></li>
+            <li><a href="#amenities"><i class="fas fa-angle-right"></i> Coastal Helipad Service</a></li>
+            <li><a href="#amenities"><i class="fas fa-angle-right"></i> Clefs d'Or Concierge</a></li>
+          </ul>
+        </div>
+
+        <!-- Col 4: Contact Details & Map -->
+        <div class="footer-col">
+          <h4>Contact &amp; Location</h4>
+          <ul class="footer-contact-details">
+            <li>
+              <i class="fas fa-location-dot"></i>
+              <span>Via Panoramica 114, Cliffside Overlook, Amalfi Riviera, Italy</span>
+            </li>
+            <li>
+              <i class="fas fa-phone"></i>
+              <span>Direct Concierge: +1 (800) 888-AURELIA</span>
+            </li>
+            <li>
+              <i class="fas fa-envelope"></i>
+              <span>reservations@aureliagrand.com</span>
+            </li>
+          </ul>
+
+          <!-- Google Map Embed Placeholder -->
+          <div class="map-embed-box">
+            <iframe 
+              title="Aurelia Grand Location Map" 
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d12111.458994537659!2d14.59666992984924!3d40.63412571253246!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x133b946850c9533f%3A0xc0ebf35659835ec9!2sAmalfi%2C%20Salerno%2C%20Italy!5e0!3m2!1sen!2sus!4v1700000000000!5m2!1sen!2sus" 
+              width="100%" 
+              height="115" 
+              style="border:0;" 
+              allowfullscreen="" 
+              loading="lazy" 
+              referrerpolicy="no-referrer-when-downgrade">
+            </iframe>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <div class="footer-bottom-flex">
+          <p>&copy; 2026 Aurelia Grand Hotel &amp; Luxury Resorts International. All rights reserved.</p>
+          <div class="footer-bottom-links">
+            <a href="#">Privacy Policy</a>
+            <span>&bull;</span>
+            <a href="#">Booking Terms</a>
+            <span>&bull;</span>
+            <a href="#">Concierge Ethics</a>
+            <span>&bull;</span>
+            <a href="#">Accessibility</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Scroll to Top Gold Button -->
+  <button class="scroll-top-btn" id="scrollTopBtn" aria-label="Return to top">
+    <i class="fas fa-arrow-up"></i>
+  </button>
+
+  <!-- External JS Libraries -->
+  <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>

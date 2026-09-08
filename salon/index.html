@@ -1,0 +1,822 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>The Fade Room | Premier Salon &amp; Luxury Barber Studio</title>
+  <meta name="description" content="The Fade Room offers master craftsmanship in precision fades, executive beard styling, avant-garde hair coloring, and rejuvenating head spa treatments." />
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@500;600;700&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&family=Syne:wght@600;700;800&display=swap" rel="stylesheet">
+
+  <!-- Font Awesome & AOS Animation Library -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+  <link rel="stylesheet" href="https://unpkg.com/aos@2.3.4/dist/aos.css" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- Backdrop Overlay for Mobile Drawer -->
+  <div class="nav-overlay" id="navOverlay"></div>
+
+  <!-- Sticky Navbar -->
+  <nav class="navbar" id="navbar">
+    <div class="container nav-container">
+      <a href="#home" class="brand-logo">
+        <div class="logo-icon-box">
+          <i class="fas fa-scissors"></i>
+        </div>
+        <div class="brand-titles">
+          <span class="brand-name">THE FADE ROOM</span>
+          <span class="brand-tag">Salon &bull; Barber Studio</span>
+        </div>
+      </a>
+
+      <!-- Mobile Hamburger Toggle -->
+      <button class="nav-toggle" id="navToggle" aria-label="Toggle Navigation">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+
+      <!-- Navigation Menu -->
+      <div class="nav-menu" id="navMenu">
+        <ul class="nav-links">
+          <li><a href="#home" class="nav-link active">Home</a></li>
+          <li><a href="#services" class="nav-link">Services</a></li>
+          <li><a href="#stylists" class="nav-link">Stylists</a></li>
+          <li><a href="#gallery" class="nav-link">Gallery</a></li>
+          <li><a href="#pricing" class="nav-link">Pricing</a></li>
+          <li><a href="#booking" class="nav-link">Book Now</a></li>
+          <li><a href="#contact" class="nav-link">Contact</a></li>
+        </ul>
+        <a href="#booking" class="btn btn-copper btn-sm nav-cta-btn">
+          <i class="fas fa-calendar-check"></i> Book Appointment
+        </a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <section class="hero-section" id="home">
+    <div class="container">
+      <div class="hero-grid">
+        <div class="hero-content" data-aos="fade-right" data-aos-duration="1000">
+          <div class="hero-badge-top">
+            <i class="fas fa-crown"></i> Awarded Best Studio 2025
+          </div>
+          <h1 class="hero-title">
+            Precision Craft. <br />
+            <span class="copper-text">Elevated Grooming.</span>
+          </h1>
+          <p class="hero-subtitle">
+            Where old-school barber mastery meets contemporary hair fashion. Experience tailored razor fades, custom balayage, hot towel rituals, and bespoke VIP styling.
+          </p>
+          <div class="hero-actions">
+            <a href="#booking" class="btn btn-copper btn-lg">
+              <i class="fas fa-calendar-plus"></i> Book an Appointment
+            </a>
+            <a href="#services" class="btn btn-outline-copper btn-lg">
+              <i class="fas fa-scissors"></i> View Services
+            </a>
+          </div>
+
+          <div class="hero-stats-row">
+            <div class="h-stat">
+              <strong>12<span>+</span></strong>
+              <span>Years of Mastery</span>
+            </div>
+            <div class="h-stat">
+              <strong>25K<span>+</span></strong>
+              <span>Precision Fades</span>
+            </div>
+            <div class="h-stat">
+              <strong>4.9<span>&starf;</span></strong>
+              <span>From 1,200+ Reviews</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="hero-visual" data-aos="fade-left" data-aos-duration="1000" data-aos-delay="200">
+          <div class="hero-img-box">
+            <img src="https://images.unsplash.com/photo-1503951914875-452162b0f3f1?auto=format&fit=crop&w=800&q=80" alt="The Fade Room Master Barber" loading="lazy" />
+          </div>
+
+          <!-- Floating Badges -->
+          <div class="hero-float-card card-top">
+            <div class="float-icon"><i class="fas fa-award"></i></div>
+            <div>
+              <strong>Master Artisans</strong>
+              <span>Licensed Colorists &amp; Barbers</span>
+            </div>
+          </div>
+
+          <div class="hero-float-card card-bottom">
+            <div class="float-icon"><i class="fas fa-clock"></i></div>
+            <div>
+              <strong>Walk-ins Welcome</strong>
+              <span>Appointments Prioritized</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Services Section -->
+  <section class="services-section" id="services">
+    <div class="container">
+      <div class="section-header" data-aos="fade-up">
+        <span class="section-tag">Signature Offerings</span>
+        <h2 class="section-title">Crafted Grooming &amp; Styling Services</h2>
+        <div class="copper-divider">
+          <span class="divider-line"></span>
+          <i class="fas fa-scissors divider-scissor"></i>
+          <span class="divider-line"></span>
+        </div>
+        <p class="section-subtitle">
+          Every service includes a tailored style consultation, organic botanical wash, and precision styling.
+        </p>
+      </div>
+
+      <div class="services-grid">
+        <!-- Service 1: Haircut -->
+        <div class="service-card" data-aos="fade-up" data-aos-delay="100">
+          <div class="service-thumb">
+            <img src="https://images.unsplash.com/photo-1622286342621-4bd786c2447c?auto=format&fit=crop&w=600&q=80" alt="Precision Haircut" loading="lazy" />
+            <span class="service-category-tag">Barber Classic</span>
+            <span class="service-price-badge">$45</span>
+          </div>
+          <div class="service-body">
+            <h3 class="service-title">Signature Fade &amp; Haircut</h3>
+            <div class="service-meta">
+              <span><i class="fas fa-clock"></i> 45 Mins</span>
+              <span><i class="fas fa-shower"></i> Includes Wash &amp; Style</span>
+            </div>
+            <p class="service-desc">
+              Custom skin tapers, low/mid/high fades, and textured scissor top work finished with straight-razor neck outline and hot lather.
+            </p>
+            <button class="btn btn-copper btn-block service-book-btn" data-service="haircut">
+              <i class="fas fa-calendar-check"></i> Book Service
+            </button>
+          </div>
+        </div>
+
+        <!-- Service 2: Beard Trim -->
+        <div class="service-card" data-aos="fade-up" data-aos-delay="200">
+          <div class="service-thumb">
+            <img src="https://images.unsplash.com/photo-1503951914875-452162b0f3f1?auto=format&fit=crop&w=600&q=80" alt="Beard Trim & Hot Towel" loading="lazy" />
+            <span class="service-category-tag">Facial Grooming</span>
+            <span class="service-price-badge">$35</span>
+          </div>
+          <div class="service-body">
+            <h3 class="service-title">Hot Towel Beard Sculpting</h3>
+            <div class="service-meta">
+              <span><i class="fas fa-clock"></i> 35 Mins</span>
+              <span><i class="fas fa-fire"></i> 2 Hot Towels</span>
+            </div>
+            <p class="service-desc">
+              Precision clipper sculpting, foil fade blending, organic eucalyptus hot towel treatment, and nourishing argan beard oil massage.
+            </p>
+            <button class="btn btn-copper btn-block service-book-btn" data-service="beard">
+              <i class="fas fa-calendar-check"></i> Book Service
+            </button>
+          </div>
+        </div>
+
+        <!-- Service 3: Hair Coloring -->
+        <div class="service-card" data-aos="fade-up" data-aos-delay="300">
+          <div class="service-thumb">
+            <img src="https://images.unsplash.com/photo-1560066984-138dadb4c035?auto=format&fit=crop&w=600&q=80" alt="Hair Coloring" loading="lazy" />
+            <span class="service-category-tag">Salon Color</span>
+            <span class="service-price-badge">$120</span>
+          </div>
+          <div class="service-body">
+            <h3 class="service-title">Hair Coloring &amp; Balayage</h3>
+            <div class="service-meta">
+              <span><i class="fas fa-clock"></i> 90 Mins</span>
+              <span><i class="fas fa-wand-magic-sparkles"></i> Custom Tones</span>
+            </div>
+            <p class="service-desc">
+              Full dimensional highlights, platinum bleaching, ash tone balayage, or gray blending using ammonia-free Italian organic dyes.
+            </p>
+            <button class="btn btn-copper btn-block service-book-btn" data-service="color">
+              <i class="fas fa-calendar-check"></i> Book Service
+            </button>
+          </div>
+        </div>
+
+        <!-- Service 4: Facial -->
+        <div class="service-card" data-aos="fade-up" data-aos-delay="400">
+          <div class="service-thumb">
+            <img src="https://images.unsplash.com/photo-1570172619644-dfd03ed5d881?auto=format&fit=crop&w=600&q=80" alt="Deep Cleansing Facial" loading="lazy" />
+            <span class="service-category-tag">Skin Therapy</span>
+            <span class="service-price-badge">$65</span>
+          </div>
+          <div class="service-body">
+            <h3 class="service-title">Deep Pore Detox Facial</h3>
+            <div class="service-meta">
+              <span><i class="fas fa-clock"></i> 45 Mins</span>
+              <span><i class="fas fa-spa"></i> Charcoal Mask</span>
+            </div>
+            <p class="service-desc">
+              Exfoliating enzyme peel, ultrasonic pore vacuum extraction, volcanic charcoal mask, and cold stone lymphatic massage.
+            </p>
+            <button class="btn btn-copper btn-block service-book-btn" data-service="facial">
+              <i class="fas fa-calendar-check"></i> Book Service
+            </button>
+          </div>
+        </div>
+
+        <!-- Service 5: Bridal Makeup -->
+        <div class="service-card" data-aos="fade-up" data-aos-delay="500">
+          <div class="service-thumb">
+            <img src="https://images.unsplash.com/photo-1487412720507-e7ab37603c6f?auto=format&fit=crop&w=600&q=80" alt="Bridal Makeup" loading="lazy" />
+            <span class="service-category-tag">Glamour &amp; Bridal</span>
+            <span class="service-price-badge">$150</span>
+          </div>
+          <div class="service-body">
+            <h3 class="service-title">Bridal &amp; Event Makeup</h3>
+            <div class="service-meta">
+              <span><i class="fas fa-clock"></i> 75 Mins</span>
+              <span><i class="fas fa-gem"></i> HD Airbrushing</span>
+            </div>
+            <p class="service-desc">
+              Long-wear HD airbrush application, luxury mink lash setting, custom contouring, and bridal skin prep with luminous radiance.
+            </p>
+            <button class="btn btn-copper btn-block service-book-btn" data-service="makeup">
+              <i class="fas fa-calendar-check"></i> Book Service
+            </button>
+          </div>
+        </div>
+
+        <!-- Service 6: Head Spa -->
+        <div class="service-card" data-aos="fade-up" data-aos-delay="600">
+          <div class="service-thumb">
+            <img src="https://images.unsplash.com/photo-1519699047748-de8e457a634e?auto=format&fit=crop&w=600&q=80" alt="Scalp Detox Spa" loading="lazy" />
+            <span class="service-category-tag">Wellness Spa</span>
+            <span class="service-price-badge">$55</span>
+          </div>
+          <div class="service-body">
+            <h3 class="service-title">Scalp Detox &amp; Head Spa</h3>
+            <div class="service-meta">
+              <span><i class="fas fa-clock"></i> 40 Mins</span>
+              <span><i class="fas fa-hands"></i> Acupressure Massage</span>
+            </div>
+            <p class="service-desc">
+              Japanese scalp rejuvenation, exfoliating tea tree scrub, warm herbal steam infusion, and neck &amp; shoulder tension release massage.
+            </p>
+            <button class="btn btn-copper btn-block service-book-btn" data-service="spa">
+              <i class="fas fa-calendar-check"></i> Book Service
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Stylists & Barber Team Section -->
+  <section class="stylists-section" id="stylists">
+    <div class="container">
+      <div class="section-header" data-aos="fade-up">
+        <span class="section-tag">The Masters Behind The Chair</span>
+        <h2 class="section-title">Meet Our Master Stylists</h2>
+        <div class="copper-divider">
+          <span class="divider-line"></span>
+          <i class="fas fa-scissors divider-scissor"></i>
+          <span class="divider-line"></span>
+        </div>
+        <p class="section-subtitle">
+          Internationally certified, trendsetting artists dedicated to personalizing your signature look.
+        </p>
+      </div>
+
+      <div class="stylists-grid">
+        <!-- Stylist 1 -->
+        <div class="stylist-card" data-aos="fade-up" data-aos-delay="100">
+          <div class="stylist-photo-wrap">
+            <img src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=600&q=80" alt="Elena Rostova" loading="lazy" />
+            <a href="#" class="stylist-social-btn" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+          </div>
+          <div class="stylist-details">
+            <h3 class="stylist-name">Elena Rostova</h3>
+            <span class="stylist-role">Master Colorist &amp; Balayage Specialist</span>
+            <span class="stylist-exp">9+ Years in High-Fashion Salons</span>
+            <button class="btn btn-outline-copper btn-sm stylist-book-btn" data-stylist="elena">
+              Book with Elena
+            </button>
+          </div>
+        </div>
+
+        <!-- Stylist 2 -->
+        <div class="stylist-card" data-aos="fade-up" data-aos-delay="200">
+          <div class="stylist-photo-wrap">
+            <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=600&q=80" alt="Marcus 'Blade' Hayes" loading="lazy" />
+            <a href="#" class="stylist-social-btn" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+          </div>
+          <div class="stylist-details">
+            <h3 class="stylist-name">Marcus Hayes</h3>
+            <span class="stylist-role">Lead Master Barber &amp; Razor Artist</span>
+            <span class="stylist-exp">12+ Years Precision Fading</span>
+            <button class="btn btn-outline-copper btn-sm stylist-book-btn" data-stylist="marcus">
+              Book with Marcus
+            </button>
+          </div>
+        </div>
+
+        <!-- Stylist 3 -->
+        <div class="stylist-card" data-aos="fade-up" data-aos-delay="300">
+          <div class="stylist-photo-wrap">
+            <img src="https://images.unsplash.com/photo-1517841905240-472988babdf9?auto=format&fit=crop&w=600&q=80" alt="Sophia Lin" loading="lazy" />
+            <a href="#" class="stylist-social-btn" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+          </div>
+          <div class="stylist-details">
+            <h3 class="stylist-name">Sophia Lin</h3>
+            <span class="stylist-role">Bridal &amp; Editorial Makeup Artist</span>
+            <span class="stylist-exp">7+ Years Red Carpet Artistry</span>
+            <button class="btn btn-outline-copper btn-sm stylist-book-btn" data-stylist="sophia">
+              Book with Sophia
+            </button>
+          </div>
+        </div>
+
+        <!-- Stylist 4 -->
+        <div class="stylist-card" data-aos="fade-up" data-aos-delay="400">
+          <div class="stylist-photo-wrap">
+            <img src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?auto=format&fit=crop&w=600&q=80" alt="Darius Vance" loading="lazy" />
+            <a href="#" class="stylist-social-btn" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+          </div>
+          <div class="stylist-details">
+            <h3 class="stylist-name">Darius Vance</h3>
+            <span class="stylist-role">Executive Beard &amp; Skin Specialist</span>
+            <span class="stylist-exp">8+ Years Royal Barber Certified</span>
+            <button class="btn btn-outline-copper btn-sm stylist-book-btn" data-stylist="darius">
+              Book with Darius
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Before / After Style Gallery -->
+  <section class="gallery-section" id="gallery">
+    <div class="container">
+      <div class="section-header" data-aos="fade-up">
+        <span class="section-tag">Transformation Showcase</span>
+        <h2 class="section-title">Before &amp; After Masterpieces</h2>
+        <div class="copper-divider">
+          <span class="divider-line"></span>
+          <i class="fas fa-scissors divider-scissor"></i>
+          <span class="divider-line"></span>
+        </div>
+        <p class="section-subtitle">
+          Drag the sliders to witness the precision artistry and stunning hair transformations achieved at The Fade Room.
+        </p>
+      </div>
+
+      <div class="ba-showcase-grid" data-aos="fade-up" data-aos-delay="100">
+        <!-- Transformation 1: Fade & Beard -->
+        <div class="ba-slider-container">
+          <img src="https://images.unsplash.com/photo-1503951914875-452162b0f3f1?auto=format&fit=crop&w=700&q=80" class="ba-img" alt="Before Haircut" loading="lazy" />
+          <div class="ba-after-wrap">
+            <img src="https://images.unsplash.com/photo-1622286342621-4bd786c2447c?auto=format&fit=crop&w=700&q=80" class="ba-img" alt="After Razor Fade" loading="lazy" />
+          </div>
+          <span class="ba-badge badge-before">Before</span>
+          <span class="ba-badge badge-after">After &bull; Razor Skin Fade</span>
+          <div class="ba-handle"><i class="fas fa-arrows-left-right"></i></div>
+        </div>
+
+        <!-- Transformation 2: Balayage & Glam -->
+        <div class="ba-slider-container">
+          <img src="https://images.unsplash.com/photo-1517841905240-472988babdf9?auto=format&fit=crop&w=700&q=80" class="ba-img" alt="Before Balayage" loading="lazy" />
+          <div class="ba-after-wrap">
+            <img src="https://images.unsplash.com/photo-1560066984-138dadb4c035?auto=format&fit=crop&w=700&q=80" class="ba-img" alt="After Caramel Balayage" loading="lazy" />
+          </div>
+          <span class="ba-badge badge-before">Before</span>
+          <span class="ba-badge badge-after">After &bull; Honey Balayage</span>
+          <div class="ba-handle"><i class="fas fa-arrows-left-right"></i></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Pricing Table Section -->
+  <section class="pricing-section" id="pricing">
+    <div class="container">
+      <div class="section-header" data-aos="fade-up">
+        <span class="section-tag">Transparent Value</span>
+        <h2 class="section-title">Grooming Packages &amp; Pricing</h2>
+        <div class="copper-divider">
+          <span class="divider-line"></span>
+          <i class="fas fa-scissors divider-scissor"></i>
+          <span class="divider-line"></span>
+        </div>
+        <p class="section-subtitle">
+          Transparent, all-inclusive luxury grooming packages tailored to your schedule and lifestyle.
+        </p>
+      </div>
+
+      <div class="pricing-grid">
+        <!-- Tier 1 -->
+        <div class="pricing-card" data-aos="fade-up" data-aos-delay="100">
+          <div class="pricing-header">
+            <h3 class="pricing-name">The Classic Fade</h3>
+            <div class="pricing-price">$45</div>
+            <span style="font-size:0.8rem; color:var(--text-muted);">Approx. 45 Minutes</span>
+          </div>
+          <ul class="pricing-features">
+            <li><i class="fas fa-check"></i> Precision Taper or Razor Fade</li>
+            <li><i class="fas fa-check"></i> Scissor Texturing &amp; Styling</li>
+            <li><i class="fas fa-check"></i> Straight-Razor Neck Cleanup</li>
+            <li><i class="fas fa-check"></i> Botanical Tea Tree Wash</li>
+          </ul>
+          <a href="#booking" class="btn btn-outline-copper btn-block">Book Package</a>
+        </div>
+
+        <!-- Tier 2: Featured -->
+        <div class="pricing-card featured" data-aos="fade-up" data-aos-delay="200">
+          <div class="popular-ribbon">Most Requested</div>
+          <div class="pricing-header">
+            <h3 class="pricing-name">The Executive Combo</h3>
+            <div class="pricing-price">$75</div>
+            <span style="font-size:0.8rem; color:var(--copper-light);">Approx. 75 Minutes</span>
+          </div>
+          <ul class="pricing-features">
+            <li><i class="fas fa-check"></i> Signature Fade &amp; Scissor Work</li>
+            <li><i class="fas fa-check"></i> Hot Towel Beard Sculpt &amp; Trim</li>
+            <li><i class="fas fa-check"></i> Argan Oil Facial Massage</li>
+            <li><i class="fas fa-check"></i> Scalp Acupressure Rinse</li>
+            <li><i class="fas fa-check"></i> Complimentary Craft Beverage</li>
+          </ul>
+          <a href="#booking" class="btn btn-copper btn-block">Book Package</a>
+        </div>
+
+        <!-- Tier 3 -->
+        <div class="pricing-card" data-aos="fade-up" data-aos-delay="300">
+          <div class="pricing-header">
+            <h3 class="pricing-name">VIP Royal Indulgence</h3>
+            <div class="pricing-price">$140</div>
+            <span style="font-size:0.8rem; color:var(--text-muted);">Approx. 120 Minutes</span>
+          </div>
+          <ul class="pricing-features">
+            <li><i class="fas fa-check"></i> Complete Haircut &amp; Tonal Color</li>
+            <li><i class="fas fa-check"></i> Deep Pore Charcoal Detox Facial</li>
+            <li><i class="fas fa-check"></i> Japanese Scalp Herbal Spa</li>
+            <li><i class="fas fa-check"></i> Full Beard Shaping or Shave</li>
+            <li><i class="fas fa-check"></i> Take-Home Styling Product</li>
+          </ul>
+          <a href="#booking" class="btn btn-outline-copper btn-block">Book Package</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Online Booking Form Section -->
+  <section class="booking-section" id="booking">
+    <div class="container">
+      <div class="booking-container-box" data-aos="zoom-in">
+        <div class="section-header">
+          <span class="section-tag">Direct Scheduling</span>
+          <h2 class="section-title">Book Your Appointment</h2>
+          <div class="copper-divider">
+            <span class="divider-line"></span>
+            <i class="fas fa-scissors divider-scissor"></i>
+            <span class="divider-line"></span>
+          </div>
+          <p class="section-subtitle">
+            Select your preferred grooming service, master stylist, and appointment slot below.
+          </p>
+        </div>
+
+        <form id="salonBookingForm" novalidate>
+          <div class="booking-form-grid">
+            <!-- Full Name -->
+            <div class="form-group">
+              <label for="clientName"><i class="fas fa-user"></i> Full Name *</label>
+              <input type="text" id="clientName" name="name" class="form-control" placeholder="e.g. Jordan Mitchell" required />
+              <span class="field-error" id="nameError">Please enter your full name.</span>
+            </div>
+
+            <!-- Phone -->
+            <div class="form-group">
+              <label for="clientPhone"><i class="fas fa-phone"></i> Mobile Phone *</label>
+              <input type="tel" id="clientPhone" name="phone" class="form-control" placeholder="e.g. +1 (555) 234-5678" required />
+              <span class="field-error" id="phoneError">Please provide a valid phone number.</span>
+            </div>
+
+            <!-- Service Selection -->
+            <div class="form-group">
+              <label for="bookService"><i class="fas fa-scissors"></i> Service Category *</label>
+              <select id="bookService" name="service" class="form-control" required>
+                <option value="">Select a service...</option>
+                <option value="haircut">Signature Fade &amp; Haircut ($45)</option>
+                <option value="beard">Hot Towel Beard Sculpting ($35)</option>
+                <option value="combo">The Executive Combo ($75)</option>
+                <option value="color">Hair Coloring &amp; Balayage ($120)</option>
+                <option value="facial">Deep Pore Detox Facial ($65)</option>
+                <option value="makeup">Bridal &amp; Event Makeup ($150)</option>
+                <option value="spa">Scalp Detox &amp; Head Spa ($55)</option>
+                <option value="vip">VIP Royal Indulgence ($140)</option>
+              </select>
+              <span class="field-error" id="serviceError">Please select a service.</span>
+            </div>
+
+            <!-- Stylist Selection -->
+            <div class="form-group">
+              <label for="bookStylist"><i class="fas fa-user-tie"></i> Preferred Stylist / Barber *</label>
+              <select id="bookStylist" name="stylist" class="form-control" required>
+                <option value="">Choose your stylist...</option>
+                <option value="elena">Elena Rostova (Master Colorist)</option>
+                <option value="marcus">Marcus Hayes (Lead Barber &amp; Razor)</option>
+                <option value="sophia">Sophia Lin (Bridal &amp; Makeup Artist)</option>
+                <option value="darius">Darius Vance (Beard &amp; Skin Specialist)</option>
+                <option value="any">First Available Master Artist</option>
+              </select>
+              <span class="field-error" id="stylistError">Please select a stylist.</span>
+            </div>
+
+            <!-- Date -->
+            <div class="form-group">
+              <label for="bookDate"><i class="fas fa-calendar-day"></i> Preferred Date *</label>
+              <input type="date" id="bookDate" name="date" class="form-control" required />
+              <span class="field-error" id="dateError">Please select a future appointment date.</span>
+            </div>
+
+            <!-- Time Slot -->
+            <div class="form-group">
+              <label for="bookTime"><i class="fas fa-clock"></i> Preferred Time *</label>
+              <select id="bookTime" name="time" class="form-control" required>
+                <option value="">Select appointment time...</option>
+                <option value="09:00 AM">09:00 AM &mdash; Morning Opening</option>
+                <option value="10:30 AM">10:30 AM</option>
+                <option value="12:00 PM">12:00 PM &mdash; Midday Slot</option>
+                <option value="02:00 PM">02:00 PM</option>
+                <option value="03:30 PM">03:30 PM</option>
+                <option value="05:00 PM">05:00 PM &mdash; Prime Evening</option>
+                <option value="06:30 PM">06:30 PM</option>
+                <option value="07:30 PM">07:30 PM &mdash; Final Chair</option>
+              </select>
+              <span class="field-error" id="timeError">Please select a time slot.</span>
+            </div>
+
+            <!-- Special Notes -->
+            <div class="form-group full-width">
+              <label for="bookNotes"><i class="fas fa-message"></i> Style Preferences / Special Requests</label>
+              <textarea id="bookNotes" name="notes" rows="3" class="form-control" placeholder="Describe the fade style, hair length, color inspiration, or event date..."></textarea>
+            </div>
+          </div>
+
+          <button type="submit" class="btn btn-copper btn-block btn-lg" id="submitAppointmentBtn">
+            <span class="btn-text"><i class="fas fa-calendar-check"></i> Confirm Studio Appointment</span>
+            <span class="btn-loading" style="display:none;"><i class="fas fa-spinner fa-spin"></i> Reserving Chair...</span>
+          </button>
+        </form>
+
+        <!-- Booking Confirmation Success Card -->
+        <div class="booking-success-card" id="bookingSuccess" style="display:none;">
+          <div class="success-icon-box"><i class="fas fa-check"></i></div>
+          <h3>Appointment Confirmed!</h3>
+          <p>We have reserved your chair at The Fade Room. A confirmation SMS has been dispatched.</p>
+
+          <div class="booking-summary-table">
+            <div class="summary-row">
+              <span>Appointment ID</span>
+              <span id="confCode">FADE-839210</span>
+            </div>
+            <div class="summary-row">
+              <span>Client Name</span>
+              <span id="confName"></span>
+            </div>
+            <div class="summary-row">
+              <span>Service</span>
+              <span id="confService"></span>
+            </div>
+            <div class="summary-row">
+              <span>Stylist</span>
+              <span id="confStylist"></span>
+            </div>
+            <div class="summary-row">
+              <span>Date &amp; Time</span>
+              <span id="confDateTime"></span>
+            </div>
+          </div>
+
+          <button class="btn btn-outline-copper btn-sm" id="newBookingBtn">Book Another Service</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Client Testimonials Carousel -->
+  <section class="testimonials-section">
+    <div class="container">
+      <div class="section-header" data-aos="fade-up">
+        <span class="section-tag">Client Reviews</span>
+        <h2 class="section-title">What Our Clients Say</h2>
+        <div class="copper-divider">
+          <span class="divider-line"></span>
+          <i class="fas fa-scissors divider-scissor"></i>
+          <span class="divider-line"></span>
+        </div>
+        <p class="section-subtitle">Real feedback from clients who trust The Fade Room with their signature image.</p>
+      </div>
+
+      <div class="testimonials-wrapper" data-aos="fade-up" data-aos-delay="150">
+        <div class="testimonials-track" id="testimonialsTrack">
+          <!-- Slide 1 -->
+          <div class="testimonial-card">
+            <div class="test-quote-icon"><i class="fas fa-quote-left"></i></div>
+            <div class="test-stars">
+              <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+            </div>
+            <p class="test-quote">
+              "Marcus Hayes is hands down the cleanest razor fade artist in the city. The hot towel treatment and complimentary craft brew make every visit a luxury experience."
+            </p>
+            <div class="test-client">
+              <h4>Anthony Rivera</h4>
+              <span>Executive Client &bull; 3 Years Regular</span>
+            </div>
+          </div>
+
+          <!-- Slide 2 -->
+          <div class="testimonial-card">
+            <div class="test-quote-icon"><i class="fas fa-quote-left"></i></div>
+            <div class="test-stars">
+              <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+            </div>
+            <p class="test-quote">
+              "Elena transformed my dull brown hair into the most radiant honey balayage I have ever had. The attention to hair health and precision color mixing is unmatched."
+            </p>
+            <div class="test-client">
+              <h4>Sarah Jenkins</h4>
+              <span>Fashion Stylist &bull; New York</span>
+            </div>
+          </div>
+
+          <!-- Slide 3 -->
+          <div class="testimonial-card">
+            <div class="test-quote-icon"><i class="fas fa-quote-left"></i></div>
+            <div class="test-stars">
+              <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+            </div>
+            <p class="test-quote">
+              "Booked the VIP Royal Indulgence package before my wedding day. The charcoal facial and beard lineup had me looking sharper than ever for photos. 10/10 studio!"
+            </p>
+            <div class="test-client">
+              <h4>David Sterling</h4>
+              <span>Groom &bull; Boston, MA</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="test-controls">
+          <button class="test-btn" id="testPrevBtn" aria-label="Previous Testimonial"><i class="fas fa-chevron-left"></i></button>
+          <div class="test-dots" id="testDots"></div>
+          <button class="test-btn" id="testNextBtn" aria-label="Next Testimonial"><i class="fas fa-chevron-right"></i></button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Instagram Photo Feed Grid -->
+  <section class="insta-section">
+    <div class="container">
+      <div class="section-header" style="margin-bottom:32px;">
+        <span class="section-tag">Follow The Vibe</span>
+        <h3 style="font-size:1.6rem; color:#ffffff;">Instagram <span class="copper-text">@thefaderoom</span></h3>
+      </div>
+      <div class="insta-grid">
+        <div class="insta-item">
+          <img src="https://images.unsplash.com/photo-1622286342621-4bd786c2447c?auto=format&fit=crop&w=400&q=80" alt="Instagram Post 1" loading="lazy" />
+          <div class="insta-overlay"><i class="fab fa-instagram"></i></div>
+        </div>
+        <div class="insta-item">
+          <img src="https://images.unsplash.com/photo-1560066984-138dadb4c035?auto=format&fit=crop&w=400&q=80" alt="Instagram Post 2" loading="lazy" />
+          <div class="insta-overlay"><i class="fab fa-instagram"></i></div>
+        </div>
+        <div class="insta-item">
+          <img src="https://images.unsplash.com/photo-1503951914875-452162b0f3f1?auto=format&fit=crop&w=400&q=80" alt="Instagram Post 3" loading="lazy" />
+          <div class="insta-overlay"><i class="fab fa-instagram"></i></div>
+        </div>
+        <div class="insta-item">
+          <img src="https://images.unsplash.com/photo-1517841905240-472988babdf9?auto=format&fit=crop&w=400&q=80" alt="Instagram Post 4" loading="lazy" />
+          <div class="insta-overlay"><i class="fab fa-instagram"></i></div>
+        </div>
+        <div class="insta-item">
+          <img src="https://images.unsplash.com/photo-1519699047748-de8e457a634e?auto=format&fit=crop&w=400&q=80" alt="Instagram Post 5" loading="lazy" />
+          <div class="insta-overlay"><i class="fab fa-instagram"></i></div>
+        </div>
+        <div class="insta-item">
+          <img src="https://images.unsplash.com/photo-1570172619644-dfd03ed5d881?auto=format&fit=crop&w=400&q=80" alt="Instagram Post 6" loading="lazy" />
+          <div class="insta-overlay"><i class="fab fa-instagram"></i></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer" id="contact">
+    <div class="container">
+      <div class="footer-grid">
+        <!-- Col 1: Brand & Overview -->
+        <div class="footer-col footer-brand">
+          <div class="brand-logo" style="margin-bottom:16px;">
+            <div class="logo-icon-box"><i class="fas fa-scissors"></i></div>
+            <div class="brand-titles">
+              <span class="brand-name">THE FADE ROOM</span>
+              <span class="brand-tag">Salon &bull; Barber Studio</span>
+            </div>
+          </div>
+          <p class="footer-about">
+            A contemporary haven for master haircutting, razor fading, creative balayage color, and executive skin wellness.
+          </p>
+          <div class="footer-social-row">
+            <a href="#" class="footer-social-btn" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+            <a href="#" class="footer-social-btn" aria-label="TikTok"><i class="fab fa-tiktok"></i></a>
+            <a href="#" class="footer-social-btn" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+            <a href="#" class="footer-social-btn" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+          </div>
+        </div>
+
+        <!-- Col 2: Studio Hours -->
+        <div class="footer-col">
+          <h4>Studio Hours</h4>
+          <ul class="footer-hours-table">
+            <li>
+              <span>Mon &ndash; Fri</span>
+              <span>9:00 AM &ndash; 8:00 PM</span>
+            </li>
+            <li>
+              <span>Saturday</span>
+              <span>8:30 AM &ndash; 7:00 PM</span>
+            </li>
+            <li>
+              <span>Sunday</span>
+              <span>10:00 AM &ndash; 5:00 PM</span>
+            </li>
+            <li>
+              <span>Walk-ins</span>
+              <span style="color:var(--copper-light);">Subject to Chair Availability</span>
+            </li>
+          </ul>
+        </div>
+
+        <!-- Col 3: Studio Location & Map -->
+        <div class="footer-col">
+          <h4>Studio Location</h4>
+          <ul class="footer-contact-list">
+            <li>
+              <i class="fas fa-location-dot"></i>
+              <span>844 Newbury Street, Studio 2B, Boston, MA 02116</span>
+            </li>
+            <li>
+              <i class="fas fa-phone"></i>
+              <span>Studio Desk: +1 (617) 555-FADE</span>
+            </li>
+            <li>
+              <i class="fas fa-envelope"></i>
+              <span>appointments@thefaderoom.com</span>
+            </li>
+          </ul>
+
+          <div class="map-embed-wrap">
+            <iframe 
+              title="The Fade Room Studio Map" 
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2948.745812938472!2d-71.08479382346808!3d42.34900593578761!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89e37a08ecf6b701%3A0xb249d97858c0c451!2sNewbury%20St%2C%20Boston%2C%20MA!5e0!3m2!1sen!2sus!4v1700000000000!5m2!1sen!2sus" 
+              width="100%" 
+              height="110" 
+              style="border:0;" 
+              allowfullscreen="" 
+              loading="lazy" 
+              referrerpolicy="no-referrer-when-downgrade">
+            </iframe>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>&copy; 2026 The Fade Room Luxury Salon &amp; Barber Studio. All rights reserved.</p>
+        <div class="footer-bottom-links">
+          <a href="#">Privacy Policy</a>
+          <span>&bull;</span>
+          <a href="#">Cancellation Policy</a>
+          <span>&bull;</span>
+          <a href="#">Terms of Service</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Scroll to Top Button -->
+  <button class="scroll-top-btn" id="scrollTopBtn" aria-label="Return to top">
+    <i class="fas fa-arrow-up"></i>
+  </button>
+
+  <!-- External JS Libraries -->
+  <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>

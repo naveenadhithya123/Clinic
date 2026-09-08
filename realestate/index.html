@@ -1,0 +1,911 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Skyline Realty | Luxury Estates & Modern Architecture</title>
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=Playfair+Display:ital,wght@0,600;0,700;0,800;1,600&display=swap" rel="stylesheet" />
+  <!-- FontAwesome 6.5.0 -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+  <!-- AOS CSS -->
+  <link rel="stylesheet" href="https://unpkg.com/aos@2.3.4/dist/aos.css" />
+  <!-- Custom Stylesheet -->
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- ================= NAVBAR ================= -->
+  <header class="navbar" id="navbar">
+    <div class="nav-container">
+      <a href="#home" class="nav-brand">
+        <div class="brand-symbol">
+          <i class="fas fa-building-columns"></i>
+        </div>
+        <div class="brand-text">
+          <span class="brand-skyline">SKYLINE</span>
+          <span class="brand-realty">REALTY</span>
+        </div>
+      </a>
+
+      <nav class="nav-menu" id="navMenu">
+        <a href="#home" class="nav-link active">Home</a>
+        <a href="#properties" class="nav-link">Properties</a>
+        <a href="#categories" class="nav-link">Categories</a>
+        <a href="#why-us" class="nav-link">Why Us</a>
+        <a href="#agents" class="nav-link">Agents</a>
+        <a href="#testimonials" class="nav-link">Reviews</a>
+        <a href="#contact" class="nav-link">Contact</a>
+        <a href="#contact" class="nav-btn-cta"><i class="fas fa-calendar-check"></i> Schedule Tour</a>
+      </nav>
+
+      <div class="nav-right">
+        <a href="tel:+18005557596" class="nav-phone"><i class="fas fa-phone"></i> <span>(800) 555-SKYL</span></a>
+        <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- ================= HERO SECTION ================= -->
+  <section class="hero-section" id="home">
+    <div class="hero-bg-wrapper">
+      <img src="https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?auto=format&fit=crop&w=1920&q=80" alt="Modern Luxury Architectural Home" class="hero-bg-img" />
+      <div class="hero-gradient-overlay"></div>
+    </div>
+
+    <div class="container hero-container">
+      <div class="hero-content" data-aos="fade-up" data-aos-duration="1000">
+        <div class="hero-badge">
+          <i class="fas fa-gem"></i> <span>Curated Luxury Estates & Waterfront Penthouses</span>
+        </div>
+        <h1 class="hero-title">
+          Find Your Sanctuary <br />
+          <span class="italic-serif">In The Skyline.</span>
+        </h1>
+        <p class="hero-subtitle">
+          Discover exclusive high-end villas, architectural masterpieces, and modern luxury urban residences tailored for discerning owners worldwide.
+        </p>
+      </div>
+
+      <!-- Advanced Property Search Bar -->
+      <div class="search-panel-wrap" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="200">
+        <div class="search-panel-tabs">
+          <button class="search-type-btn active" data-type="all"><i class="fas fa-magnifying-glass"></i> All Listings</button>
+          <button class="search-type-btn" data-type="buy"><i class="fas fa-house"></i> For Sale</button>
+          <button class="search-type-btn" data-type="rent"><i class="fas fa-key"></i> For Rent</button>
+        </div>
+
+        <form class="search-panel-form" id="propertySearchForm">
+          <div class="search-group">
+            <label><i class="fas fa-location-dot"></i> Location</label>
+            <div class="select-wrapper">
+              <select id="searchLocation">
+                <option value="all">All Prime Locations</option>
+                <option value="beverly-hills">Beverly Hills, CA</option>
+                <option value="manhattan">Manhattan, NY</option>
+                <option value="miami">Miami Beach, FL</option>
+                <option value="aspen">Aspen, CO</option>
+                <option value="malibu">Malibu Coast, CA</option>
+              </select>
+            </div>
+          </div>
+
+          <div class="search-group">
+            <label><i class="fas fa-building"></i> Property Type</label>
+            <div class="select-wrapper">
+              <select id="searchType">
+                <option value="all">All Property Types</option>
+                <option value="villa">Modern Luxury Villa</option>
+                <option value="penthouse">Sky Penthouse</option>
+                <option value="estate">Waterfront Estate</option>
+                <option value="condo">Architectural Condo</option>
+              </select>
+            </div>
+          </div>
+
+          <div class="search-group">
+            <label><i class="fas fa-tag"></i> Price Range</label>
+            <div class="select-wrapper">
+              <select id="searchPrice">
+                <option value="all">Any Price</option>
+                <option value="1-3">$1M - $3M</option>
+                <option value="3-6">$3M - $6M</option>
+                <option value="6-10">$6M - $10M</option>
+                <option value="10+">$10M+ Ultra Luxury</option>
+              </select>
+            </div>
+          </div>
+
+          <div class="search-group">
+            <label><i class="fas fa-bed"></i> Bedrooms</label>
+            <div class="select-wrapper">
+              <select id="searchBeds">
+                <option value="all">Any Beds</option>
+                <option value="2">2+ Beds</option>
+                <option value="3">3+ Beds</option>
+                <option value="4">4+ Beds</option>
+                <option value="5">5+ Beds</option>
+              </select>
+            </div>
+          </div>
+
+          <div class="search-btn-group">
+            <button type="submit" class="btn btn-primary btn-search" id="btnSearchSubmit">
+              <i class="fas fa-magnifying-glass"></i> <span>Search (340+)</span>
+            </button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= STATS COUNTER BAR ================= -->
+  <section class="stats-section">
+    <div class="container">
+      <div class="stats-grid" id="statsGrid">
+        <div class="stat-box" data-aos="fade-up" data-aos-delay="0">
+          <div class="stat-icon"><i class="fas fa-handshake-angle"></i></div>
+          <div class="stat-number-wrap">
+            <span class="stat-prefix">$</span>
+            <span class="stat-counter" data-target="2.8">0</span>
+            <span class="stat-suffix">B+</span>
+          </div>
+          <div class="stat-label">Total Real Estate Volume Sold</div>
+        </div>
+
+        <div class="stat-box" data-aos="fade-up" data-aos-delay="100">
+          <div class="stat-icon"><i class="fas fa-users"></i></div>
+          <div class="stat-number-wrap">
+            <span class="stat-counter" data-target="3800">0</span>
+            <span class="stat-suffix">+</span>
+          </div>
+          <div class="stat-label">Satisfied High-Net-Worth Clients</div>
+        </div>
+
+        <div class="stat-box" data-aos="fade-up" data-aos-delay="200">
+          <div class="stat-icon"><i class="fas fa-city"></i></div>
+          <div class="stat-number-wrap">
+            <span class="stat-counter" data-target="24">0</span>
+            <span class="stat-suffix">+</span>
+          </div>
+          <div class="stat-label">Metropolitan Global Markets</div>
+        </div>
+
+        <div class="stat-box" data-aos="fade-up" data-aos-delay="300">
+          <div class="stat-icon"><i class="fas fa-award"></i></div>
+          <div class="stat-number-wrap">
+            <span class="stat-counter" data-target="22">0</span>
+            <span class="stat-suffix">Yrs</span>
+          </div>
+          <div class="stat-label">Architectural Brokerage Legacy</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= FEATURED PROPERTIES ================= -->
+  <section class="properties-section" id="properties">
+    <div class="container">
+      <div class="section-header" data-aos="fade-up">
+        <span class="section-badge"><i class="fas fa-star"></i> EXCLUSIVE PORTFOLIO</span>
+        <h2 class="section-heading">Featured <span class="serif-accent">Architectural</span> Properties</h2>
+        <p class="section-subtext">Every residence in our signature collection represents the apex of structural elegance, interior refinement, and premier location.</p>
+      </div>
+
+      <div class="properties-grid" id="propertiesGrid">
+
+        <!-- Property 1 -->
+        <div class="property-card" data-category="buy" data-location="beverly-hills" data-price="12500000" data-beds="6" data-aos="fade-up" data-aos-delay="100">
+          <div class="prop-img-box">
+            <img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=800&q=80" alt="The Glass Horizon Villa in Beverly Hills" class="prop-img" loading="lazy" />
+            <div class="prop-badge tag-featured">Exclusive Listing</div>
+            <div class="prop-status">For Sale</div>
+            <button class="prop-fav-btn" aria-label="Favorite"><i class="far fa-heart"></i></button>
+            <div class="prop-overlay-cta">
+              <button class="btn-quick-view" data-prop="glass-horizon"><i class="fas fa-eye"></i> Quick View</button>
+            </div>
+          </div>
+          <div class="prop-content">
+            <div class="prop-price">$12,500,000</div>
+            <h3 class="prop-title">The Glass Horizon Villa</h3>
+            <p class="prop-address"><i class="fas fa-location-dot"></i> 1420 Loma Vista Dr, Beverly Hills, CA 90210</p>
+            <div class="prop-amenities">
+              <div class="amenity-item"><i class="fas fa-bed"></i> <span>6 Beds</span></div>
+              <div class="amenity-item"><i class="fas fa-bath"></i> <span>8 Baths</span></div>
+              <div class="amenity-item"><i class="fas fa-vector-square"></i> <span>9,450 sqft</span></div>
+              <div class="amenity-item"><i class="fas fa-water-ladder"></i> <span>Infinity Pool</span></div>
+            </div>
+            <div class="prop-footer">
+              <button class="btn-view-details" data-prop="glass-horizon">View Details</button>
+              <a href="#contact" class="btn-book-tour" data-prop-name="The Glass Horizon Villa"><i class="fas fa-calendar"></i> Tour</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Property 2 -->
+        <div class="property-card" data-category="buy" data-location="manhattan" data-price="8950000" data-beds="4" data-aos="fade-up" data-aos-delay="150">
+          <div class="prop-img-box">
+            <img src="https://images.unsplash.com/photo-1512917774080-9991f1c4c750?auto=format&fit=crop&w=800&q=80" alt="The Sky Penthouse in Manhattan" class="prop-img" loading="lazy" />
+            <div class="prop-badge tag-luxury">Sky Collection</div>
+            <div class="prop-status">For Sale</div>
+            <button class="prop-fav-btn" aria-label="Favorite"><i class="far fa-heart"></i></button>
+            <div class="prop-overlay-cta">
+              <button class="btn-quick-view" data-prop="sky-penthouse"><i class="fas fa-eye"></i> Quick View</button>
+            </div>
+          </div>
+          <div class="prop-content">
+            <div class="prop-price">$8,950,000</div>
+            <h3 class="prop-title">One Central Park Penthouse</h3>
+            <p class="prop-address"><i class="fas fa-location-dot"></i> 220 Central Park South, Manhattan, NY 10019</p>
+            <div class="prop-amenities">
+              <div class="amenity-item"><i class="fas fa-bed"></i> <span>4 Beds</span></div>
+              <div class="amenity-item"><i class="fas fa-bath"></i> <span>5 Baths</span></div>
+              <div class="amenity-item"><i class="fas fa-vector-square"></i> <span>5,200 sqft</span></div>
+              <div class="amenity-item"><i class="fas fa-building"></i> <span>360° Terrace</span></div>
+            </div>
+            <div class="prop-footer">
+              <button class="btn-view-details" data-prop="sky-penthouse">View Details</button>
+              <a href="#contact" class="btn-book-tour" data-prop-name="One Central Park Penthouse"><i class="fas fa-calendar"></i> Tour</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Property 3 -->
+        <div class="property-card" data-category="buy" data-location="miami" data-price="14800000" data-beds="5" data-aos="fade-up" data-aos-delay="200">
+          <div class="prop-img-box">
+            <img src="https://images.unsplash.com/photo-1613490493576-7fde63acd811?auto=format&fit=crop&w=800&q=80" alt="Villa Bellissima in Miami Beach" class="prop-img" loading="lazy" />
+            <div class="prop-badge tag-waterfront">Waterfront Dock</div>
+            <div class="prop-status">For Sale</div>
+            <button class="prop-fav-btn" aria-label="Favorite"><i class="far fa-heart"></i></button>
+            <div class="prop-overlay-cta">
+              <button class="btn-quick-view" data-prop="villa-bellissima"><i class="fas fa-eye"></i> Quick View</button>
+            </div>
+          </div>
+          <div class="prop-content">
+            <div class="prop-price">$14,800,000</div>
+            <h3 class="prop-title">Villa Bellissima Waterfront</h3>
+            <p class="prop-address"><i class="fas fa-location-dot"></i> 4400 Pine Tree Dr, Miami Beach, FL 33140</p>
+            <div class="prop-amenities">
+              <div class="amenity-item"><i class="fas fa-bed"></i> <span>5 Beds</span></div>
+              <div class="amenity-item"><i class="fas fa-bath"></i> <span>7 Baths</span></div>
+              <div class="amenity-item"><i class="fas fa-vector-square"></i> <span>8,100 sqft</span></div>
+              <div class="amenity-item"><i class="fas fa-ship"></i> <span>100ft Yacht Slip</span></div>
+            </div>
+            <div class="prop-footer">
+              <button class="btn-view-details" data-prop="villa-bellissima">View Details</button>
+              <a href="#contact" class="btn-book-tour" data-prop-name="Villa Bellissima Waterfront"><i class="fas fa-calendar"></i> Tour</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Property 4 -->
+        <div class="property-card" data-category="rent" data-location="malibu" data-price="45000" data-beds="4" data-aos="fade-up" data-aos-delay="100">
+          <div class="prop-img-box">
+            <img src="https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?auto=format&fit=crop&w=800&q=80" alt="Malibu Cove Modern Retreat" class="prop-img" loading="lazy" />
+            <div class="prop-badge tag-rent">Luxury Lease</div>
+            <div class="prop-status tag-rent-status">For Rent</div>
+            <button class="prop-fav-btn" aria-label="Favorite"><i class="far fa-heart"></i></button>
+            <div class="prop-overlay-cta">
+              <button class="btn-quick-view" data-prop="malibu-cove"><i class="fas fa-eye"></i> Quick View</button>
+            </div>
+          </div>
+          <div class="prop-content">
+            <div class="prop-price">$45,000 <span class="price-period">/ month</span></div>
+            <h3 class="prop-title">Malibu Cove Modern Retreat</h3>
+            <p class="prop-address"><i class="fas fa-location-dot"></i> 31200 Broad Beach Rd, Malibu, CA 90265</p>
+            <div class="prop-amenities">
+              <div class="amenity-item"><i class="fas fa-bed"></i> <span>4 Beds</span></div>
+              <div class="amenity-item"><i class="fas fa-bath"></i> <span>5 Baths</span></div>
+              <div class="amenity-item"><i class="fas fa-vector-square"></i> <span>4,800 sqft</span></div>
+              <div class="amenity-item"><i class="fas fa-umbrella-beach"></i> <span>Private Beach</span></div>
+            </div>
+            <div class="prop-footer">
+              <button class="btn-view-details" data-prop="malibu-cove">View Details</button>
+              <a href="#contact" class="btn-book-tour" data-prop-name="Malibu Cove Modern Retreat"><i class="fas fa-calendar"></i> Tour</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Property 5 -->
+        <div class="property-card" data-category="buy" data-location="aspen" data-price="18200000" data-beds="6" data-aos="fade-up" data-aos-delay="150">
+          <div class="prop-img-box">
+            <img src="https://images.unsplash.com/photo-1542314831-068cd1dbfeeb?auto=format&fit=crop&w=800&q=80" alt="Red Mountain Alpine Lodge in Aspen" class="prop-img" loading="lazy" />
+            <div class="prop-badge tag-alpine">Ski-In / Ski-Out</div>
+            <div class="prop-status">For Sale</div>
+            <button class="prop-fav-btn" aria-label="Favorite"><i class="far fa-heart"></i></button>
+            <div class="prop-overlay-cta">
+              <button class="btn-quick-view" data-prop="aspen-lodge"><i class="fas fa-eye"></i> Quick View</button>
+            </div>
+          </div>
+          <div class="prop-content">
+            <div class="prop-price">$18,200,000</div>
+            <h3 class="prop-title">Red Mountain Alpine Lodge</h3>
+            <p class="prop-address"><i class="fas fa-location-dot"></i> 720 Willoughby Way, Aspen, CO 81611</p>
+            <div class="prop-amenities">
+              <div class="amenity-item"><i class="fas fa-bed"></i> <span>6 Beds</span></div>
+              <div class="amenity-item"><i class="fas fa-bath"></i> <span>8 Baths</span></div>
+              <div class="amenity-item"><i class="fas fa-vector-square"></i> <span>11,200 sqft</span></div>
+              <div class="amenity-item"><i class="fas fa-person-skiing"></i> <span>Private Trail</span></div>
+            </div>
+            <div class="prop-footer">
+              <button class="btn-view-details" data-prop="aspen-lodge">View Details</button>
+              <a href="#contact" class="btn-book-tour" data-prop-name="Red Mountain Alpine Lodge"><i class="fas fa-calendar"></i> Tour</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Property 6 -->
+        <div class="property-card" data-category="rent" data-location="manhattan" data-price="28000" data-beds="3" data-aos="fade-up" data-aos-delay="200">
+          <div class="prop-img-box">
+            <img src="https://images.unsplash.com/photo-1502672260266-1c1ef2d93688?auto=format&fit=crop&w=800&q=80" alt="Tribeca Cast-Iron Loft" class="prop-img" loading="lazy" />
+            <div class="prop-badge tag-rent">Furnished Lease</div>
+            <div class="prop-status tag-rent-status">For Rent</div>
+            <button class="prop-fav-btn" aria-label="Favorite"><i class="far fa-heart"></i></button>
+            <div class="prop-overlay-cta">
+              <button class="btn-quick-view" data-prop="tribeca-loft"><i class="fas fa-eye"></i> Quick View</button>
+            </div>
+          </div>
+          <div class="prop-content">
+            <div class="prop-price">$28,000 <span class="price-period">/ month</span></div>
+            <h3 class="prop-title">Tribeca Cast-Iron Artist Loft</h3>
+            <p class="prop-address"><i class="fas fa-location-dot"></i> 114 Franklin St, Tribeca, NY 10013</p>
+            <div class="prop-amenities">
+              <div class="amenity-item"><i class="fas fa-bed"></i> <span>3 Beds</span></div>
+              <div class="amenity-item"><i class="fas fa-bath"></i> <span>3 Baths</span></div>
+              <div class="amenity-item"><i class="fas fa-vector-square"></i> <span>3,600 sqft</span></div>
+              <div class="amenity-item"><i class="fas fa-elevator"></i> <span>Direct Keyed Lift</span></div>
+            </div>
+            <div class="prop-footer">
+              <button class="btn-view-details" data-prop="tribeca-loft">View Details</button>
+              <a href="#contact" class="btn-book-tour" data-prop-name="Tribeca Cast-Iron Artist Loft"><i class="fas fa-calendar"></i> Tour</a>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= PROPERTY CATEGORIES SECTION ================= -->
+  <section class="categories-section" id="categories">
+    <div class="container">
+      <div class="section-header" data-aos="fade-up">
+        <span class="section-badge"><i class="fas fa-layer-group"></i> REAL ESTATE SOLUTIONS</span>
+        <h2 class="section-heading">How Can We <span class="serif-accent">Serve</span> You?</h2>
+        <p class="section-subtext">Whether acquiring, leasing, or selling high-value properties, our advisory practice guarantees discretion and peak valuation.</p>
+      </div>
+
+      <!-- Categories Tabs -->
+      <div class="category-tabs-nav" data-aos="fade-up" data-aos-delay="100">
+        <button class="cat-nav-btn active" data-tab="buy-tab"><i class="fas fa-house-chimney"></i> Buying Luxury</button>
+        <button class="cat-nav-btn" data-tab="rent-tab"><i class="fas fa-key"></i> High-End Leasing</button>
+        <button class="cat-nav-btn" data-tab="sell-tab"><i class="fas fa-chart-line"></i> Selling & Valuation</button>
+      </div>
+
+      <div class="cat-tabs-content" data-aos="fade-up" data-aos-delay="200">
+        
+        <!-- Buy Panel -->
+        <div class="cat-panel active" id="buy-tab">
+          <div class="cat-panel-grid">
+            <div class="cat-text-col">
+              <span class="cat-pill">ACQUISITION ADVISORY</span>
+              <h3>Bespoke Property Search & Off-Market Portfolios</h3>
+              <p>Over 40% of our premier transactions occur off-market. Gain privileged private access to unlisted architectural estates before they reach public awareness.</p>
+              <ul class="cat-checklist">
+                <li><i class="fas fa-circle-check"></i> Private discreet viewings with dedicated concierge</li>
+                <li><i class="fas fa-circle-check"></i> Complete title search, zoning & tax optimization advisory</li>
+                <li><i class="fas fa-circle-check"></i> Negotiation by master brokers with 20+ years expertise</li>
+              </ul>
+              <a href="#properties" class="btn btn-primary"><i class="fas fa-compass"></i> Explore Buying Portfolio</a>
+            </div>
+            <div class="cat-visual-col">
+              <img src="https://images.unsplash.com/photo-1600585154526-990dced4db0d?auto=format&fit=crop&w=800&q=80" alt="Luxury Architectural Living Space" />
+            </div>
+          </div>
+        </div>
+
+        <!-- Rent Panel -->
+        <div class="cat-panel" id="rent-tab">
+          <div class="cat-panel-grid">
+            <div class="cat-text-col">
+              <span class="cat-pill">LUXURY LEASING</span>
+              <h3>Executive Residences & Seasonal Dream Villas</h3>
+              <p>From fully furnished penthouses in Manhattan to seasonal oceanfront compounds in Malibu and Miami Beach, our leasing division manages ultra-luxury tenancies.</p>
+              <ul class="cat-checklist">
+                <li><i class="fas fa-circle-check"></i> Fully vetted, white-glove furnished residences</li>
+                <li><i class="fas fa-circle-check"></i> Flexible terms: Annual, seasonal, or corporate relocation</li>
+                <li><i class="fas fa-circle-check"></i> 24/7 dedicated property management & maintenance team</li>
+              </ul>
+              <a href="#properties" class="btn btn-primary"><i class="fas fa-key"></i> View Available Leases</a>
+            </div>
+            <div class="cat-visual-col">
+              <img src="https://images.unsplash.com/photo-1600607687920-4e2a09cf159d?auto=format&fit=crop&w=800&q=80" alt="Penthouse Terrace View" />
+            </div>
+          </div>
+        </div>
+
+        <!-- Sell Panel -->
+        <div class="cat-panel" id="sell-tab">
+          <div class="cat-panel-grid">
+            <div class="cat-text-col">
+              <span class="cat-pill">MAXIMUM VALUATION</span>
+              <h3>Global Cinematic Marketing & Record-Breaking Sales</h3>
+              <p>We syndicate your property across Architectural Digest, Robb Report, Wall Street Journal, and private international buyer networks for premium record-setting equity.</p>
+              <ul class="cat-checklist">
+                <li><i class="fas fa-circle-check"></i> 4K cinematic drone tours, 3D Matterport VR scanning</li>
+                <li><i class="fas fa-circle-check"></i> Staging by world-renowned interior architectural designers</li>
+                <li><i class="fas fa-circle-check"></i> AI-powered comparative market equity analysis report</li>
+              </ul>
+              <a href="#contact" class="btn btn-primary"><i class="fas fa-calculator"></i> Request Free Home Valuation</a>
+            </div>
+            <div class="cat-visual-col">
+              <img src="https://images.unsplash.com/photo-1600566753376-12c8ab7fb75b?auto=format&fit=crop&w=800&q=80" alt="Modern Staged Architectural Interior" />
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= WHY CHOOSE US ================= -->
+  <section class="why-us-section" id="why-us">
+    <div class="container">
+      <div class="section-header" data-aos="fade-up">
+        <span class="section-badge"><i class="fas fa-shield-halved"></i> THE SKYLINE STANDARD</span>
+        <h2 class="section-heading">Why Discerning Buyers <span class="serif-accent">Trust</span> Us</h2>
+        <p class="section-subtext">We combine deep market intelligence with architectural prestige to deliver seamless, discreet transactions.</p>
+      </div>
+
+      <div class="why-grid">
+        <div class="why-card" data-aos="fade-up" data-aos-delay="100">
+          <div class="why-icon-box"><i class="fas fa-certificate"></i></div>
+          <h3>100% Verified Ownership</h3>
+          <p>Every listing undergoes rigorous legal verification, title inspection, environmental check, and architectural zoning appraisal.</p>
+        </div>
+
+        <div class="why-card" data-aos="fade-up" data-aos-delay="200">
+          <div class="why-icon-box"><i class="fas fa-user-tie"></i></div>
+          <h3>Top 1% Elite Agents</h3>
+          <p>Our licensed estate directors are recognized by Wall Street Journal as top-tier negotiators managing over $2B in closed estates.</p>
+        </div>
+
+        <div class="why-card" data-aos="fade-up" data-aos-delay="300">
+          <div class="why-icon-box"><i class="fas fa-vr-cardboard"></i></div>
+          <h3>Matterport 3D & VR Tours</h3>
+          <p>Explore luxury properties from anywhere in the world in ultra-high-definition 3D virtual walkthroughs and 4K aerial drone video.</p>
+        </div>
+
+        <div class="why-card" data-aos="fade-up" data-aos-delay="400">
+          <div class="why-icon-box"><i class="fas fa-headset"></i></div>
+          <h3>24/7 Private Concierge</h3>
+          <p>Direct access to private charter transports, architect consultations, interior styling teams, and round-the-clock advisory.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= ELITE AGENTS ================= -->
+  <section class="agents-section" id="agents">
+    <div class="container">
+      <div class="section-header" data-aos="fade-up">
+        <span class="section-badge"><i class="fas fa-users-gear"></i> LEADERSHIP & DIRECTORS</span>
+        <h2 class="section-heading">Meet Our <span class="serif-accent">Estate</span> Directors</h2>
+        <p class="section-subtext">Unmatched market acumen, international network reach, and unwavering fiduciary commitment.</p>
+      </div>
+
+      <div class="agents-grid">
+        <!-- Agent 1 -->
+        <div class="agent-card" data-aos="fade-up" data-aos-delay="100">
+          <div class="agent-img-box">
+            <img src="https://images.unsplash.com/photo-1560250097-0b93528c311a?auto=format&fit=crop&w=600&q=80" alt="Arthur Sterling - Managing Principal" />
+            <div class="agent-socials">
+              <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+              <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+              <a href="mailto:arthur@skylinerealty.com" aria-label="Email"><i class="fas fa-envelope"></i></a>
+            </div>
+          </div>
+          <div class="agent-info">
+            <div class="agent-role">MANAGING PRINCIPAL &bull; BEVERLY HILLS</div>
+            <h3 class="agent-name">Arthur Sterling</h3>
+            <p class="agent-meta"><i class="fas fa-id-badge"></i> DRE #01928471 &bull; 18 Yrs Exp</p>
+            <div class="agent-stats-row">
+              <div><strong>$820M+</strong><span>Career Sales</span></div>
+              <div class="v-div"></div>
+              <div><strong>140+</strong><span>Estates Closed</span></div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Agent 2 -->
+        <div class="agent-card" data-aos="fade-up" data-aos-delay="200">
+          <div class="agent-img-box">
+            <img src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?auto=format&fit=crop&w=600&q=80" alt="Victoria Chen - VP Penthouse Division" />
+            <div class="agent-socials">
+              <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+              <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+              <a href="mailto:victoria@skylinerealty.com" aria-label="Email"><i class="fas fa-envelope"></i></a>
+            </div>
+          </div>
+          <div class="agent-info">
+            <div class="agent-role">VP SKY PENTHOUSE &bull; MANHATTAN</div>
+            <h3 class="agent-name">Victoria Chen</h3>
+            <p class="agent-meta"><i class="fas fa-id-badge"></i> NY RE #4920194 &bull; 14 Yrs Exp</p>
+            <div class="agent-stats-row">
+              <div><strong>$640M+</strong><span>Career Sales</span></div>
+              <div class="v-div"></div>
+              <div><strong>95+</strong><span>Penthouses Closed</span></div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Agent 3 -->
+        <div class="agent-card" data-aos="fade-up" data-aos-delay="300">
+          <div class="agent-img-box">
+            <img src="https://images.unsplash.com/photo-1519085360753-af0119f7cbe7?auto=format&fit=crop&w=600&q=80" alt="Sebastian Rossi - Waterfront Director" />
+            <div class="agent-socials">
+              <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+              <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+              <a href="mailto:sebastian@skylinerealty.com" aria-label="Email"><i class="fas fa-envelope"></i></a>
+            </div>
+          </div>
+          <div class="agent-info">
+            <div class="agent-role">DIRECTOR OF WATERFRONT &bull; MIAMI</div>
+            <h3 class="agent-name">Sebastian Rossi</h3>
+            <p class="agent-meta"><i class="fas fa-id-badge"></i> FL BK #3391024 &bull; 16 Yrs Exp</p>
+            <div class="agent-stats-row">
+              <div><strong>$590M+</strong><span>Career Sales</span></div>
+              <div class="v-div"></div>
+              <div><strong>110+</strong><span>Waterfront Homes</span></div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Agent 4 -->
+        <div class="agent-card" data-aos="fade-up" data-aos-delay="400">
+          <div class="agent-img-box">
+            <img src="https://images.unsplash.com/photo-1580489944761-15a19d654956?auto=format&fit=crop&w=600&q=80" alt="Genevieve Laurent - Alpine & Resort Estates" />
+            <div class="agent-socials">
+              <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+              <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+              <a href="mailto:genevieve@skylinerealty.com" aria-label="Email"><i class="fas fa-envelope"></i></a>
+            </div>
+          </div>
+          <div class="agent-info">
+            <div class="agent-role">DIRECTOR ALPINE & RESORTS &bull; ASPEN</div>
+            <h3 class="agent-name">Genevieve Laurent</h3>
+            <p class="agent-meta"><i class="fas fa-id-badge"></i> CO ER #1002934 &bull; 12 Yrs Exp</p>
+            <div class="agent-stats-row">
+              <div><strong>$480M+</strong><span>Career Sales</span></div>
+              <div class="v-div"></div>
+              <div><strong>78+</strong><span>Chalets & Ranches</span></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= TESTIMONIALS ================= -->
+  <section class="testimonials-section" id="testimonials">
+    <div class="container">
+      <div class="section-header" data-aos="fade-up">
+        <span class="section-badge"><i class="fas fa-quote-left"></i> CLIENT EXPERIENCES</span>
+        <h2 class="section-heading">Words From Our <span class="serif-accent">Esteemed</span> Clients</h2>
+        <p class="section-subtext">Discover why industry leaders, tech founders, and collectors choose Skyline Realty.</p>
+      </div>
+
+      <div class="t-slider-wrapper" data-aos="fade-up" data-aos-delay="100">
+        <div class="t-slides-container" id="testimonialSlider">
+
+          <!-- Slide 1 -->
+          <div class="t-slide active">
+            <div class="t-card">
+              <div class="t-stars"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
+              <p class="t-quote">
+                "Arthur Sterling and the Skyline team secured our Beverly Hills estate completely off-market. Their discretion, architectural depth, and legal finesse exceeded every expectation. There is no other brokerage I would trust with a 9-figure property portfolio."
+              </p>
+              <div class="t-user">
+                <img src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=150&q=80" alt="Claire Montagu" class="t-avatar" />
+                <div class="t-meta">
+                  <h4>Claire Montagu</h4>
+                  <span>Private Equity Principal &bull; <strong class="text-emerald">Acquired $12.5M Estate</strong></span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Slide 2 -->
+          <div class="t-slide">
+            <div class="t-card">
+              <div class="t-stars"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
+              <p class="t-quote">
+                "Victoria Chen's knowledge of Manhattan trophy penthouses is peerless. Within 14 days of listing, she curated a private showing that resulted in an all-cash offer above ask. Truly world-class brokerage execution."
+              </p>
+              <div class="t-user">
+                <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=150&q=80" alt="David Sterling" class="t-avatar" />
+                <div class="t-meta">
+                  <h4>David Sterling</h4>
+                  <span>Tech Entrepreneur &bull; <strong class="text-emerald">Sold $8.95M Penthouse</strong></span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Slide 3 -->
+          <div class="t-slide">
+            <div class="t-card">
+              <div class="t-stars"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
+              <p class="t-quote">
+                "Relocating our family to Miami Beach seemed daunting until Sebastian Rossi stepped in. He navigated yacht dockage zoning, private school districts, and negotiated our dream waterfront villa effortlessly."
+              </p>
+              <div class="t-user">
+                <img src="https://images.unsplash.com/photo-1544005313-94ddf0286df2?auto=format&fit=crop&w=150&q=80" alt="Isabella & Marco De Luca" class="t-avatar" />
+                <div class="t-meta">
+                  <h4>Isabella De Luca</h4>
+                  <span>Architectural Designer &bull; <strong class="text-emerald">Acquired $14.8M Waterfront</strong></span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+        <!-- Slider Controls -->
+        <div class="t-controls">
+          <button class="t-btn-ctrl" id="tPrev" aria-label="Previous"><i class="fas fa-arrow-left"></i></button>
+          <div class="t-indicator-dots" id="tDots">
+            <span class="t-dot active" data-index="0"></span>
+            <span class="t-dot" data-index="1"></span>
+            <span class="t-dot" data-index="2"></span>
+          </div>
+          <button class="t-btn-ctrl" id="tNext" aria-label="Next"><i class="fas fa-arrow-right"></i></button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= CONTACT & SCHEDULE TOUR ================= -->
+  <section class="contact-section" id="contact">
+    <div class="container">
+      <div class="contact-card-wrapper" data-aos="zoom-in" data-aos-duration="1000">
+        <div class="contact-left-col">
+          <span class="section-badge"><i class="fas fa-building"></i> PRIVATE CONSULTATION</span>
+          <h2 class="contact-heading">Schedule A Private <span class="serif-accent">Viewing</span></h2>
+          <p class="contact-lead">
+            Experience our properties with a dedicated Estate Director. We provide private chauffeured transport, architectural documentation, and confidential valuation reports.
+          </p>
+          <div class="contact-highlights">
+            <div class="ch-item">
+              <i class="fas fa-shield-check"></i>
+              <div><strong>Strict Discretion & NDA</strong><span>Full confidential client protection</span></div>
+            </div>
+            <div class="ch-item">
+              <i class="fas fa-car-side"></i>
+              <div><strong>Complimentary Private Escort</strong><span>Chauffeured viewing experience</span></div>
+            </div>
+            <div class="ch-item">
+              <i class="fas fa-file-contract"></i>
+              <div><strong>Complete Dossier & Blueprints</strong><span>Full architectural and zoning data</span></div>
+            </div>
+          </div>
+        </div>
+
+        <div class="contact-right-col">
+          <form class="booking-form" id="tourBookingForm" novalidate>
+            <div class="form-row">
+              <div class="form-field">
+                <label for="clientName">Full Name *</label>
+                <div class="input-wrap"><i class="fas fa-user"></i><input type="text" id="clientName" placeholder="Eleanor Vance" required /></div>
+                <span class="error-msg" id="nameErr"></span>
+              </div>
+              <div class="form-field">
+                <label for="clientPhone">Phone Number *</label>
+                <div class="input-wrap"><i class="fas fa-phone"></i><input type="tel" id="clientPhone" placeholder="+1 (555) 019-2834" required /></div>
+                <span class="error-msg" id="phoneErr"></span>
+              </div>
+            </div>
+
+            <div class="form-row">
+              <div class="form-field">
+                <label for="clientEmail">Email Address *</label>
+                <div class="input-wrap"><i class="fas fa-envelope"></i><input type="email" id="clientEmail" placeholder="eleanor@vancecapital.com" required /></div>
+                <span class="error-msg" id="emailErr"></span>
+              </div>
+              <div class="form-field">
+                <label for="propertyInterest">Property of Interest *</label>
+                <div class="input-wrap select-wrap">
+                  <i class="fas fa-building"></i>
+                  <select id="propertyInterest" required>
+                    <option value="">Select a property...</option>
+                    <option value="The Glass Horizon Villa">The Glass Horizon Villa ($12.5M &bull; Beverly Hills)</option>
+                    <option value="One Central Park Penthouse">One Central Park Penthouse ($8.95M &bull; Manhattan)</option>
+                    <option value="Villa Bellissima Waterfront">Villa Bellissima Waterfront ($14.8M &bull; Miami)</option>
+                    <option value="Malibu Cove Modern Retreat">Malibu Cove Modern Retreat ($45k/mo &bull; Malibu)</option>
+                    <option value="Red Mountain Alpine Lodge">Red Mountain Alpine Lodge ($18.2M &bull; Aspen)</option>
+                    <option value="Tribeca Cast-Iron Artist Loft">Tribeca Cast-Iron Artist Loft ($28k/mo &bull; Tribeca)</option>
+                    <option value="General Private Portfolio Consultation">General Private Portfolio Consultation</option>
+                  </select>
+                </div>
+                <span class="error-msg" id="propErr"></span>
+              </div>
+            </div>
+
+            <div class="form-row">
+              <div class="form-field">
+                <label for="tourDate">Preferred Tour Date *</label>
+                <div class="input-wrap"><i class="fas fa-calendar"></i><input type="date" id="tourDate" required /></div>
+                <span class="error-msg" id="dateErr"></span>
+              </div>
+              <div class="form-field">
+                <label for="tourTime">Preferred Time</label>
+                <div class="input-wrap select-wrap">
+                  <i class="fas fa-clock"></i>
+                  <select id="tourTime">
+                    <option>10:00 AM - Morning Daylight</option>
+                    <option>02:00 PM - Afternoon Light</option>
+                    <option>05:30 PM - Sunset Golden Hour</option>
+                  </select>
+                </div>
+              </div>
+            </div>
+
+            <div class="form-field full-width">
+              <label for="clientNotes">Special Inquiries or Architectural Requirements</label>
+              <div class="input-wrap textarea-wrap">
+                <i class="fas fa-message"></i>
+                <textarea id="clientNotes" rows="3" placeholder="Tell us if you require yacht dockage, private security clearance, or specific square footage..."></textarea>
+              </div>
+            </div>
+
+            <button type="submit" class="btn btn-primary btn-full" id="btnSubmitTour">
+              <i class="fas fa-calendar-check"></i> <span>Confirm Private Tour Request</span>
+            </button>
+          </form>
+
+          <!-- Confirmation Card -->
+          <div class="tour-confirmation-card" id="tourConfirmation" style="display: none;">
+            <div class="confirm-icon"><i class="fas fa-circle-check"></i></div>
+            <h3>PRIVATE TOUR CONFIRMED</h3>
+            <p>Your appointment has been registered with our Senior Estate Director.</p>
+            <div class="confirm-meta-box">
+              <div><span>Guest</span><strong id="confGuest">Eleanor Vance</strong></div>
+              <div><span>Pass ID</span><strong class="text-emerald" id="confPassId">SKY-849201</strong></div>
+              <div><span>Estate</span><strong id="confProp">The Glass Horizon Villa</strong></div>
+              <div><span>Date & Time</span><strong id="confTime">Nov 15, 2026 @ 10:00 AM</strong></div>
+            </div>
+            <button type="button" class="btn btn-secondary btn-full" id="btnResetTour">Schedule Another Viewing</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= PROPERTY DETAILS MODAL ================= -->
+  <div class="modal-backdrop" id="propModal" aria-hidden="true">
+    <div class="modal-dialog">
+      <button class="modal-close" id="modalClose" aria-label="Close dialog"><i class="fas fa-xmark"></i></button>
+      <div class="modal-grid">
+        <div class="modal-media-col">
+          <img id="mPropImg" src="" alt="Property Preview" />
+          <div class="m-price-tag">
+            <span id="mPropPrice">$0</span>
+            <small id="mPropStatus">For Sale</small>
+          </div>
+        </div>
+        <div class="modal-details-col">
+          <span class="modal-badge-tag" id="mPropTag">EXCLUSIVE RESIDENCE</span>
+          <h2 id="mPropTitle">Property Title</h2>
+          <p class="modal-address" id="mPropAddress"><i class="fas fa-location-dot"></i> Property Address</p>
+          <p class="modal-desc" id="mPropDesc">Property architectural overview and highlights.</p>
+          
+          <h4 class="modal-section-title"><i class="fas fa-vector-square"></i> Architectural Specifications</h4>
+          <div class="m-specs-grid" id="mSpecsGrid"></div>
+
+          <h4 class="modal-section-title"><i class="fas fa-sparkles"></i> Signature Luxury Amenities</h4>
+          <div class="m-amenities-grid" id="mAmenitiesGrid"></div>
+
+          <div class="modal-actions">
+            <a href="#contact" class="btn btn-primary" id="mBookTourBtn"><i class="fas fa-calendar-check"></i> Schedule Private Tour</a>
+            <a href="tel:+18005557596" class="btn btn-secondary"><i class="fas fa-phone"></i> Inquire Direct</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ================= FOOTER ================= -->
+  <footer class="footer">
+    <div class="footer-top">
+      <div class="container footer-grid">
+
+        <div class="footer-col brand-col">
+          <a href="#home" class="nav-brand footer-brand">
+            <div class="brand-symbol"><i class="fas fa-building-columns"></i></div>
+            <div class="brand-text">
+              <span class="brand-skyline">SKYLINE</span>
+              <span class="brand-realty">REALTY</span>
+            </div>
+          </a>
+          <p class="footer-bio">
+            Skyline Realty is a premier luxury residential and commercial brokerage specializing in architectural landmarks, waterfront estates, and iconic urban penthouses.
+          </p>
+          <div class="footer-socials">
+            <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+            <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+            <a href="#" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+            <a href="#" aria-label="Twitter X"><i class="fab fa-x-twitter"></i></a>
+          </div>
+        </div>
+
+        <div class="footer-col">
+          <h4>Prime Markets</h4>
+          <ul class="footer-links">
+            <li><a href="#properties"><i class="fas fa-chevron-right"></i> Beverly Hills & Bel Air</a></li>
+            <li><a href="#properties"><i class="fas fa-chevron-right"></i> Manhattan Penthouses</a></li>
+            <li><a href="#properties"><i class="fas fa-chevron-right"></i> Miami Beach Waterfront</a></li>
+            <li><a href="#properties"><i class="fas fa-chevron-right"></i> Aspen Alpine Chalets</a></li>
+            <li><a href="#properties"><i class="fas fa-chevron-right"></i> Malibu Oceanfront</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4>Client Advisory</h4>
+          <ul class="footer-links">
+            <li><a href="#categories"><i class="fas fa-chevron-right"></i> Off-Market Acquisitions</a></li>
+            <li><a href="#categories"><i class="fas fa-chevron-right"></i> Free Home Equity Valuation</a></li>
+            <li><a href="#categories"><i class="fas fa-chevron-right"></i> 3D Virtual Reality Tours</a></li>
+            <li><a href="#why-us"><i class="fas fa-chevron-right"></i> Private Concierge Desk</a></li>
+            <li><a href="#contact"><i class="fas fa-chevron-right"></i> Schedule VIP Tour</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4>Private Global Dossier</h4>
+          <p class="newsletter-subtext">Subscribe to receive confidential quarterly architectural market reports and off-market whispers.</p>
+          <form class="footer-newsletter" id="footerNewsletter">
+            <div class="newsletter-box">
+              <input type="email" placeholder="Your executive email..." required />
+              <button type="submit" aria-label="Join"><i class="fas fa-paper-plane"></i></button>
+            </div>
+          </form>
+          <div class="direct-concierge">
+            <i class="fas fa-headset"></i>
+            <div>
+              <span>Direct Concierge Desk</span>
+              <strong>+1 (800) 555-SKYL</strong>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <div class="container footer-bottom-flex">
+        <p>&copy; 2026 Skyline Realty International, LLC. Equal Housing Opportunity. All rights reserved.</p>
+        <div class="footer-legal">
+          <a href="#">Privacy Policy</a>
+          <span>&bull;</span>
+          <a href="#">Terms of Brokerage</a>
+          <span>&bull;</span>
+          <a href="#">Fair Housing Act</a>
+          <span>&bull;</span>
+          <a href="#">Sitemap</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Scroll Top Button -->
+  <button class="scroll-top-btn" id="scrollTopBtn" aria-label="Scroll to top"><i class="fas fa-arrow-up"></i></button>
+
+  <!-- Scripts -->
+  <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
