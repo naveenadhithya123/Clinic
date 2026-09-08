@@ -1740,3 +1740,15 @@ img { max-width: 100%; height: auto; display: block; }
     justify-content: center;
   }
 }
+
+/* Mobile width guardrails */
+@media (max-width: 768px) {
+  html, body { width: 100%; max-width: 100%; overflow-x: hidden; }
+  .container, .nav-container { width: 100%; max-width: 100%; min-width: 0; }
+  .hero-container, .appointment-grid, .form-row-2, .stats-container,
+  .why-grid, .services-grid, .dept-grid, .footer-grid { min-width: 0; }
+  .hero-content, .hero-visual, .hero-card-wrapper, .appointment-form-card,
+  .section-title-wrap, .floating-card { max-width: 100%; min-width: 0; }
+  input, select, textarea, button, .btn { max-width: 100%; }
+  .nav-menu { width: min(290px, 88vw); max-width: 100vw; }
+}
